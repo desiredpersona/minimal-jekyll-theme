@@ -1,0 +1,46 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Meta Robots Tag -->
+  {% if page.meta_robots %}<meta name="robots" content="{{ page.meta_robots }}">{% else %}<meta name="robots" content="all">{% endif %}
+
+  <!-- Site Author -->
+  <meta name="author" content="{{ site.author }}">
+
+  <!-- Atom Feed -->
+  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/minimal.css' | relative_url }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Analytics -->
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
+
+  {% if site.google_site_verification %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+  {% endif %}
+
+  {% if site.bing_site_verification %}
+  <meta name="msvalidate.01" content="{{ site.bing_site_verification }}">
+  {% endif %}
+
+  {% if site.fb_page %}
+  <meta property="fb:pages" content="{{ site.fb_page_id }}">
+  {% endif %}
+
+  <!-- SEO -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+  {% if page.categories %}
+  <meta name="keywords" content="{{ page.categories | join: ', ' }}">
+  {% endif %}
+
+  {% seo %}
+</head>

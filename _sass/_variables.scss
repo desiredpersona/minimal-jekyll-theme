@@ -1,0 +1,38 @@
+/*
+
+    THEME VARIABLES
+
+*/
+
+// Links
+$link: $black;
+
+// Fonts
+$font-family: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               'helvetica neue', helvetica,
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif;
+
+
+$code-font-family: monospace;
+
+// Codeblocks
+$code-background-color: $light-gray;
+
+// Blockquotes
+$blockquote-border: $black;
+$blockquote-color: $black;
+$blockquote-border-left: 3px;
+
+// Tables
+$table-border: $black;
+$table-header: $white;
+
+// Highlighted text
+$mark-color: $lightest-blue;
+
+// Image captions
+$figcaption-color: $light-silver;

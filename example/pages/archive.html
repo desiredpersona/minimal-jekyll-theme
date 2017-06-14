@@ -1,0 +1,44 @@
+---
+layout: default
+header: false
+footer: false
+
+permalink: /archive/
+---
+
+<section class="mw7 center ph3 ph4-m f5 f4-ns fw3 lh-copy mb0">
+
+  <h1 class="f5 fw4 lh-title mb0 pb2 bb b--light-gray">{{ site.data.theme.text.full_archive | capitalize }}</h1>
+
+  {% for post in site.posts %}
+  {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% capture month %}{{ post.date | date: "%B" }}{% endcapture %}
+
+  <article class="f5 lh-copy fw3 pb4 bb b--light-gray">
+    <h4 class="f6 fw6 lh-title ttu tracked mv4">{{ month }} {{ year }}</h4>
+    <a class="link black" href="{{ post.url | relative_url }}">
+      <h3 class="f3 fw6 lh-title mb0">{{ post.title | escape }}</h3>
+      <div class="f5 fw3 lh-copy">
+        {% if post.summary %}
+          {{ post.summary }}
+        {% else %}
+          {{ post.excerpt }}
+        {% endif %}
+      </div>
+    </a>
+
+    <div class="f6 fw3 light-silver mt0">
+      {% if post.last_modified_at %}
+      <span>{{ site.text.updated }} {{ post.last_modified_at | date: site.date_format }}</span>
+      {% else %}
+      <span>{{ post.date | date: site.date_format }}</span>
+      {% endif %}
+      <span class="ttl">&middot;
+      {% include read_time.html %}
+      </span>
+    </div>
+  </article>
+  {% endfor %}
+
+</section>
+

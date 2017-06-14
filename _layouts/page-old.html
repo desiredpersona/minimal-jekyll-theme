@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<main>
+  <article class="flex flex-column items-center">
+    {% unless page.header.layout == 'hero' %}
+    <header class="mw7 w-100 ph3 ph4-m">
+      <h1 class="f2 fw6 lh-title mb1">{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <h2 class="f3 fw3 lh-title light-silver mv2">{{ page.subtitle }}</h2>
+      {% endif %}
+    </header>
+    {% endunless %}
+
+    <div class="mw7 w-100 ph3 ph4-m f5 f4-ns fw3 lh-copy mb0">
+    {{ content }}
+    </div>
+  </article>
+</main>

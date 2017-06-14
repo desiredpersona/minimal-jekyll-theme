@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<main class="mw8 center flex flex-column flex-row-l justify-center">
+  <article class="mw7 {% if page.sidebar %}center-l{% else %}center{% endif %} w-100 w-75-l">
+    {% unless page.header.layout == 'hero' %}
+    <header class="ph3 ph4-m">
+      <h1 class="f2 fw6 lh-title mb1">{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <h2 class="f3 fw3 lh-title light-silver mv2">{{ page.subtitle }}</h2>
+      {% endif %}
+    </header>
+    {% endunless %}
+
+    <div class="ph3 ph4-m f5 f4-ns fw3 lh-copy mb0">
+    {{ content }}
+    </div>
+  </article>
+
+  {% if page.sidebar %}
+    {% include sidebar.html %}
+  {% endif %}
+
+</main>

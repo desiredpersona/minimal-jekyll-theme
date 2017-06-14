@@ -1,0 +1,38 @@
+{% unless page.header.navigation == 'fancy' %}
+{% include navigation.html %}
+{% endunless %}
+
+
+{% if page.header.layout == 'hero' %}
+<header class="flex flex-column cover w-100 vh-50 vh-75-l bg-left bg-center-l" style="background-image: url({{ page.header.image | absolute_url }})">
+  {% if page.header.navigation == 'fancy' %}
+  {% include navigation.html %}
+  {% endif %}
+  <div class="flex flex-auto flex-column justify-center">
+    <div class="flex flex-column items-start items-center-l mw9 mw7-m center w-100 ph3 ph4-ns">
+      <h1 class="f2 f1-l fw6 lh-title white mv0">{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <h2 class="f4 f3-l fw3 white-90 mt3 mb3">{{ page.subtitle }}</h2>
+      {% endif %}
+
+      {% if page.header.cta_url contains "://" %}
+      <a class="f5 f4-ns no-underline dib grow{% if page.header.cta.class %}{{ page.header.cta.class | join: ' ' | prepend: ' ' }}{% else %}{{ site.data.theme.ui.header.cta.class | join: ' ' | prepend: ' ' }}{% endif %} ph4 pv3 mb3" href="{{ page.header.cta_url }}" target="_blank" rel="nofollow">{{ page.header.cta }}</a>
+      {% elsif page.header.cta_url %}
+      <a class="f5 f4-ns no-underline dib grow{% if page.header.cta.class %}{{ page.header.cta.class | join: ' ' | prepend: ' ' }}{% else %}{{ site.data.theme.ui.header.cta.class | join: ' ' | prepend: ' ' }}{% endif %} ph4 pv3 mb3" href="{{ page.header.cta_url | absolute_url }}">{{ page.header.cta }}</a>
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+{% elsif page.header.layout == 'header' %}
+<header class="flex flex-column cover w-100 vh-50 vh-75-l bg-left bg-center-l" style="background-image: url({{ page.header.image | absolute_url }})">
+  {% if page.header.navigation == 'fancy' %}
+  {% include navigation.html %}
+  {% endif %}
+</header>
+{% endif %}
+
+
+{% if page.header.attribution %}
+<span class="flex flex-row justify-center f6 fw3 light-silver pv2 ph3">{{ site.data.theme.text.attribution }}&colon;&nbsp; {{ page.header.attribution | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+{% endif %}

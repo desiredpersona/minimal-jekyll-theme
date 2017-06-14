@@ -1,0 +1,17 @@
+source "https://rubygems.org"
+
+# Jekyll
+gem "jekyll", "~> 3.4.3"
+
+# Theme Development
+#gem "minimal-jekyll-theme", :path => "../"
+
+# Theme
+gem "minimal-jekyll-theme"
+
+# Plugins
+group :jekyll_plugins do
+  gem 'jekyll-feed'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-seo-tag'
+end

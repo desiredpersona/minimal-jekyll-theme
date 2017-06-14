@@ -1,0 +1,39 @@
+{% if page.author_bio != false %}
+
+{% if page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}
+{% else %}
+  {% assign author = site.author %}
+{% endif %}
+
+<div class="flex flex-row w-100 mt2 lh-copy bt b--light-gray pv3" itemscope itemtype="http://schema.org/Person">
+  <div class="flex items-start">
+    {% if author.url contains "://" %}
+    <a href="{{ author.url }}" target="_blank"><img src="{{ author.avatar }}" alt="{{ author.name }}" class="w2 h2 w3-ns h3-ns br-100"></a>
+    {% else %}
+    <a href="{{ author.url | relative_url }}"><img src="{{ author.avatar | absolute_url }}" alt="{{ author.name }}" class="w2 h2 w3-ns h3-ns br-100"></a>
+    {% endif %}
+  </div>
+
+  <div class="flex flex-column w-90 pl2 pl3-ns">
+    <div class="flex flex-row">
+      {% if author.url contains "://" %}
+      <a class="f5 f4-ns fw4 link lh-title black mr2" href="{{ author.url }}" target="_blank">{{ author.name }}</a>
+      {% else %}
+      <a class="f5 f4-ns fw4 link lh-title black mr2" href="{{ author.url | relative_url }}">{{ author.name }}</a>
+      {% endif %}
+
+      {% if author.cta_url contains "://" %}
+      <a class="flex items-center f6 fw3 link{{ site.data.theme.ui.author.cta.class | join: ' ' | prepend: ' ' }} ph2" href="{{ author.cta_url }}" target="_blank">{{ author.cta | default: "Subscribe" }}</a>
+      {% else %}
+      <a class="flex items-center f6 fw3 link{{ site.data.theme.ui.author.cta.class | join: ' ' | prepend: ' ' }} ph2" href="{{ author.cta_url | relative_url }}" target="_blank">{{ author.cta | default: "Subscribe" }}</a>
+      {% endif %}
+    </div>
+
+
+    <div class="f6 f5-ns fw3 lh-copy light-silver">{{ author.bio }}</div>
+  </div>
+
+</div>
+
+{% endif %}
