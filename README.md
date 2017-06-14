@@ -1,14 +1,14 @@
 # Minimal Jekyll Theme
 
-**Subscribe to my[Newsletter for more Themes](https://desiredpersona.com/themes).**
+**Subscribe to my [Newsletter for more Themes](https://desiredpersona.com/themes).**
 
-### Homepage layout with latest blog posts
+## Homepage Layout With Latest Blog Posts
 ![Minimal Jekyll Theme - homepage layout](/screenshot.png)
 
-### Post layout with hero image and call-to-action
+## Post Layout With Hero Image And Call-To-Action
 ![Minimal Jekyll Theme - Post layout with hero image and cta](/screenshot-post-hero.png)
 
-### Post layout
+## Post Layout
 ![Minimal Jekyll Theme - Post layout](/screenshot-post-layout.png)
 
 
@@ -51,4 +51,4 @@ Bug reports and pull requests are welcome on GitHub at [https://github.com/desir
 
 ## License
 
-The theme is available as open source under the terms of the [Creative Commons Attribution 4.0(CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
+The theme is available as open source under the terms of the [Creative Commons Attribution 4.0 (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
