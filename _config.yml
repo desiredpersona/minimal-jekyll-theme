@@ -1,0 +1,83 @@
+################################
+# Site Settings
+################################
+title       : Minimal Theme
+email       : your-email@domain.com
+description : Your awesome site
+baseurl     : "" # the subpath of your site, e.g. /blog
+url         : ""
+date_format : "%-d %b %Y"
+port        : 5000
+
+# Include/Exclude filetypes
+include:
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+
+################################
+# Theme Settings
+################################
+theme       : minimal-jekyll-theme
+permalink   : /:title/
+
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+    input: GFM
+    hard_wrap: false
+    syntax_highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+################################
+# Analytics Settings
+################################
+google_analytics: UA-XXXXXXXX-N
+google_tag_manager:
+google_plus_id:
+google_site_verification:
+bing_site_verification:
+
+facebook:
+  app_id:
+  publisher:
+  admins:
+
+
+################################
+# Jekyll Gems
+################################
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Jekyll SEO Tag Settings https://github.com/jekyll/jekyll-seo-tag
+author: Desired Persona # Default author site-wide unless specified in post
+
+twitter:
+  username: Joe Bloggs
+
+social:
+  name: Joe Bloggs
+  links:
+    - https://twitter.com/username
+    - https://plus.google.com/u/0/+username
+    - https://www.facebook.com/username
+
+# Jekyll Feed Settings https://github.com/jekyll/jekyll-feed
+atom_feed:
+    path: # Leave blank to use default (feed.xml)
+
