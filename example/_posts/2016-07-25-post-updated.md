@@ -1,7 +1,7 @@
 ---
 layout: post
 title: This post has been updated
-date:   2016-07-25 13:20:50 +0100
+date: 2016-07-25 13:20:50 +0100
 author: Desired Persona
 last_modified_at: 2016-09-03 11:14:40 +0100
 categories:

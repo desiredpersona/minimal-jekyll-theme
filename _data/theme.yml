@@ -118,3 +118,4 @@ ui:
           - black-60          # Text color
           - hover-dark-gray   # Hover color
           - b ba br-pill      # Border radius
+          
