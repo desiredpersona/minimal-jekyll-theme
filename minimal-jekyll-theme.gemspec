@@ -1,21 +1,18 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "minimal-jekyll-theme"
-  spec.version       = "0.1.1"
-  spec.authors       = ["Desired Persona"]
-  spec.summary       = %q{A minimal Jekyll (gem-based) theme built with Tachyons.}
-  spec.homepage      = "https://desiredpersona.com/themes/"
-  spec.license       = "CC-BY-4.0"
+  spec.name                    = "minimal-jekyll-theme"
+  spec.version                 = "0.1.2"
+  spec.authors                 = ["Desired Persona"]
+  spec.summary                 = %q{A minimal Jekyll theme that converts! Built with Tachyons CSS.}
+  spec.homepage                = "https://desiredpersona.com/themes/"
+  spec.license                 = "CC-BY-4.0"
 
   spec.metadata["plugin_type"] = "theme"
 
-  spec.files         = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r{^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
+  spec.files                   = `git ls-files -z`.split("\x0").select do |f|
+    f.match(%r{^(assets|_(includes|layouts|sass)/|(LICENSE|README|CHANGELOG)((\.(txt|md|markdown)|$)))}i)
   end
-
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
 
   spec.add_runtime_dependency "jekyll", "~> 3.4"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
