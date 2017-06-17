@@ -7,7 +7,7 @@ description : Your awesome site
 baseurl     : "" # the subpath of your site, e.g. /blog
 url         : ""
 date_format : "%-d %b %Y"
-port        : 5000
+port        : 4000
 
 # Include/Exclude filetypes
 include:
@@ -57,7 +57,7 @@ facebook:
 
 
 ################################
-# Jekyll Gems
+# Jekyll Plugins
 ################################
 gems:
   - jekyll-sitemap

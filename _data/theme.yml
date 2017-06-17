@@ -28,6 +28,9 @@ navigation:
 
 
   docs:
+  - title: introduction
+    url: /docs/
+    
   - title: install
     url: /docs/install-theme/
 

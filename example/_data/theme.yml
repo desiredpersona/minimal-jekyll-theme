@@ -28,6 +28,9 @@ navigation:
 
 
   docs:
+  - title: introduction
+    url: /docs/
+
   - title: install
     url: /docs/install-theme/
 
@@ -118,4 +121,3 @@ ui:
           - black-60          # Text color
           - hover-dark-gray   # Hover color
           - b ba br-pill      # Border radius
-          
