@@ -8,7 +8,7 @@ layout: default
     <h3 class="f5 f4-ns fw3 mb0 pb2 bb b--light-gray">{{ site.data.theme.text.latest_articles | capitalize | default: "Latest writings" }}</h3>
     
     {% for post in site.posts limit: site.data.theme.text.post_limit %}
-    <div class="post pt3 pb3 bb b--light-gray">
+    <div class="post pv4 bb b--light-gray">
       <div class="f5 fw3 light-silver lh-copy">
         {% if post.last_modified_at %}
         <span>{{ site.data.theme.text.updated }} {{ post.last_modified_at | date: site.date_format }}</span>
