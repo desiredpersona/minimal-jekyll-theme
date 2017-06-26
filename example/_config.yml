@@ -57,9 +57,9 @@ facebook:
 
 
 ################################
-# Jekyll Gems
+# Jekyll Plugins
 ################################
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
