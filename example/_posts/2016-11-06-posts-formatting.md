@@ -326,15 +326,15 @@ Definition
 
 ## Primary button
 
-Create a primary button like so:
+Create a Primary button like so:
 
 ```markdown
-[Primary Button](https://google.com){: .f5 .f4-ns .no-underline .grow .ph3 .pv2 .dib .white .bg-blue}
+[Primary button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
 ```
 
 This will output the following:
 
-[Primary Button](#){: .f5 .f4-ns .no-underline .grow .ph3 .pv2 .dib .white .bg-blue}
+[Primary button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
 
 ***
 
@@ -343,12 +343,12 @@ This will output the following:
 Create a success button like so:
 
 ```markdown
-[Success Button](https://google.com){: .f5 .f4-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-green}
+[Success button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-green}
 ```
 
 This will output the following:
 
-[Success Button](https://google.com){: .f5 .f4-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-green}
+[Success button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-green}
 
 ***
 
@@ -357,12 +357,12 @@ This will output the following:
 Create a warning button like so:
 
 ```markdown
-[Warning Button](https://google.com){: .f5 .f4-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-orange}
+[Warning button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-orange}
 ```
 
 This will output the following:
 
-[Warning Button](https://google.com){: .f5 .f4-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-orange}
+[Warning button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-orange}
 
 ***
 
@@ -371,12 +371,12 @@ This will output the following:
 Create a Danger button like so:
 
 ```markdown
-[Danger Button](https://google.com){: .f5 .f4-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-red}
+[Danger button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-red}
 ```
 
 This will output the following:
 
-[Danger Button](https://google.com){: .f5 .f4-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-red}
+[Danger button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-red}
 
 
 ***
@@ -386,12 +386,12 @@ This will output the following:
 Create a Info button like so:
 
 ```markdown
-[Info Button](https://google.com){: .f5 .f4-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-light-blue}
+[Info button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-light-blue}
 ```
 
 This will output the following:
 
-[Info Button](https://google.com){: .f5 .f4-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-light-blue}
+[Info button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-light-blue}
 
 ***
 
@@ -400,40 +400,12 @@ This will output the following:
 Create a Inverse button like so:
 
 ```markdown
-[Inverse Button](https://google.com){: .f5 .f4-ns .no-underline .grow .ba .bw1 .ph3 .pv2 .mb2 .dib}
+[Inverse button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .ba .bw1  .pv2 .mb2 .dib}
 ```
 
 This will output the following:
 
-[Inverse Button](https://google.com){: .f5 .f4-ns .no-underline .grow .ba .bw1 .ph3 .pv2 .mb2 .dib}
-
-***
-
-## Primary pill
-
-Create a Primary pill like so:
-
-```markdown
-[Primary Pill](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph3 .pv2 .mb2 .dib .white .bg-blue}
-```
-
-This will output the following:
-
-[Primary Pill](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph3 .pv2 .mb2 .dib .white .bg-blue}
-
-***
-
-## Inverse pill
-
-Create a Inverse pill like so:
-
-```markdown
-[Inverse Pill](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ba .bw1 .ph3 .pv2 .mb2 .dib}
-```
-
-This will output the following:
-
-[Inverse Pill](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ba .bw1 .ph3 .pv2 .mb2 .dib}
+[Inverse button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .ba .bw1  .pv2 .mb2 .dib}
 
 ***
 
@@ -442,12 +414,12 @@ This will output the following:
 Create a X-Large button like so:
 
 ```markdown
-[X-Large Button](https://google.com){: .f3 .f2-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-blue}
+[X-Large button](https://google.com){: .f3 .f2-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
 ```
 
 This will output the following:
 
-[X-Large Button](https://google.com){: .f3 .f2-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-blue}
+[X-Large button](https://google.com){: .f3 .f2-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
 
 ***
 
@@ -456,12 +428,12 @@ This will output the following:
 Create a Large button like so:
 
 ```markdown
-[Large Button](https://google.com){: .f4 .f3-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-blue}
+[Large button](https://google.com){: .f4 .f3-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
 ```
 
 This will output the following:
 
-[Large Button](https://google.com){: .f4 .f3-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-blue}
+[Large button](https://google.com){: .f4 .f3-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
 
 ***
 
@@ -470,12 +442,12 @@ This will output the following:
 Create a Default button like so:
 
 ```markdown
-[Default Button](https://google.com){: .f5 .f4-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-blue}
+[Default button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
 ```
 
 This will output the following:
 
-[Default Button](https://google.com){: .f5 .f4-ns .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-blue}
+[Default button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
 
 ***
 
@@ -484,12 +456,12 @@ This will output the following:
 Create a Small button like so:
 
 ```markdown
-[Small Button](https://google.com){: .f6 .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-blue}
+[Small button](https://google.com){: .f6 .no-underline .grow .br-pill .ph3 .pv2 .mb2 .dib .white .bg-blue}
 ```
 
 This will output the following:
 
-[Small Button](https://google.com){: .f6 .no-underline .grow .ph3 .pv2 .mb2 .dib .white .bg-blue}
+[Small button](https://google.com){: .f6 .no-underline .grow .br-pill .ph3 .pv2 .mb2 .dib .white .bg-blue}
 
 ***
 
