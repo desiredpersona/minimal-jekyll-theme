@@ -1,6 +1,6 @@
 # Minimal Jekyll Theme
 
-**Subscribe to my [Newsletter for more Themes](https://desiredpersona.com/themes).**
+**Subscribe to my [newsletter for more Themes](https://desiredpersona.com/themes).**
 
 ## Homepage Layout With Latest Blog Posts
 ![Minimal Jekyll Theme - homepage layout](/screenshot.png)
@@ -27,7 +27,7 @@
 
 ## Installation
 
-Please read the [theme documentation](https://github.com/desiredpersona/minimal-jekyll-theme/tree/master/example/_docs)
+Please read the [theme documentation](https://github.com/desiredpersona/minimal-jekyll-theme/tree/master/example/_docs).
 
 
 ## Credits
@@ -40,10 +40,12 @@ Desired Persona
 - <https://twitter.com/desiredpersona>
 - <https://github.com/desiredpersona>
 
-### Thanks to:
+### Thanks
 
 - [Jekyll](http://jekyllrb.com)
 - [Tachyons](http://tachyons.io)
+- [Tachyons Background Overlays by Alec Lomas](https://github.com/lowmess/tachyons-background-overlays)
+- [SVG Icons by Matthew Skiles](http://www.matthewskiles.com)
 
 ## Contributing
 
