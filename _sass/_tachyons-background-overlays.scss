@@ -1,0 +1,44 @@
+/* Variables */
+/* Media queries */
+/*
+
+  TACHYONS BACKGROUND OVERLAYS
+
+  Add an overlay to background images.
+
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
+*/
+.bg-darken-25 { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
+.bg-darken-50 { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
+.bg-darken-75 { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+.bg-lighten-25 { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
+.bg-lighten-50 { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
+.bg-lighten-75 { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
+@media screen and (min-width: 30em) {
+ .bg-darken-25-ns { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
+ .bg-darken-50-ns { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
+ .bg-darken-75-ns { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+ .bg-lighten-25-ns { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
+ .bg-lighten-50-ns { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
+ .bg-lighten-75-ns { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+ .bg-darken-25-m { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
+ .bg-darken-50-m { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
+ .bg-darken-75-m { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+ .bg-lighten-25-m { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
+ .bg-lighten-50-m { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
+ .bg-lighten-75-m { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
+}
+@media screen and (min-width: 60em) {
+ .bg-darken-25-l { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
+ .bg-darken-50-l { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
+ .bg-darken-75-l { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+ .bg-lighten-25-l { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
+ .bg-lighten-50-l { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
+ .bg-lighten-75-l { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
+}

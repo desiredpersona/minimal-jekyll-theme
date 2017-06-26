@@ -4,7 +4,7 @@
 
 
 {% if page.header.layout == 'hero' %}
-<header class="flex flex-column cover w-100 vh-50 vh-75-l bg-left bg-center-l" style="background-image: url({{ page.header.image | absolute_url }})">
+<header class="flex flex-column cover w-100 vh-50-m vh-75-l bg-left bg-center-l {% if page.header.class %}{{ page.header.class }}{% endif %}" style="background-image: url({{ page.header.image | absolute_url }})">
   {% if page.header.navigation == 'fancy' %}
   {% include navigation.html %}
   {% endif %}
@@ -16,9 +16,9 @@
       {% endif %}
 
       {% if page.header.cta_url contains "://" %}
-      <a class="f5 f4-ns no-underline dib grow{% if page.header.cta.class %}{{ page.header.cta.class | join: ' ' | prepend: ' ' }}{% else %}{{ site.data.theme.ui.header.cta.class | join: ' ' | prepend: ' ' }}{% endif %} ph4 pv3 mb3" href="{{ page.header.cta_url }}" target="_blank" rel="nofollow">{{ page.header.cta }}</a>
+      <a class="f5 f4-ns no-underline dib grow {% if page.header.cta.class %}{{ page.header.cta.class | join: ' ' | prepend: ' ' }}{% else %}{{ site.data.theme.ui.header.cta.class | join: ' ' | prepend: ' ' }}{% endif %} ph4 pv3 mb3" href="{{ page.header.cta_url }}" target="_blank" rel="nofollow">{{ page.header.cta }}</a>
       {% elsif page.header.cta_url %}
-      <a class="f5 f4-ns no-underline dib grow{% if page.header.cta.class %}{{ page.header.cta.class | join: ' ' | prepend: ' ' }}{% else %}{{ site.data.theme.ui.header.cta.class | join: ' ' | prepend: ' ' }}{% endif %} ph4 pv3 mb3" href="{{ page.header.cta_url | absolute_url }}">{{ page.header.cta }}</a>
+      <a class="f5 f4-ns no-underline dib grow {% if page.header.cta.class %}{{ page.header.cta.class | join: ' ' | prepend: ' ' }}{% else %}{{ site.data.theme.ui.header.cta.class | join: ' ' | prepend: ' ' }}{% endif %} ph4 pv3 mb3" href="{{ page.header.cta_url | absolute_url }}">{{ page.header.cta }}</a>
       {% endif %}
     </div>
   </div>
