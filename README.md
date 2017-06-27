@@ -14,7 +14,7 @@
 
 ## Features
 
-- Compatible with Jekyll 3.4.x and GitHub Pages.
+- Compatible with Jekyll 3.5.x and GitHub Pages.
 - Support for Jekyll's built-in Sass/SCSS preprocessor.
 - Built with [Tachyons-sass](https://github.com/tachyons-css/tachyons-sass).
 - Several layout options (one-column pages, two-column pages, posts, archive, landing pages).
@@ -54,3 +54,11 @@ Bug reports and pull requests are welcome on GitHub at [https://github.com/desir
 ## License
 
 The theme is available as open source under the terms of the [Creative Commons Attribution 4.0 (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+TLDR: This theme is free to use for both personal and commercial sites once you do not remove the attribution link from the themes footer.
+
+
+If you need to remove the attribution link in the footer you have two options;
+1. Pay $10 per website.
+or
+2. Pay $30 for unlimited licence to use this theme.
