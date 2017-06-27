@@ -59,6 +59,8 @@ TLDR: This theme is free to use for both personal and commercial sites once you 
 
 
 If you need to remove the attribution link in the footer you have two options;
-1. Pay $10 per website.
+1. Pay $10 per website
+
 or
+
 2. Pay $30 for unlimited licence to use this theme.
