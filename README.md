@@ -55,12 +55,10 @@ Bug reports and pull requests are welcome on GitHub at [https://github.com/desir
 
 The theme is available as open source under the terms of the [Creative Commons Attribution 4.0 (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
 
-TLDR: This theme is free to use for both personal and commercial sites once you do not remove the attribution link from the themes footer.
+### TLDR:
+This theme is free to use for personal and/or commercial sites once you do not remove the attribution link from the themes footer.
 
-
-If you need to remove the attribution link in the footer you have two options;
-1. Pay $10 per website
-
-or
-
-2. Pay $30 for unlimited licence to use this theme.
+### Remove Attribution Link (optional):
+If you would like to remove the attribution link from the themes footer for personal and/or commercial sites you have two options;
+1. Pay $10 per website.
+2. Pay $30 for an unlimited site licence.
