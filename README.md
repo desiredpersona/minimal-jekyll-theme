@@ -32,7 +32,7 @@ Please read the [theme documentation](https://github.com/desiredpersona/minimal-
 
 ## Credits
 
-### Creator
+#### Creator
 
 Desired Persona
 
@@ -40,12 +40,12 @@ Desired Persona
 - <https://twitter.com/desiredpersona>
 - <https://github.com/desiredpersona>
 
-### Thanks
+#### Thanks
 
 - [Jekyll](http://jekyllrb.com)
 - [Tachyons](http://tachyons.io)
 - [Tachyons Background Overlays by Alec Lomas](https://github.com/lowmess/tachyons-background-overlays)
-- [SVG Icons by Matthew Skiles](http://www.matthewskiles.com)
+- [SVG Icons by Matthew Skiles](https://dribbble.com/shots/1925069-Lynny-Icon-Set-Free)
 
 ## Contributing
 
@@ -55,10 +55,10 @@ Bug reports and pull requests are welcome on GitHub at [https://github.com/desir
 
 The theme is available as open source under the terms of the [Creative Commons Attribution 4.0 (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
 
-### TLDR:
+#### TLDR:
 This theme is free to use for personal and/or commercial sites once you do not remove the attribution link from the themes footer.
 
-### Remove Attribution Link (optional):
+#### Remove Attribution Link (optional):
 If you would like to remove the attribution link from the themes footer for personal and/or commercial sites you have two options;
 1. Pay $10 per website.
 2. Pay $30 for an unlimited site licence.
