@@ -8,7 +8,6 @@ author: Desired Persona
 header:
     layout: hero
     image: "/assets/images/evening.jpg"
-    caption:
     cta: "Call-to-action button"
     cta_url: https://www.google.com/
 

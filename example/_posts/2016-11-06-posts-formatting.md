@@ -9,7 +9,7 @@ header:
     layout: header
     navigation: fancy
     image: /assets/images/mountains-large.jpg
-    attribution: "[Unsplash](https://unsplash.com)"
+    caption: "[Unsplash](https://unsplash.com)"
 
 categories:
     - jekyll theme

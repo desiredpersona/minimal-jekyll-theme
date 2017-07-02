@@ -8,7 +8,7 @@ header:
     layout: hero
     navigation: fancy
     image: /assets/images/stars-large.jpg
-    attribution: "[Unsplash](https://unsplash.com)"
+    caption: "[Unsplash](https://unsplash.com)"
 
 categories:
     - jekyll theme

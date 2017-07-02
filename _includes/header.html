@@ -36,6 +36,6 @@
 {% endif %}
 
 
-{% if page.header.attribution %}
-<span class="flex flex-row justify-center f6 fw3 light-silver pv2 ph3">{{ site.data.theme.text.attribution }}&colon;&nbsp; {{ page.header.attribution | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+{% if page.header.caption %}
+<span class="flex flex-row justify-center f6 fw3 light-silver pv2 ph3">{{ site.data.theme.text.caption }}&colon;&nbsp; {{ page.header.attribution | markdownify | remove: "<p>" | remove: "</p>" }}</span>
 {% endif %}
