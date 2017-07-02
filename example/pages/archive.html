@@ -29,7 +29,7 @@ permalink: /archive/
 
     <div class="f6 fw3 light-silver mt0">
       {% if post.last_modified_at %}
-      <span>{{ site.text.updated }} {{ post.last_modified_at | date: site.date_format }}</span>
+      <span>{{ site.data.theme.text.updated }} {{ post.last_modified_at | date: site.date_format }}</span>
       {% else %}
       <span>{{ post.date | date: site.date_format }}</span>
       {% endif %}
