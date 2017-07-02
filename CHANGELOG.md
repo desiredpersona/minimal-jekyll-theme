@@ -1,8 +1,12 @@
+## 02-07-2017
+- Added paragraph option to header hero
+
 ## 27-06-2017
 - Improved header vertical padding on mobile.
 - Updated footer attribution link.
 - Updated demo gemfile to Jekyll 3.5.0
 - Updated README.md to recommend using Jekyll 3.5.0 or higher. Reasons: gems are now officially called plugins.
+- Removed padding(pr3) from navigation on mobile view. 
 
 ## 26-06-2017
 - Added tachyons-background-overlays.scss

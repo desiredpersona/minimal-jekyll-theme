@@ -12,7 +12,10 @@
     <div class="flex flex-column items-start items-center-l mw9 mw7-m center w-100 pa3 ph4-ns">
       <h1 class="f2 f1-l fw6 lh-title white mv0">{{ page.title }}</h1>
       {% if page.subtitle %}
-      <h2 class="f4 f3-l fw3 white-90 mt3 mb3">{{ page.subtitle }}</h2>
+      <h2 class="f3 f2-l fw4 lh-title white-90 mt3 mb3">{{ page.subtitle }}</h2>
+      {% endif %}
+      {% if page.paragraph %}
+      <p class="f5 f4-l fw3 lh-copy white-80 mt3 mb3">{{ page.paragraph }}</p>
       {% endif %}
 
       {% if page.header.cta_url contains "://" %}
