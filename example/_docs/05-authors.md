@@ -1,5 +1,6 @@
 ---
 layout: page
+
 sidebar:
   title: Documentation
   navigation: docs
@@ -16,6 +17,7 @@ This theme has multiple author support.
 3. Edit the `authors.yml` file with your own author info.
 
 Here is an example
+
 ```
 # Authors
 

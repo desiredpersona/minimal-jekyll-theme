@@ -28,13 +28,13 @@ navigation:
 
 
   docs:
-  - title: introduction
+  - title: Introduction
     url: /docs/
-
-  - title: install
+    
+  - title: Install
     url: /docs/install-theme/
 
-  - title: layouts
+  - title: Layouts
     url: /docs/theme-layouts/
   
   - title: UI-Text
@@ -51,6 +51,15 @@ navigation:
 
   - title: Pages
     url: /docs/page-layouts/
+
+  - title: Collections
+    url: /docs/collections/
+  
+  - title: Helper classes
+    url: /docs/helper-classes/
+
+  - title: Utility classes
+    url: /docs/utility-classes/
 
 
 ################################

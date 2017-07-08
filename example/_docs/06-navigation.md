@@ -1,5 +1,6 @@
 ---
 layout: page
+
 sidebar:
   title: Documentation
   navigation: docs

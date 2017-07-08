@@ -27,32 +27,6 @@ navigation:
     url: /terms/
 
 
-  docs:
-  - title: introduction
-    url: /docs/
-    
-  - title: install
-    url: /docs/install-theme/
-
-  - title: layouts
-    url: /docs/theme-layouts/
-  
-  - title: UI-Text
-    url: /docs/ui-text/
-
-  - title: Authors
-    url: /docs/authors/
-
-  - title: Navigation
-    url: /docs/navigation/
-
-  - title: Posts
-    url: /docs/post-layouts/
-
-  - title: Pages
-    url: /docs/page-layouts/
-
-
 ################################
 # Theme Attribution Link
 ################################
