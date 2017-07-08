@@ -1,3 +1,7 @@
+## 08-07-2017
+- Added notices documentation.
+- Added buttons documentation.
+
 ## 02-07-2017
 - Added paragraph option to header hero
 

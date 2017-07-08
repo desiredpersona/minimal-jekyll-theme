@@ -324,246 +324,58 @@ Definition
 
 # Buttons
 
-## Primary button
+You can view the [button documentation here](http://localhost:5000/docs/utility-classes/#buttons){: .dim}.
 
-Create a Primary button like so:
-
-```markdown
-[Primary button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
-```
-
-This will output the following:
-
-[Primary button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
-
-***
-
-## Success button
-
-Create a success button like so:
-
-```markdown
-[Success button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-green}
-```
-
-This will output the following:
-
-[Success button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-green}
-
-***
-
-## Warning button
-
-Create a warning button like so:
-
-```markdown
-[Warning button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-orange}
-```
-
-This will output the following:
-
-[Warning button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-orange}
-
-***
-
-## Danger button
-
-Create a Danger button like so:
-
-```markdown
-[Danger button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-red}
-```
-
-This will output the following:
-
-[Danger button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-red}
+<a href="https://www.google.ie" class="bg-green br-pill dib f5 f4-ns grow mb2 no-underline ph4 pv1 white">Success</a>
 
 
-***
+<a href="https://www.google.ie" class="bg-orange br-pill dib f5 f4-ns grow mb2 no-underline ph4 pv1 white">Warning</a>
 
-## Info button
 
-Create a Info button like so:
+<a href="https://www.google.ie" class="bg-red br-pill dib f5 f4-ns grow mb2 no-underline ph4 pv1 white">Danger</a>
 
-```markdown
-[Info button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-light-blue}
-```
 
-This will output the following:
+<a href="https://www.google.ie" class="bg-light-blue br-pill dib f5 f4-ns grow mb2 no-underline ph4 pv1 white">Info</a>
 
-[Info button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-light-blue}
 
-***
+<a href="https://www.google.ie" class="bg-gray br-pill dib f3 f2-ns grow mb2 no-underline ph4 pv3 white">X-Large</a>
 
-## Inverse button
 
-Create a Inverse button like so:
+<a href="https://www.google.ie" class="bg-gray br-pill dib f4 f3-ns grow mb2 no-underline ph4 pv2 white">Large</a>
 
-```markdown
-[Inverse button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .ba .bw1  .pv2 .mb2 .dib}
-```
 
-This will output the following:
+<a href="https://www.google.ie" class="bg-gray br-pill dib f5 f4-ns grow mb2 no-underline ph4 pv1 white">Default</a>
 
-[Inverse button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .ba .bw1  .pv2 .mb2 .dib}
 
-***
+<a href="https://www.google.ie" class="bg-gray br-pill dib f6 grow mb2 no-underline ph4 pv1 white">Small</a>
 
-## X-Large button
 
-Create a X-Large button like so:
+<a href="https://www.google.ie" class="ba bg-white gray br-pill bw1 dib f3 f2-ns grow mb2 no-underline ph4 pv3">X-Large</a>
 
-```markdown
-[X-Large button](https://google.com){: .f3 .f2-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
-```
 
-This will output the following:
+<a href="https://www.google.ie" class="ba bg-white gray br-pill bw1 dib f4 f3-ns grow mb2 no-underline ph4 pv1">Large</a>
 
-[X-Large button](https://google.com){: .f3 .f2-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
 
-***
+<a href="https://www.google.ie" class="ba bg-white gray br-pill bw1 dib f5 f4-ns grow mb2 no-underline ph4">Default</a>
 
-## Large button
 
-Create a Large button like so:
-
-```markdown
-[Large button](https://google.com){: .f4 .f3-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
-```
-
-This will output the following:
-
-[Large button](https://google.com){: .f4 .f3-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
-
-***
-
-## Default button
-
-Create a Default button like so:
-
-```markdown
-[Default button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
-```
-
-This will output the following:
-
-[Default button](https://google.com){: .f5 .f4-ns .no-underline .grow .br-pill .ph4 .pv2 .mb2 .dib .white .bg-blue}
-
-***
-
-## Small button
-
-Create a Small button like so:
-
-```markdown
-[Small button](https://google.com){: .f6 .no-underline .grow .br-pill .ph3 .pv2 .mb2 .dib .white .bg-blue}
-```
-
-This will output the following:
-
-[Small button](https://google.com){: .f6 .no-underline .grow .br-pill .ph3 .pv2 .mb2 .dib .white .bg-blue}
+<a href="https://www.google.ie" class="ba bg-white gray br-pill bw1 dib f6 grow mb2 no-underline ph4">Small</a>
 
 ***
 
 # Notices
 
-## Primary notice
-Create a Primary notice like so:
+You can view the [Notices documentation here](http://localhost:5000/docs/utility-classes/#notices){: .dim}.
 
-```markdown
-{% raw %}**Primary Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.
-{: .bg-light-gray .f5 .w-100 .pa2 .pa3-ns}{% endraw %}
-```
+<p class="bg-light-gray br2 f5 w-100 pa2 pa3-ns"><b>Hey!</b> Minimal Jekyll theme has beautiful notices that are designed to grab a visitors attention.</p>
 
-This will output the following:
+<p class="bg-lightest-blue br2 f5 w-100 pa2 pa3-ns"><b>Hey!</b> Minimal Jekyll theme has beautiful notices that are designed to grab a visitors attention.</p>
 
+<p class="bg-washed-yellow br2 f5 w-100 pa2 pa3-ns"><b>Hey!</b> Minimal Jekyll theme has beautiful notices that are designed to grab a visitors attention.</p>
 
-**Primary Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.
-{: .bg-light-gray .f5 .w-100 .pa2 .pa3-ns}
+<p class="bg-washed-red br2 f5 w-100 pa2 pa3-ns"><b>Hey!</b> Minimal Jekyll theme has beautiful notices that are designed to grab a visitors attention.</p>
 
-```html
-<p class="bg-light-gray f5 w-100 pa2 pa3-ns"><strong>Primary Notice:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.</p>
-```
-
-***
-
-## Info notice
-
-Create a Info notice like so:
-
-```markdown
-{% raw %}**Info Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.
-{: .bg-lightest-blue .f5 .w-100 .pa2 .pa3-ns}{% endraw %}
-```
-
-This will output the following:
-
-**Info Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.
-{: .bg-lightest-blue .f5 .w-100 .pa2 .pa3-ns}
-
-```html
-<p class="bg-lightest-blue f5 w-100 pa2 pa3-ns"><b>Info Notice:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.</p>
-```
-
-***
-
-## Warning notice
-
-Create a Warning notice like so:
-
-```markdown
-{% raw %}**Warning Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.
-{: .bg-washed-yellow .f5 .w-100 .pa2 .pa3-ns}{% endraw %}
-```
-
-This will output the following:
-
-**Warning Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.
-{: .bg-washed-yellow .f5 .w-100 .pa2 .pa3-ns}
-
-```html
-<p class="bg-washed-yellow f5 w-100 pa2 pa3-ns"><b>Warning Notice:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.</p>
-```
-
-***
-
-## Danger notice
-
-Create a Danger notice like so:
-
-```markdown
-{% raw %}**Danger Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.
-{: .bg-washed-red .f5 .w-100 .pa2 .pa3-ns}{% endraw %}
-```
-
-This will output the following:
-
-**Danger Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.
-{: .bg-washed-red .f5 .w-100 .pa2 .pa3-ns}
-
-```html
-<p class="bg-washed-red f5 w-100 pa2 pa3-ns"><b>Danger Notice:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.</p>
-```
-
-***
-
-## Success notice
-
-Create a Success notice like so:
-
-```markdown
-{% raw %}**Success Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.
-{: .bg-washed-green .f5 .w-100 .pa2 .pa3-ns}{% endraw %}
-```
-
-This will output the following:
-
-**Success Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.
-{: .bg-washed-green .f5 .w-100 .pa2 .pa3-ns}
-
-```html
-<p class="bg-washed-green f5 w-100 pa2 pa3-ns"><b>Success Notice:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia sem a blandit sagittis. Etiam sit amet eleifend urna, quis vulputate lectus. Suspendisse potenti. Nam egestas urna quis ipsum blandit luctus.</p>
-```
+<p class="bg-washed-green br2 f5 w-100 pa2 pa3-ns"><b>Hey!</b> Minimal Jekyll theme has beautiful notices that are designed to grab a visitors attention.</p>
 
 ***
 
