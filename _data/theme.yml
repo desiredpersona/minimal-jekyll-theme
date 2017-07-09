@@ -28,8 +28,10 @@ navigation:
 
 
 ################################
-# Theme Attribution Link
+# Attribution Link (Optional)
 ################################
+# Setting this to false will remove the attribution link from themes footer.
+# You must then purchase a licence from https://desiredpersona.com/themes/
 attribution: true
 
 

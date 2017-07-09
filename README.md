@@ -59,6 +59,5 @@ The theme is available as open source under the terms of the [Creative Commons A
 This theme is free to use for personal and/or commercial sites once you do not remove the attribution link from the themes footer.
 
 #### Remove Attribution Link (optional):
-If you would like to remove the attribution link from the themes footer for personal and/or commercial sites you have two options;
-1. Pay $10 per website.
-2. Pay $30 for an unlimited site licence.
+If you would like to remove the attribution link from the themes footer for personal and/or commercial sites set `attribution: false` in your theme.yml file and [purchase a theme licence.](https://desiredpersona.com/themes/)
+
