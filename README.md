@@ -1,6 +1,6 @@
 # Minimal Jekyll Theme
 
-Subscribe to my [newsletter for more Themes](https://desiredpersona.com/themes).
+Subscribe to my [newsletter for more themes](https://desiredpersona.com/themes/).
 
 ## Homepage Layout
 ![Minimal Jekyll Theme - homepage layout](/screenshot.png)
@@ -27,7 +27,7 @@ Subscribe to my [newsletter for more Themes](https://desiredpersona.com/themes).
 
 ## Installation
 
-Please read the [theme documentation](https://github.com/desiredpersona/minimal-jekyll-theme/tree/master/example/_docs).
+Please read the [theme documentation](https://github.com/desiredpersona/minimal-jekyll-theme/tree/master/docs/_docs).
 
 
 ## Credits
