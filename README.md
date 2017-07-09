@@ -1,8 +1,8 @@
 # Minimal Jekyll Theme
 
-**Subscribe to my [newsletter for more Themes](https://desiredpersona.com/themes).**
+Subscribe to my [newsletter for more Themes](https://desiredpersona.com/themes).
 
-## Homepage Layout With Latest Blog Posts
+## Homepage Layout
 ![Minimal Jekyll Theme - homepage layout](/screenshot.png)
 
 ## Post Layout With Hero Image And Call-To-Action
