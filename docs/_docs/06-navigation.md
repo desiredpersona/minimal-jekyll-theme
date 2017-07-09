@@ -12,4 +12,4 @@ post_meta: false
 permalink: /docs/navigation/
 ---
 
-Edit the `theme.yml` file. An example file can be found in `example/_data` folder.
+Edit the `theme.yml` file. An example file can be found in `/docs/_data/` folder.

@@ -53,15 +53,15 @@ permalink: /docs/install-theme/
 
 ## Theme Setup
 
-1. Create a `_data` folder in your sites root directory.
+1. Create a `/_data/` folder in your sites root directory.
 
-2. Copy `theme.yml` and `authors.yml` from `example/_data/` to your `_data` folder in root directory.
+2. Copy `theme.yml` and `authors.yml` from `/docs/_data/` to your `/_data/` folder in root directory.
 
-3. Create `assets/images` folder to manage all your sites images.
+3. Create `/assets/images/` folder to manage all your sites images.
 
 
 ## Usage
 
 To view your new theme, run `bundle exec jekyll serve` and open your browser at [http://localhost:4000](http://localhost:4000).
 
-The `example` directory contains a working demo of this theme. To view the demo, run `bundle exec jekyll serve` while in `example` directory and open your browser at [http://localhost:5000](http://localhost:5000).
+The `/docs/` directory contains a working demo of this theme. To view the demo, run `bundle exec jekyll serve` while in `/docs/` directory and open your browser at [http://localhost:5000](http://localhost:5000).

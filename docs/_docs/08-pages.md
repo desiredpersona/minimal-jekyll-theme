@@ -13,7 +13,7 @@ permalink: /docs/page-layouts/
 ---
 
 ### Archive Page
-Copy `archive.html` page from `example/pages/` folder in to your sites `pages/` directory.
+Copy `archive.html` page from `/docs/pages/` folder in to your sites `/pages/` directory.
 
 ### Categories & Tags Pages
-Copy `categories.html` page and `tags.html` from `example/pages/` folder in to your sites `pages/` directory.
+Copy `categories.html` page and `tags.html` from `/docs/pages/` folder in to your sites `/pages/` directory.

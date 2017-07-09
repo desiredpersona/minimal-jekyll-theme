@@ -12,8 +12,8 @@ post_meta: false
 permalink: /docs/authors/
 ---
 This theme has multiple author support.
-1. First create a `_data` folder in your sites root directory if none exist yet.
-2. Open `example/_data` [folder (located here)](https://github.com/desiredpersona/minimal-jekyll-theme/tree/master/example/_data) and copy the example `authors.yml` file to your `_data` folder in your root directory.
+1. First create a `/_data/` folder in your sites root directory if none exist yet.
+2. Open `/docs/_data` [folder (located here)](https://github.com/desiredpersona/minimal-jekyll-theme/tree/master/docs/_data) and copy the example `authors.yml` file to your `/_data/` folder in your root directory.
 3. Edit the `authors.yml` file with your own author info.
 
 Here is an example
@@ -59,7 +59,7 @@ Desired Persona:
 
 
 ## How to add an author image
-Add your author image to `assets/images` in your sites root directory. Update your avatar link in `authors.yml` file with the location to your author image.
+Add your author image to `/assets/images/` in your sites root directory. Update your avatar link in `authors.yml` file with the location to your author image.
 
 ## How to set a default author site-wide.
 You can set a default author site-wide in your `_config.yml` by adding the following.
