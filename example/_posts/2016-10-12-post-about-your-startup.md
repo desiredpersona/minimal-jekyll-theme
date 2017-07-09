@@ -1,13 +1,10 @@
 ---
 layout: post
-title:  Post with title and subtitle
-subtitle: Adding subtitles couldn't be easier
+title:  A beautiful post about your startup
+subtitle: Adding an optional subtitles is easy when needed
 date:   2016-10-12 13:20:50 +0100
 author: Desired Persona
-post_meta: false
-author_bio: false
-share_icons: false
-category_tag_list: false
+
 categories:
   - jekyll theme
   - post formatting
