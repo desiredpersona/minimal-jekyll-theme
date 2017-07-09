@@ -1,3 +1,7 @@
+## 09-07-2017
+- Updated about.md with theme intro that showcases post layouts.
+- Update attribution link description.
+
 ## 08-07-2017
 - Added notices documentation.
 - Added buttons documentation.

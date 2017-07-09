@@ -4,6 +4,10 @@ title:  Post with title and subtitle
 subtitle: Adding subtitles couldn't be easier
 date:   2016-10-12 13:20:50 +0100
 author: Desired Persona
+post_meta: false
+author_bio: false
+share_icons: false
+category_tag_list: false
 categories:
   - jekyll theme
   - post formatting
@@ -13,8 +17,6 @@ tags:
 ---
 
 To add a subtitle to any blog post, simply add `subtitle: Your subtitle text goes here` in that posts YAML front-matter.
-
-***
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nibh orci. Donec posuere, urna sit amet hendrerit pellentesque, massa ex commodo lorem, vel euismod mauris justo a tortor. Nunc nec eros lacus. Curabitur quis massa non neque viverra viverra. Integer feugiat lorem non velit fermentum efficitur. Cras id turpis sed ipsum egestas hendrerit consequat vel elit. Pellentesque eros sem, bibendum tempus felis ac, molestie auctor lacus. In hac habitasse platea dictumst. Nulla facilisi. Nullam mattis dui sit amet diam luctus venenatis. Donec sed pulvinar dolor. Sed purus dui, pellentesque in dolor quis, volutpat euismod nibh.
 

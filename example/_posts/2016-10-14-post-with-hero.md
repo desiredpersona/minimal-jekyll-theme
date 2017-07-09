@@ -1,14 +1,15 @@
 ---
-layout: post
-title:  Post with hero image
+layout:   post
+title:    Post with hero image
 subtitle: Adding subtitles couldn't be easier
-date:   2016-10-14 13:20:50 +0100
+date:     2016-09-05 13:20:50 +0100
+last_modified_at: 2017-07-07 22:02:07 +0100
 author: Joe Bloggs
 header:
     layout: hero
     navigation: fancy
-    image: /assets/images/stars-large.jpg
-    caption: "[Unsplash](https://unsplash.com)"
+    image: /assets/images/full-moon-night.jpg
+    caption: "[Nathan Anderson](https://unsplash.com/@nathananderson)"
 
 categories:
     - jekyll theme

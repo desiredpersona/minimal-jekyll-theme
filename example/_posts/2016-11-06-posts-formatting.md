@@ -2,8 +2,8 @@
 layout:     post
 title:      Post formatting looks pretty damn amazing
 subtitle:   Subtitles are optional and look just as good
-date:       2016-11-06 13:20:50 +0100
-last_modified_at: 2016-11-07 09:17:23 +0100
+date:       2016-12-06 13:20:50 +0100
+last_modified_at: 2017-07-08 22:02:07 +0100
 author:     Desired Persona
 header:
     layout: header

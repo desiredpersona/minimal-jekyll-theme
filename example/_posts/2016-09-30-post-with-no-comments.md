@@ -12,9 +12,7 @@ tags:
   - comments
 ---
 
-You can disable Disqus comments on any blog post. You simply add `comments: false` in that posts YAML front-matter.
-
-***
+You can disable Disqus comments on any blog post. You simply add `comments: false` in that posts YAML front-matter. Enable/disable comments site-wide by adding/removing your disqus shortname in theme.yml.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nibh orci. Donec posuere, urna sit amet hendrerit pellentesque, massa ex commodo lorem, vel euismod mauris justo a tortor. Nunc nec eros lacus. Curabitur quis massa non neque viverra viverra. Integer feugiat lorem non velit fermentum efficitur. Cras id turpis sed ipsum egestas hendrerit consequat vel elit. Pellentesque eros sem, bibendum tempus felis ac, molestie auctor lacus. In hac habitasse platea dictumst. Nulla facilisi. Nullam mattis dui sit amet diam luctus venenatis. Donec sed pulvinar dolor. Sed purus dui, pellentesque in dolor quis, volutpat euismod nibh.
 

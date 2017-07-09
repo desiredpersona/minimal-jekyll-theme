@@ -1,23 +1,20 @@
 ---
 layout: post
-title: This post has been updated
-date: 2016-07-25 13:20:50 +0100
+title:  Post with social share icons
+date:   2016-08-28 12:04:50 +0100
 author: Desired Persona
-last_modified_at: 2016-09-03 11:14:40 +0100
+category_tag_list: false
 categories:
   - post formatting
   - jekyll theme
 tags:
-  - updated
+  - post
 ---
 
-This blog post has been updated. You simply add `last_modified_at: YYYY-MM-DD` in any posts YAML front-matter. Your sitemap will be updated automatically.
+Add `share_icons: true` in any posts YAML front-matter to enable the author bio after posts.
+You can set `share_icons:` to `true` or `false` in your theme.yml file to enable/disable the share icons site wide. The theme also allows you to turn on/off individual share button in your theme.yml file.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nibh orci. Donec posuere, urna sit amet hendrerit pellentesque, massa ex commodo lorem, vel euismod mauris justo a tortor. Nunc nec eros lacus. Curabitur quis massa non neque viverra viverra. Integer feugiat lorem non velit fermentum efficitur. Cras id turpis sed ipsum egestas hendrerit consequat vel elit. Pellentesque eros sem, bibendum tempus felis ac, molestie auctor lacus. In hac habitasse platea dictumst. Nulla facilisi. Nullam mattis dui sit amet diam luctus venenatis. Donec sed pulvinar dolor. Sed purus dui, pellentesque in dolor quis, volutpat euismod nibh.
-
-Vivamus fermentum auctor neque, a posuere felis. Vivamus vel tempor turpis, vel rutrum risus. Duis est diam, porta quis lorem id, hendrerit euismod nisi. Duis vel convallis odio. Praesent at ipsum suscipit, efficitur tellus et, laoreet justo. Aliquam erat volutpat. Aliquam erat volutpat. Suspendisse eu pretium eros. Duis ac pulvinar ante, id mollis elit. Donec pretium non ex ut volutpat. Maecenas convallis diam sed elementum gravida. Aenean imperdiet eu nisi nec dignissim. Nunc massa augue, ornare nec nisi id, bibendum maximus lectus. Sed ultrices risus sit amet purus tempus malesuada. Suspendisse potenti.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum leo, egestas sed mi id, elementum imperdiet odio. Sed scelerisque consectetur rutrum. Nam neque nibh, luctus sed pharetra vitae, tincidunt eget turpis. Maecenas rhoncus turpis vitae ipsum ullamcorper placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut pellentesque eros mauris, quis luctus magna efficitur interdum. Proin enim velit, rhoncus a molestie id, vestibulum id tortor. Vestibulum maximus leo eros, eget consequat lorem posuere cursus. Sed vestibulum enim nisi, eu sollicitudin odio pretium et. Phasellus et dictum enim. Curabitur et tellus a erat tempus cursus.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nibh orci. Donec posuere, urna sit amet hendrerit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum leo, egestas sed mi id, elementum imperdiet odio. Sed scelerisque consectetur rutrum. Nam neque nibh, luctus sed pharetra vitae, tincidunt eget turpis. Maecenas rhoncus turpis vitae ipsum ullamcorper placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut pellentesque eros mauris, quis luctus magna efficitur interdum. Proin enim velit, rhoncus a molestie id, vestibulum id tortor. Vestibulum maximus leo eros, eget consequat lorem posuere cursus. Sed vestibulum enim nisi, eu sollicitudin odio pretium et. Phasellus et dictum enim. Curabitur et tellus a erat tempus cursus.
 
 Donec porttitor tempor felis vel ullamcorper. Duis vestibulum urna leo, nec sodales diam semper sit amet. Mauris viverra semper efficitur. Vivamus commodo pretium libero eget feugiat. Nam in mattis magna. Nullam nec tellus eleifend, venenatis tellus nec, ultrices libero. Donec efficitur iaculis orci, nec ultricies sem cursus a. Morbi a dui a risus volutpat vehicula ac vel sapien. Donec volutpat lacus felis, quis congue metus hendrerit eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus purus a est cursus, porta convallis sem mollis.
 

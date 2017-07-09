@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Post with author bio after posts turned off
-date:   2016-08-28 12:04:50 +0100
+title: Post with post meta above title
+date:   2016-08-29 12:04:50 +0100
 author: Desired Persona
 author_bio: false
+share_icons: false
+category_tag_list: false
 categories:
   - post formatting
   - jekyll theme
@@ -11,10 +13,7 @@ tags:
   - post
   - author bio
 ---
-
-Add `author_bio: false` in any posts YAML front-matter to disable the author bio after posts. You can also set `show_author_bio: false` in jekyll's `config.yml` file to disable the author bio site wide.
-
-***
+Add `post_meta: true` in any posts YAML front-matter to include the post meta above posts. You can also set `post_meta:` to `true` or `false` in your theme.yml file to enable/disable post meta site wide.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nibh orci. Donec posuere, urna sit amet hendrerit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum leo, egestas sed mi id, elementum imperdiet odio. Sed scelerisque consectetur rutrum. Nam neque nibh, luctus sed pharetra vitae, tincidunt eget turpis. Maecenas rhoncus turpis vitae ipsum ullamcorper placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut pellentesque eros mauris, quis luctus magna efficitur interdum. Proin enim velit, rhoncus a molestie id, vestibulum id tortor. Vestibulum maximus leo eros, eget consequat lorem posuere cursus. Sed vestibulum enim nisi, eu sollicitudin odio pretium et. Phasellus et dictum enim. Curabitur et tellus a erat tempus cursus.
 
