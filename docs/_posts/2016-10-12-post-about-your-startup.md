@@ -2,7 +2,7 @@
 layout: post
 title:  A beautiful post about your startup
 subtitle: Adding an optional subtitles is easy when needed
-date:   2016-10-12 13:20:50 +0100
+date: 2016-10-12 13:20:50 +0100
 author: Desired Persona
 
 categories:
