@@ -1,4 +1,6 @@
 ## 09-07-2017
+- Released theme version 0.1.3
+- Improved header hero padding on mobile.
 - Updated about.md with theme intro that showcases post layouts.
 - Update attribution link description.
 
@@ -32,6 +34,7 @@
 - Added author documentation.
 
 ## 16-06-2017
+- Released theme version 0.1.2
 - Update theme gemspec.
 - Set theme `_config` to `port:4000`.
 - Changed example demo `_config` to `port:5000` so you can view the theme demos while also using the theme on your site.
@@ -41,4 +44,5 @@
 - Remove old post layout.
 
 ## 14-06-2017
+- Released theme version 0.1.1
 - Redesign.

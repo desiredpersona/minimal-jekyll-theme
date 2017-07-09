@@ -4,12 +4,12 @@
 
 
 {% if page.header.layout == 'hero' %}
-<header class="flex flex-column cover w-100 vh-50-m vh-75-l bg-left bg-center-l {% if page.header.class %}{{ page.header.class }}{% endif %}" style="background-image: url({{ page.header.image | absolute_url }})">
+<header class="flex flex-column cover w-100 vh-75-l bg-left bg-center-l {% if page.header.class %}{{ page.header.class }}{% endif %}" style="background-image: url({{ page.header.image | absolute_url }})">
   {% if page.header.navigation == 'fancy' %}
   {% include navigation.html %}
   {% endif %}
   <div class="flex flex-auto flex-column justify-center">
-    <div class="flex flex-column items-start items-center-l mw9 mw7-m center w-100 pa3 ph4-ns">
+    <div class="flex flex-column items-start items-center-l mw9 mw7-m center w-100 pv5 pv0-l pa3 ph4-ns">
       <h1 class="f2 f1-l fw6 lh-title white mv0">{{ page.title }}</h1>
       {% if page.subtitle %}
       <h2 class="f3 f2-l fw4 lh-title white-90 mt3 mb3">{{ page.subtitle }}</h2>
