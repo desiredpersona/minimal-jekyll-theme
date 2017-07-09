@@ -1,10 +1,13 @@
 ---
 layout: home
-title: This is your super impressive headline
-subtitle: Add a subheadline to explain your wonderful new startup
+title: Super impressive headline
+subtitle: Optional subheadline about your startup
+paragraph: Optional paragraph when you need to write some more
 header:
     layout: hero
     navigation: fancy
     image: "/assets/images/macbook.jpg"
-    filter: "rgba(0, 0, 0, .2)"
+    class: bg-darken-25
+    cta: "Call-to-action"
+    cta_url: https://www.desiredpersona.com/themes/
 ---
