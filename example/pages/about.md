@@ -9,7 +9,7 @@ After months of slaving away at my Macbook, i'm so glad to finally reveal my fir
 This is <b>Minimal Jekyll Theme</b> and it looks so damn good if i do say so myself.
 Lets take a look at what you can achieve starting with the most minimal of layouts.
 - [A minimal post with a title]({{ '/title-only-post/' | relative_url }}){: .dim}
-- [A post with a title and subtitle]({{ '/post-with-a-title-and-subtitle/' | relative_url }}){: .dim}
+- [A post with a title and subtitle]({{ '/minimal-post-with-a-title-and-subtitle/' | relative_url }}){: .dim}
 - [A post with post meta above title]({{ '/post-with-post-meta/' | relative_url }}){: .dim}
 - [A post with post meta and an author bio]({{ '/post-with-author-bio/' | relative_url }}){: .dim}
 - [A post with share icons.]({{ '/post-with-share-icons/' | relative_url }}){: .dim}
