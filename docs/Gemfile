@@ -1,13 +1,13 @@
 source "https://rubygems.org"
 
 # Jekyll
-gem "jekyll", "~> 3.5.0"
+gem "jekyll", "~> 3.5.1"
 
 # Theme
-#gem "minimal-jekyll-theme"
+gem "minimal-jekyll-theme"
 
 # Local Theme Development
-gem "minimal-jekyll-theme", :path => "../"
+#gem "minimal-jekyll-theme", :path => "../"
 
 
 # Plugins
