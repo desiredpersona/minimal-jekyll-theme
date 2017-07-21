@@ -1,7 +1,6 @@
 ---
 layout: default
 header: false
-footer: false
 permalink: /categories/
 ---
 
@@ -13,14 +12,13 @@ permalink: /categories/
       {% capture category_name %}{{ category | first }}{% endcapture %}
       <div id="#{{ category_name | slugify }}"></div>
       <a name="{{ category_name | slugify }}"></a>
-      <p></p>
 
-      <article class="f5 lh-copy fw3">
-        <h4 class="f6 fw6 lh-title ttu tracked mv4">{{ category_name }}</h4>
+      <article class="f5 pv3 lh-copy fw3">
+        <h4 class="f6 fw6 lh-title ttu tracked mv3 light-silver">{{ category_name }}</h4>
         {% for post in site.categories[category_name] %}
           <a class="link black-80" href="{{ post.url | relative_url }}">
             <h3 class="f3 fw6 lh-title mb0">{{ post.title | escape }}</h3>
-            <div class="f5 fw3 lh-copy pb2 bb b--light-gray">
+            <div class="f5 fw3 lh-copy pb2">
               {% if post.summary %}
                 {{ post.summary }}
               {% else %}
