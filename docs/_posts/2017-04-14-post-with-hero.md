@@ -2,8 +2,8 @@
 layout:   post
 title:    Post with hero image
 subtitle: Adding subtitles couldn't be easier
-date:     2016-09-05 13:20:50 +0100
-last_modified_at: 2017-07-07 22:02:07 +0100
+date:     2017-04-14 13:20:50 +0100
+last_modified_at: 2017-05-07 22:02:07 +0100
 author: Joe Bloggs
 header:
     layout: hero
