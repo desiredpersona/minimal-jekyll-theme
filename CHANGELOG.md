@@ -1,3 +1,18 @@
+## 21-07-2017
+- Improved the readability of category and tag pages with new design.
+- Improved the readability of author bio width in `author_bio.html` and `post_meta.html`.
+- Improved position of author avatar in `post-meta.html` on mobile.
+- Removed unnecessary flexbox classes in `author_bio.html` and `post_meta.html`.
+- Updated "tachyons-background-overlays" to v1.1.0
+- Fix header `cta_class:`. Easily change the header CTA button classes of any page.
+
+## 15-07-2017
+- Update to Jekyll 3.5.1
+
+## 15-07-2017
+- Improved header margin on page layout
+- Improved header margin on post layout when post_meta = false
+
 ## 09-07-2017
 - Released theme version 0.1.3
 - Improved header hero padding on mobile.
