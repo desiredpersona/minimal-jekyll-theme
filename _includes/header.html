@@ -19,9 +19,9 @@
       {% endif %}
 
       {% if page.header.cta_url contains "://" %}
-      <a class="f5 f4-ns no-underline dib grow {% if page.header.cta.class %}{{ page.header.cta.class | join: ' ' | prepend: ' ' }}{% else %}{{ site.data.theme.ui.header.cta.class | join: ' ' | prepend: ' ' }}{% endif %} ph4 pv3 mb3" href="{{ page.header.cta_url }}" target="_blank" rel="nofollow">{{ page.header.cta }}</a>
+      <a class="f5 f4-ns no-underline dib grow {% if page.header.cta_class %}{{ page.header.cta_class | join: ' ' | prepend: ' ' }}{% else %}{{ site.data.theme.ui.header.cta.class | join: ' ' | prepend: ' ' }}{% endif %} ph4 pv3 mb3" href="{{ page.header.cta_url }}" target="_blank" rel="nofollow">{{ page.header.cta }}</a>
       {% elsif page.header.cta_url %}
-      <a class="f5 f4-ns no-underline dib grow {% if page.header.cta.class %}{{ page.header.cta.class | join: ' ' | prepend: ' ' }}{% else %}{{ site.data.theme.ui.header.cta.class | join: ' ' | prepend: ' ' }}{% endif %} ph4 pv3 mb3" href="{{ page.header.cta_url | absolute_url }}">{{ page.header.cta }}</a>
+      <a class="f5 f4-ns no-underline dib grow {% if page.header.cta_class %}{{ page.header.cta_class | join: ' ' | prepend: ' ' }}{% else %}{{ site.data.theme.ui.header.cta.class | join: ' ' | prepend: ' ' }}{% endif %} ph4 pv3 mb3" href="{{ page.header.cta_url | absolute_url }}">{{ page.header.cta }}</a>
       {% endif %}
     </div>
   </div>
