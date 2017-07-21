@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<main>
-  <article class="flex flex-column items-center">
+<main class="flex flex-column items-center">
+  <article class="mw7 w-100">
 
-    <header class="mw7 w-100 ph3 ph4-m">
+    <header class="{% if page.post_meta == false %}mt5{% endif %} ph3 ph4-m">
     {% if site.data.theme.post_meta %}
     {% include post_meta.html %}
     {% endif %}
