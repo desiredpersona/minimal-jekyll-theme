@@ -37,10 +37,10 @@ header:
 
 - `layout:` Choose `hero` or `header`.
 - `image:` Set a background image.
-- `caption:` Create captions with support for markdown urls.
+- `caption:` Create a header image caption. Support for markdown links.
 - `cta:` Allows you to create a call-to-action.
-- `cta_url:` Call-to-action link. External links will open in a new tab.
+- `cta_url:` Call-to-action link. URL's starting with 'http' will open in a new tab automatically.
 - `cta_class:` Overwrite the themes default CTA button classes on any page. Control the text color, button color, button shape and button border color.
-- `class:` Overwrite the themes default header classes on any page. You can set background overlays for mobile, tablet and desktop.
+- `class:` Overwrite the themes default header classes on any page. Easily set background overlays for mobile, tablet and desktop.
 
 I highly recommend you take a look at all the features of this theme. I think you will be blown away.
