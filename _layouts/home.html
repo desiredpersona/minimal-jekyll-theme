@@ -2,39 +2,29 @@
 layout: default
 ---
 
-<article class="flex justify-center mt3">
-
-  <div class="mw7 w-100 pa3 pa4-m">
-    <h3 class="f5 f4-ns fw3 mb0 pb2 bb b--light-gray">{{ site.data.theme.text.latest_articles | capitalize | default: "Latest writings" }}</h3>
+<section class="flex justify-center mt3">
+  <div class="mw7 w-100 pa3 pa4-ns">
+    <h3 class="f5 f4-ns fw3 mb0 pb2 bb b--light-gray">{{ site.data.theme.text.latest_articles | default: "Recent Posts" }}</h3>
     
     {% for post in site.posts limit: site.data.theme.text.post_limit %}
-    <div class="post pv4 bb b--light-gray">
-      <div class="f5 fw3 light-silver lh-copy">
-        {% if post.last_modified_at %}
-        <span>{{ site.data.theme.text.updated }} {{ post.last_modified_at | date: site.date_format }}</span>
-        {% else %}
-        <span>{{ post.date | date: site.date_format }}</span>
-        {% endif %}
-        <span class="ttl">&middot;
-        {% include read_time.html %}
-        </span>
-      </div>
-
-      <a class="link black" href="{{ post.url | relative_url }}">
-        <h3 class="f3 f2-ns fw6 lh-title mt0 mb0">{{ post.title | escape }}</h3>
-        <div class="f5 f4-ns fw3 lh-copy">
-          {% if post.summary %}
-            {{ post.summary }}
+    <a class="link black hover-silver" href="{{ post.url | relative_url }}">
+      <article class="post pv4 bb b--light-gray">
+        <div class="f5 fw3 silver lh-copy">
+          {% if post.last_modified_at %}
+          <span>{{ site.data.theme.text.updated }} <time>{{ post.last_modified_at | date: site.date_format }}</time></span>
           {% else %}
-            {{ post.excerpt }}
+          <time>{{ post.date | date: site.date_format }}</time>
           {% endif %}
+          <span class="ttl">&middot; {% include read_time.html %}</span>
         </div>
-      </a>
-      <a class="f6 fw3 link light-silver lh-copy mb0" href="{{ post.url | relative_url }}">{{ site.data.theme.text.read_more | capitalize }}</a>
-    </div>
+        <h3 class="f3 f2-ns fw6 lh-title mt0 mb0">{{ post.title | escape }}</h3>
+        <p class="f5 f4-ns fw3 lh-copy mv2">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+        <div class="f6 fw3 silver lh-copy mb0">{{ site.data.theme.text.read_more | capitalize }}</div>
+      </article>
+    </a>
     {% endfor %}
-
-    <p class="f5 f4-ns fw3 mb0 mt4"><a class="link black" href="{{ site.data.theme.text.full_archive_url | relative_url }}">{{ site.data.theme.text.full_archive | capitalize }}</a></p>
+    <div class="inline-flex">
+      <a class="f5 f4-ns fw3 link black hover-silver ba br2 bw1 mv4 pv2 ph3" href="{{ site.data.theme.text.full_archive_url | relative_url }}">{{ site.data.theme.text.full_archive | default: "All Posts" }}</a>    
+    </div>
   </div>
-
-</article>
+</section>
