@@ -1,3 +1,6 @@
+## 15-09-2017
+- Added full support for jekyll-archives plugin.
+
 ## 21-07-2017
 - Improved the readability of category and tag pages with new design.
 - Improved the readability of author bio width in `author_bio.html` and `post_meta.html`.

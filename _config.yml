@@ -1,21 +1,16 @@
 ################################
 # Site Settings
 ################################
+lang        : "en"
+logo        :
 title       : Minimal Theme
-email       : your-email@domain.com
 description : Your awesome site
+author      : Desired Persona
+email       : your-email@domain.com
 baseurl     : "" # the subpath of your site, e.g. /blog
 url         : ""
 date_format : "%-d %b %Y"
 port        : 4000
-
-# Include/Exclude filetypes
-include:
-  - _pages
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
 
 
 ################################
@@ -30,7 +25,6 @@ collections:
     permalink: /:collection/:path/
 
 markdown: kramdown
-highlighter: rouge
 kramdown:
     input: GFM
     hard_wrap: false
@@ -40,20 +34,22 @@ sass:
     sass_dir: _sass
     style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
+# Include/Exclude filetypes
+include:
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
 
 ################################
 # Analytics Settings
 ################################
 google_analytics: UA-XXXXXXXX-N
+google_analytics_async: true # https://developers.google.com/analytics/devguides/collection/analyticsjs/#alternative_async_tracking_snippet
 google_tag_manager:
-google_plus_id:
-google_site_verification:
-bing_site_verification:
-
-facebook:
-  app_id:
-  publisher:
-  admins:
+facebook_pixel_id:
 
 
 ################################
@@ -63,13 +59,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-archives
 
 # Jekyll SEO Tag Settings https://github.com/jekyll/jekyll-seo-tag
-author: Desired Persona # Default author site-wide unless specified in post
-
-twitter:
-  username: Joe Bloggs
-
 social:
   name: Joe Bloggs
   links:
@@ -77,7 +69,36 @@ social:
     - https://plus.google.com/u/0/+username
     - https://www.facebook.com/username
 
+twitter:
+  username: Joe Bloggs
+
+facebook:
+  app_id:
+  publisher:
+  admins:
+
+webmaster_verifications:
+  google:
+  bing:
+  alexa:
+  yandex:
+
 # Jekyll Feed Settings https://github.com/jekyll/jekyll-feed
 atom_feed:
     path: # Leave blank to use default (feed.xml)
 
+# Jekyll Archives Settings https://github.com/jekyll/jekyll-archives
+jekyll-archives:
+  enabled:
+     - categories
+     - tags
+     - year
+     - month
+     - day
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
