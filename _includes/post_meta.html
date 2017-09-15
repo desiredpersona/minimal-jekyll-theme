@@ -10,30 +10,30 @@
 <div class="flex w-100 mt4 lh-copy">
   <div class="pt1 pt0-ns">
     {% if author.url contains "://" %}
-      <a href="{{ author.url }}" target="_blank"><img src="{{ author.avatar }}" alt="{{ author.name }}" class="w2 h2 w3-ns h3-ns br-100"></a>
+      <a href="{{ author.url }}" target="_blank"><img src="{{ author.picture }}" alt="{{ author.name }}" class="w2 h2 w3-ns h3-ns br-100"></a>
     {% else %}
-      <a href="{{ author.url | relative_url }}"><img src="{{ author.avatar | absolute_url }}" alt="{{ author.name }}" class="w2 h2 w3-ns h3-ns br-100"></a>
+      <a href="{{ author.url | relative_url }}"><img src="{{ author.picture | absolute_url }}" alt="{{ author.name }}" class="w2 h2 w3-ns h3-ns br-100"></a>
     {% endif %}
   </div>
 
   <div class="flex flex-column w-90 w-80-ns pl2 pl3-ns">
     <div class="flex items-center">
       {% if author.url contains "://" %}
-      <a class="f5 fw4 lh-copy link lh-title black mr2" href="{{ author.url }}" target="_blank">{{ author.name }}</a>
+      <a class="f5 fw4 lh-title black hover-black link mr2" href="{{ author.url }}" target="_blank">{{ author.name }}</a>
       {% else %}
-      <a class="f5 fw4 lh-copy link lh-title black mr2" href="{{ author.url | relative_url }}">{{ author.name }}</a>
+      <a class="f5 fw4 lh-title black hover-black link mr2" href="{{ author.url | relative_url }}">{{ author.name }}</a>
       {% endif %}
 
       {% if author.cta_url contains "://" %}
-      <a class="f6 fw3 lh-copy link{{ site.data.theme.ui.author.cta.class | join: ' ' | prepend: ' ' }} ph2" href="{{ author.cta_url }}" target="_blank">{{ author.cta | default: "Subscribe" }}</a>
+      <a class="f6 fw4 lh-copy link nested-author-cta ba br-pill ph2" href="{{ author.cta_url }}" target="_blank">{{ author.cta | default: "Follow" }}</a>
       {% else %}
-      <a class="f6 fw3 lh-copy link{{ site.data.theme.ui.author.cta.class | join: ' ' | prepend: ' ' }} ph2" href="{{ author.cta_url | relative_url }}">{{ author.cta | default: "Subscribe" }}</a>
+      <a class="f6 fw4 lh-copy link nested-author-cta ba br-pill ph2" href="{{ author.cta_url | relative_url }}">{{ author.cta | default: "Follow" }}</a>
       {% endif %}
     </div>
 
-    <div class="f6 fw3 lh-copy light-silver">{{ author.post_meta_bio }}</div>
+    <div class="f6 fw3 lh-copy silver">{{ author.post_meta_bio }}</div>
 
-    <div class="f6 fw3 lh-copy light-silver">
+    <div class="f6 fw3 lh-copy silver">
       {% if page.last_modified_at %}
       <span>{{ site.data.theme.text.updated }} {{ page.last_modified_at | date: site.date_format }}</span>
       {% else %}

@@ -11,14 +11,17 @@ author: Desired Persona
 post_meta: false
 permalink: /docs/authors/
 ---
+
 This theme has multiple author support.
 1. First create a `/_data/` folder in your sites root directory if none exist yet.
+
 2. Open `/docs/_data` [folder (located here)](https://github.com/desiredpersona/minimal-jekyll-theme/tree/master/docs/_data) and copy the example `authors.yml` file to your `/_data/` folder in your root directory.
+
 3. Edit the `authors.yml` file with your own author info.
 
 Here is an example
 
-```
+```yaml
 # Authors
 
 Desired Persona:
@@ -27,7 +30,7 @@ Desired Persona:
   email         : "hello@desiredpersona.com"
   bio           : "Affiliate marketer. Media buyer. Developer."
   post_meta_bio : "Affiliate marketer. Media buyer. Developer."
-  avatar        : "/assets/images/author.jpg"
+  picture       : "/assets/images/author.jpg"
   cta           : "Follow"
   cta_url       : "https://twitter.com/desiredpersona"
   twitter       : "desiredpersona"
@@ -45,7 +48,7 @@ Desired Persona:
 
 `post_meta_bio :` This is the author bio shown above each post.
 
-`avatar:` The location of your authors image.
+`picture:` The location of your authors image.
 
 `cta:` Call-To-Action text.
 
@@ -65,14 +68,14 @@ Add your author image to `/assets/images/` in your sites root directory. Update 
 You can set a default author site-wide in your `_config.yml` by adding the following.
 Note: This will be the default author unless specified in a post front matter.
 
-```
+```yaml
 author: Desired Persona
 ```
 
 ## How to add an author to a post.
 Include the following in your posts front matter
 
-```
+```yaml
 author: Desired Persona
 ```
 

@@ -1,6 +1,7 @@
 ## 15-09-2017
 - Added full support for jekyll-archives plugin.
 - Redesigned archive link on home.html layout as a button for increased visibility.
+- Renamed `author.avatar` to `author.picture` in `authors.yml` to fully support jekyll-seo-tag plugin.
 
 ## 21-07-2017
 - Improved the readability of category and tag pages with new design.
