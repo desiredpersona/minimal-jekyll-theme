@@ -5,10 +5,8 @@ date:   2016-09-30 13:20:50 +0100
 author: Desired Persona
 comments: false
 categories:
-  - post formatting
-  - jekyll theme
+  - minimal
 tags:
-  - post
   - comments
 ---
 

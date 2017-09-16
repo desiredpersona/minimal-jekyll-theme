@@ -7,8 +7,7 @@ author_bio: false
 share_icons: false
 category_tag_list: false
 categories:
-  - jekyll theme
-  - blogging
+  - minimal
 tags:
   - read time
 ---

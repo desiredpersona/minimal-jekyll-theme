@@ -7,10 +7,6 @@ author_bio: false
 share_icons: false
 category_tag_list: false
 categories:
-  - post formatting
-  - jekyll theme
-tags:
-  - post
   - author bio
 ---
 Add `post_meta: true` in any posts YAML front-matter to include the post meta above posts. You can also set `post_meta:` to `true` or `false` in your theme.yml file to enable/disable post meta site wide.

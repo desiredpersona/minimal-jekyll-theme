@@ -4,12 +4,9 @@ title:  A beautiful post about your startup
 subtitle: Adding subtitles is optional and really simple
 date: 2016-10-12 13:20:50 +0100
 author: Desired Persona
-
 categories:
-  - jekyll theme
   - post formatting
 tags:
-  - post
   - subtitle
 ---
 

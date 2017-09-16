@@ -5,10 +5,7 @@ date:   2016-08-28 12:04:50 +0100
 author: Desired Persona
 category_tag_list: false
 categories:
-  - post formatting
-  - jekyll theme
-tags:
-  - post
+  - social icons
 ---
 
 Add `share_icons: true` in any posts YAML front-matter to enable the author bio after posts.

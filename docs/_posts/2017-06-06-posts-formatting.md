@@ -12,11 +12,9 @@ header:
     caption: "[Unsplash](https://unsplash.com)"
 
 categories:
-    - jekyll theme
     - post formatting
 tags:
-    - post
-    - header image
+    - header
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
@@ -214,23 +212,23 @@ Multi line blockquote with a cite reference:
 Create a table like so:
 
 ```markdown
-| Employee                 | Salary |                                                              |
-| ------------------------ | ------ | ------------------------------------------------------------ |
-| [John Joe](#)            | $1     | Needs a better salary                                        |
-| [Jane Doe](#)            | $10K   | Blogging intern                                              |
-| [Joe Bloggs](#)          | $25k   | Photographer                                                 |
-| [Jane Bloggs](#)         | $100k  | Marketer & Copywriter                                        |
+| Employee                 | Salary |                            |
+| ------------------------ | ------ | -------------------------- |
+| [John Joe](#)            | $1     | Needs a better salary      |
+| [Jane Doe](#)            | $10K   | Blogging intern            |
+| [Joe Bloggs](#)          | $25k   | Photographer               |
+| [Jane Bloggs](#)         | $100k  | Marketer & Copywriter      |
 
 ```
 
 This will output the following:
 
-| Employee                 | Salary |                                                              |
-| ------------------------ | ------ | ------------------------------------------------------------ |
-| [John Joe](#)            | $1     | Needs a better salary                                        |
-| [Jane Doe](#)            | $10K   | Blogging intern                                              |
-| [Joe Bloggs](#)          | $25k   | Photographer                                                 |
-| [Jane Bloggs](#)         | $100k  | Marketer & Copywriter                                        |
+| Employee                 | Salary |                            |
+| ------------------------ | ------ | -------------------------- |
+| [John Joe](#)            | $1     | Needs a better salary      |
+| [Jane Doe](#)            | $10K   | Blogging intern            |
+| [Joe Bloggs](#)          | $25k   | Photographer               |
+| [Jane Bloggs](#)         | $100k  | Marketer & Copywriter      |
 
 
 <br>
@@ -238,28 +236,28 @@ This will output the following:
 Create a table with a footer like so:
 
 ```markdown
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=============================|
-| Foot1   | Foot2   | Foot3   |
+| Header1   | Header2 | Header3   |
+|:----------|:-------:|----------:|
+| cell1     | cell2   | cell3     |
+| cell4     | cell5   | cell6     |
+|---------------------------------|
+| cell1     | cell2   | cell3     |
+| cell4     | cell5   | cell6     |
+|=================================|
+| Footer1   | Footer2   | Footer3 |
 ```
 
 This will output the following:
 
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=============================|
-| Foot1   | Foot2   | Foot3   |
+| Header1   | Header2 | Header3   |
+|:----------|:-------:|----------:|
+| cell1     | cell2   | cell3     |
+| cell4     | cell5   | cell6     |
+|---------------------------------|
+| cell1     | cell2   | cell3     |
+| cell4     | cell5   | cell6     |
+|=================================|
+| Footer1   | Footer2   | Footer3 |
 
 
 ***
@@ -324,58 +322,75 @@ Definition
 
 # Buttons
 
-You can view the [button documentation here](http://localhost:5000/docs/utility-classes/#buttons){: .dim}.
+You can view the [button documentation here](http://localhost:5000/docs/markdown/#buttons){:target="\_blank"}.
 
-<a href="https://www.google.ie" class="bg-green br-pill dib f5 f4-ns grow mb2 no-underline ph4 pv1 white">Success</a>
+[primary](#){: .btn .btn--primary}
+[secondary](#){: .btn .btn--secondary}
+[success](#){: .btn .btn--success}
+[warning](#){: .btn .btn--warning}
+[danger](#){: .btn .btn--danger}
+[info](#){: .btn .btn--info}
+[light](#){: .btn .btn--light}
+[dark](#){: .btn .btn--dark}
 
+[primary](#){: .btn .btn-outline--primary}
+[secondary](#){: .btn .btn-outline--secondary}
+[success](#){: .btn .btn-outline--success}
+[warning](#){: .btn .btn-outline--warning}
+[danger](#){: .btn .btn-outline--danger}
+[info](#){: .btn .btn-outline--info}
+[light](#){: .btn .btn-outline--light}
+[dark](#){: .btn .btn-outline--dark}
 
-<a href="https://www.google.ie" class="bg-orange br-pill dib f5 f4-ns grow mb2 no-underline ph4 pv1 white">Warning</a>
+[extra large](#){: .btn .btn-outline--primary .btn--x-large}
+[extra large](#){: .btn .btn--primary .btn--x-large}
 
+[large](#){: .btn .btn-outline--primary .btn--large}
+[large](#){: .btn .btn--primary .btn--large}
 
-<a href="https://www.google.ie" class="bg-red br-pill dib f5 f4-ns grow mb2 no-underline ph4 pv1 white">Danger</a>
+[small](#){: .btn .btn-outline--primary .btn--small}
+[small](#){: .btn .btn--primary .btn--small}
 
+[Block level button](#){: .btn .btn--primary .btn--block}
+[Block level outline button](#){: .btn .btn-outline--primary .btn--block}
 
-<a href="https://www.google.ie" class="bg-light-blue br-pill dib f5 f4-ns grow mb2 no-underline ph4 pv1 white">Info</a>
+[uppercase](#){: .btn .btn--primary .ttu}
+[capitalised](#){: .btn .btn-outline--primary .ttc}
+[LOWERCASE](#){: .btn .btn--primary .ttl}
 
-
-<a href="https://www.google.ie" class="bg-gray br-pill dib f3 f2-ns grow mb2 no-underline ph4 pv3 white">X-Large</a>
-
-
-<a href="https://www.google.ie" class="bg-gray br-pill dib f4 f3-ns grow mb2 no-underline ph4 pv2 white">Large</a>
-
-
-<a href="https://www.google.ie" class="bg-gray br-pill dib f5 f4-ns grow mb2 no-underline ph4 pv1 white">Default</a>
-
-
-<a href="https://www.google.ie" class="bg-gray br-pill dib f6 grow mb2 no-underline ph4 pv1 white">Small</a>
-
-
-<a href="https://www.google.ie" class="ba bg-white gray br-pill bw1 dib f3 f2-ns grow mb2 no-underline ph4 pv3">X-Large</a>
-
-
-<a href="https://www.google.ie" class="ba bg-white gray br-pill bw1 dib f4 f3-ns grow mb2 no-underline ph4 pv1">Large</a>
-
-
-<a href="https://www.google.ie" class="ba bg-white gray br-pill bw1 dib f5 f4-ns grow mb2 no-underline ph4">Default</a>
-
-
-<a href="https://www.google.ie" class="ba bg-white gray br-pill bw1 dib f6 grow mb2 no-underline ph4">Small</a>
+[grow](#){: .btn .btn-outline--primary .grow}
+[glow](#){: .btn .btn--primary .glow .o-80}
+[dim](#){: .btn .btn--primary .dim}
 
 ***
 
-# Notices
+# Alerts/Notices
 
-You can view the [Notices documentation here](http://localhost:5000/docs/utility-classes/#notices){: .dim}.
+You can view the [Notices documentation here](http://localhost:5000/docs/markdown/#notices){:target="\_blank"}.
 
-<p class="bg-light-gray br2 f5 w-100 pa2 pa3-ns"><b>Hey!</b> Minimal Jekyll theme has beautiful notices that are designed to grab a visitors attention.</p>
+Beautiful notices that are designed to grab a visitors attention.
+{: .alert .alert--primary}
 
-<p class="bg-lightest-blue br2 f5 w-100 pa2 pa3-ns"><b>Hey!</b> Minimal Jekyll theme has beautiful notices that are designed to grab a visitors attention.</p>
+Beautiful notices that are designed to grab a visitors attention.
+{: .alert .alert--secondary}
 
-<p class="bg-washed-yellow br2 f5 w-100 pa2 pa3-ns"><b>Hey!</b> Minimal Jekyll theme has beautiful notices that are designed to grab a visitors attention.</p>
+Beautiful notices that are designed to grab a visitors attention.
+{: .alert .alert--success}
 
-<p class="bg-washed-red br2 f5 w-100 pa2 pa3-ns"><b>Hey!</b> Minimal Jekyll theme has beautiful notices that are designed to grab a visitors attention.</p>
+Beautiful notices that are designed to grab a visitors attention.
+{: .alert .alert--warning}
 
-<p class="bg-washed-green br2 f5 w-100 pa2 pa3-ns"><b>Hey!</b> Minimal Jekyll theme has beautiful notices that are designed to grab a visitors attention.</p>
+Beautiful notices that are designed to grab a visitors attention.
+{: .alert .alert--danger}
+
+Beautiful notices that are designed to grab a visitors attention.
+{: .alert .alert--info}
+
+Beautiful notices that are designed to grab a visitors attention.
+{: .alert .alert--light}
+
+Beautiful notices that are designed to grab a visitors attention.
+{: .alert .alert--dark}
 
 ***
 
@@ -400,88 +415,32 @@ This will output the following:
 
 ## Links / Anchor Tag
 
-### Primary Link
+You can view the [links documentation here](http://localhost:5000/docs/markdown/#links){:target="\_blank"}.
 
-Create a link with a custom link color set in `_sass/_variables.scss` like so:
+[Primary link](#) - Set primary colors in `variables.scss`.
 
-```markdown
-[This is a link](http://google.com "Google")
-```
+[Open link in new tab](https://google.com){:target="\_blank"}
 
-This will output the following:
+[Link title on hover](# "Google")
 
-[This is a link](http://google.com "Google")
+[Dim on hover](#){: .hover-black .dim}
 
-***
+[Link without underline](#){: .link}
 
-### Dim on hover
-
-To dim a link on hover, add the dim class:
+[Underline on hover](#){: .link .underline-hover .hover-black}
 
 
-```markdown
-[Dim on hover](http://google.com){: .dim}
-```
-
-This will output the following:
-
-[Dim on hover](http://google.com){: .dim}
-
-***
-
-### Primary Link without underline
-
-Create a link without underline like so:
-
-```markdown
-[Link without underline](http://google.com){: .link}
-```
-
-This will output the following:
-
-[Link without underline](http://google.com){: .link}
-
-***
-
-### Underline on hover
-
-To add an underline on hover and focus, use the class 'underline-hover':
-
-```markdown
-[Underline on hover](http://google.com){: .link .underline-hover}
-```
-
-This will output the following:
-
-[Underline on hover](http://google.com){: .link .underline-hover}
-
-***
-
-### Blue Link
-
-Create a blue link like so:
-
-```markdown
-[blue link created with markdown](http://google.com){: .link .dim .underline .blue}
-```
-
-This will output the following:
-
-[blue link created with markdown](http://google.com){: .link .dim .underline .blue}
-
-***
-
-### Black Link
-
-Create a black link like so:
-
-```markdown
-[black link created with markdown](http://google.com){: .link .dim .underline .black}
-```
-
-This will output the following:
-
-[black link created with markdown](http://google.com){: .link .dim .underline .black}
+[blue link](#){: .blue .hover-blue}
+[black link](#){: .black .hover-black}
+[green link](#){: .green .hover-green}
+[gray link](#){: .gray .hover-gray}
+[yellow link](#){: .yellow .hover-yellow}
+[gold link](#){: .gold .hover-gold}
+[orange](#){: .orange .hover-orange}
+[light-purple link](#){: .light-purple .hover-light-purple}
+[pink/ hover light pink](#){: .pink .hover-light-pink}
+[dark-pink/ hover hot pink](#){: .dark-pink .hover-hot-pink}
+[red link/ hover dark red](#){: .red .hover-dark-red}
 
 ***
 
@@ -491,32 +450,27 @@ The abbreviation CSS stands for "Cascading Style Sheets".
 
 *[CSS]: Cascading Style Sheets
 
-### Cite Tag
+## Cite Tag
 
 "Code is poetry." ---<cite>Automattic</cite>
 
-### Strike Tag
+## Strike Tag
 
 This tag will let you <strike>strikeout text</strike>.
 
-### Emphasize Tag
-
+## Emphasize Tag
 The emphasize tag should *italicize* text.
 
 ## Insert Tag
-
 This tag should denote updated text <ins>inserted</ins> in a blog post.
 
 ## Keyboard Tag
-
 This scarcely known <kbd>keyboard tag</kbd> emulates represents user input and produces an inline element displayed in the browser's default monospace font, which is usually styled like the `<code>` tag.
 
 ## Code Tag
-
 Its probably a really good idea to wrap your code within code tags. This is how you do it `<title>HTML for Baby's</title>`. You don't want any surprises.
 
 ## Preformatted Tag
-
 This tag styles large blocks of code
 
 ```css
@@ -527,32 +481,26 @@ This tag styles large blocks of code
 ```
 
 ## Strong Tag
-
 This tag makes **bold text, try not to overuse it tho.**
 
 ## Subscript Tag
-
 My girlfriend is a medical scientist, so i bet she knows what C<sub>2</sub>H<sub>6</sub>O and C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> means, right Rachel? Anyway the subscript tag `<sub></sub>` should have pushed the numbers down.
 
-### Superscript Tag
-
+## Superscript Tag
 Oh more science yay! Albert Einstein E = mc<sup>2</sup>, The superscript tag `<sup></sup>` should lift the 2 up.
 
 ## Variable Tag
-
 The variable tag `<var></var>`  allows you to denote <var>variables</var>.
 
 ## Footnotes
 I have more [^1] to say up here.
 
 ## Horizontal Rules
-
 To create a horizontal rule, just use `***` on a new line anywhere in your posts like so
 
 ***
 
 ## Mark Tag
-
 The <mark>mark tag allows you to highlight parts </mark> of your text.
 
 [^1]: To say down here.

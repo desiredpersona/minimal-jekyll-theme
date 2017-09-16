@@ -4,9 +4,7 @@ title: "Post with responsive videos"
 date:   2016-07-25 13:20:50 +0100
 author: Desired Persona
 categories:
-  - post formatting
-tags:
-  - video
+  - responsive video
 ---
 
 Here are a few examples of how to add responsive video to a post or page.

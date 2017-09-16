@@ -7,7 +7,7 @@ header:
     layout: hero
     navigation: fancy
     image: "/assets/images/macbook.jpg"
-    class: bg-darken-50 bg-darken-25-ns
+    class: bg-darken-50 bg-darken-25-l
     cta: "Call-to-action"
     cta_url: https://www.desiredpersona.com/themes/
 ---

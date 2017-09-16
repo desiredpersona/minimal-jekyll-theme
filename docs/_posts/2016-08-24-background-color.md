@@ -4,19 +4,16 @@ title: Change the background color of posts & pages easily.
 date:   2016-08-24 11:55:10 +0100
 author: Desired Persona
 class: 
-  - bg-lightest-blue
+  - bg-light-gray
 categories:
-  - post formatting
-  - jekyll theme
-tags:
-  - post
+  - feature 
 ---
 
 Add a class to any posts YAML front-matter to change the page or post background color.
 
 ```yaml
 class: 
-  - bg-lightest-blue
+  - bg-light-gray
 ```
 
 ***

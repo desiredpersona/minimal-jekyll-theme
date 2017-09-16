@@ -1,16 +1,34 @@
 ---
-layout: post
-title: This post has been updated
-date: 2016-07-25 13:20:50 +0100
-author: Desired Persona
-last_modified_at: 2016-09-03 11:14:40 +0100
+layout:   post
+title:    Post with minimal hero header
+subtitle: Adding subtitles couldn't be easier
+date:     2017-04-13 13:20:50 +0100
+last_modified_at: 2017-05-06 21:05:37 +0100
+author: Joe Bloggs
+header:
+    layout: hero
+    class: bg-green
+
 categories:
-  - minimal
+    - post formatting
 tags:
-  - updated
+    - header
 ---
 
-This blog post has been updated. You simply add `last_modified_at: YYYY-MM-DD` in any posts YAML front-matter. Your sitemap will be updated automatically.
+To add a hero image to any blog post header, simply add the following in that posts YAML front-matter.
+
+```yaml
+header:
+    layout: hero
+    class: bg-green
+```
+
+- `layout:` Choose `hero` or `header`.
+- `navigation:` Set navigation to `fancy` to remove white navigation bar.
+- `class:` Set a background colour class if not using a background image.
+
+
+***
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nibh orci. Donec posuere, urna sit amet hendrerit pellentesque, massa ex commodo lorem, vel euismod mauris justo a tortor. Nunc nec eros lacus. Curabitur quis massa non neque viverra viverra. Integer feugiat lorem non velit fermentum efficitur. Cras id turpis sed ipsum egestas hendrerit consequat vel elit. Pellentesque eros sem, bibendum tempus felis ac, molestie auctor lacus. In hac habitasse platea dictumst. Nulla facilisi. Nullam mattis dui sit amet diam luctus venenatis. Donec sed pulvinar dolor. Sed purus dui, pellentesque in dolor quis, volutpat euismod nibh.
 
@@ -25,3 +43,5 @@ Ut fringilla tellus id venenatis interdum. Phasellus quis massa suscipit, molest
 Fusce magna tortor, pellentesque a velit non, lacinia ullamcorper risus. Suspendisse potenti. Vivamus id libero vitae dolor sagittis laoreet. Aenean mattis dui quis velit gravida porttitor. Integer tortor urna, dignissim a posuere eu, finibus a dolor. Aliquam ut dictum ante, at scelerisque enim. Pellentesque ac urna vitae justo molestie sagittis. Aliquam id sapien dapibus, ullamcorper nunc in, maximus sapien. Etiam nec tempus turpis, sed porttitor ipsum. Sed ut dignissim ipsum. Donec imperdiet felis lobortis, tincidunt justo et, elementum massa. Nunc euismod, tortor eu maximus pretium, diam mauris suscipit augue, sed tempus nunc mauris nec elit. Morbi iaculis nec nisi euismod posuere.
 
 Donec euismod, urna et vulputate accumsan, neque turpis tempor ex, quis vestibulum est odio vel urna. Aliquam porta lorem erat, et gravida purus euismod a. Suspendisse in ante rutrum, iaculis justo posuere, pharetra lorem. Maecenas tincidunt feugiat nisi in maximus. Sed in convallis odio. Aenean mollis felis ac ligula commodo, sit amet posuere dui condimentum. Mauris vel metus eleifend, malesuada augue a, sodales urna. Morbi egestas ante ut risus posuere pellentesque. Duis a felis vel lacus maximus malesuada sed id ante. Ut pellentesque purus ut elit elementum suscipit.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum leo, egestas sed mi id, elementum imperdiet odio. Sed scelerisque consectetur rutrum. Nam neque nibh, luctus sed pharetra vitae, tincidunt eget turpis. Maecenas rhoncus turpis vitae ipsum ullamcorper placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut pellentesque eros mauris, quis luctus magna efficitur interdum. Proin enim velit, rhoncus a molestie id, vestibulum id tortor. Vestibulum maximus leo eros, eget consequat lorem posuere cursus. Sed vestibulum enim nisi, eu sollicitudin odio pretium et. Phasellus et dictum enim. Curabitur et tellus a erat tempus cursus.

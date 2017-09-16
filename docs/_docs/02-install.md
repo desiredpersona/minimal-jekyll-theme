@@ -34,6 +34,7 @@ permalink: /docs/install-theme/
       gem 'jekyll-feed'
       gem 'jekyll-sitemap'
       gem 'jekyll-seo-tag'
+      gem 'jekyll-archives'
     end
     ```
 
@@ -55,7 +56,7 @@ permalink: /docs/install-theme/
 
 1. Create a `/_data/` folder in your sites root directory.
 
-2. Copy `theme.yml` and `authors.yml` from `/docs/_data/` to your `/_data/` folder in root directory.
+2. Copy `theme.yml` and `authors.yml` from `/docs/_data/` to your `/_data/` folder located in your sites root directory.
 
 3. Create `/assets/images/` folder to manage all your sites images.
 

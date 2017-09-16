@@ -6,12 +6,7 @@ author: Desired Persona
 author_bio: true
 share_icons: false
 category_tag_list: false
-
 categories:
-  - post formatting
-  - jekyll theme
-tags:
-  - post
   - author bio
 ---
 

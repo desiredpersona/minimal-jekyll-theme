@@ -4,10 +4,10 @@ title:  Post with categories and tags
 date:   2016-08-28 12:04:50 +0100
 author: Desired Persona
 categories:
-  - post formatting
-  - jekyll theme
+  - category
 tags:
-  - post
+  - tag
+
 ---
 
 Add `category_tag_list: true` in any posts YAML front-matter to enable the author bio after posts. You can also set `category_tag_list` to `true` or `false` in your theme.yml file to enable/disable categories and tags site-wide.
