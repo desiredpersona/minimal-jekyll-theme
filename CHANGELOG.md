@@ -13,6 +13,8 @@
 - Update demo site docs.
 - Added theme introduction to docs.
 - Added markdown docs.
+- Updated theme variables
+- Removed border-radius from Alerts (looked too similar to buttons).
 
 ## 15-09-2017
 - Added full support for jekyll-archives plugin.
