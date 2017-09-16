@@ -23,24 +23,6 @@
   {% include analytics.html %}
   {% endif %}
 
-  {% if site.google_site_verification %}
-  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
-  {% endif %}
-
-  {% if site.bing_site_verification %}
-  <meta name="msvalidate.01" content="{{ site.bing_site_verification }}">
-  {% endif %}
-
-  {% if site.fb_page %}
-  <meta property="fb:pages" content="{{ site.fb_page_id }}">
-  {% endif %}
-
   <!-- SEO -->
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-
-  {% if page.categories %}
-  <meta name="keywords" content="{{ page.categories | join: ', ' }}">
-  {% endif %}
-
   {% seo %}
 </head>

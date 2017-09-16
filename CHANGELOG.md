@@ -1,4 +1,9 @@
 ## 15-09-2017
+- Google, Bing, Alexa and Yandex site verification now supported via jekyll-seo-tag plugin.
+- Canonical link now supported via jekyll-seo-tag plugin.
+- Removed category meta tag from head.
+
+## 15-09-2017
 - Added full support for jekyll-archives plugin.
 - Redesigned archive link on home.html layout as a button for increased visibility.
 - Renamed `author.avatar` to `author.picture` in `authors.yml` to fully support jekyll-seo-tag plugin.
