@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://desiredpersona.github.io/minimal-jekyll-theme/sitemap.xml
