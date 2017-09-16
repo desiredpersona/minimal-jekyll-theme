@@ -5,10 +5,10 @@
 - Added support for custom vertical screen height in header.
 - `page.header.cta.class` now support new theme button classes. (Removed theme cta default styles from theme.yml file.)
 - Added option to set a header background color.
-- Added support for HTML lang attribute in `head.html`.
 - Added Google Analytics async tracking with fallback setting in `_config.yml` for older browser support.
 - Added support for Facebook Pixel.
 - Added sibebar support for Page layout.
+- Added support for HTML lang attribute in `head.html`.
 
 ## 15-09-2017
 - Added full support for jekyll-archives plugin.

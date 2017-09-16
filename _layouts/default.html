@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: site.lang }}">
 {% include head.html %}
-<body class="black-80 {% if page.class or layout.class %}{{ page.class | default: layout.class | join: ' ' | prepend: ' ' }}{% endif %}">
+<body class="black-90 {% if page.class or layout.class %}{{ page.class | default: layout.class | join: ' ' | prepend: ' ' }}{% endif %}">
 
 {% if page.header != false %}
 {% include header.html %}
