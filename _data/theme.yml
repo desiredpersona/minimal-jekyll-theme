@@ -12,7 +12,7 @@ navigation:
   - title: About
     url: /about/
 
-  - title: Writings
+  - title: Blog
     url: /archive/
 
   - title: Contact
@@ -69,32 +69,7 @@ text:
 
     # Home Layout Settings
     post_limit        : 3
-    read_more         : Read more...
-    latest_articles   : Latest writings
-
-    # Page Titles
-    full_archive      : All writings
+    read_more         : Read more&hellip;
+    latest_articles   : Recent Posts
+    full_archive      : All Posts
     full_archive_url  : /archive/
-    tag_archive       : Tags
-    category_archive  : Categories
-
-
-################################
-# UI Default Tachyons Classes
-################################
-ui:
-    header:
-      cta:
-        class:
-          - white       # Text color
-          - bg-green    # Background color
-          - br-pill     # Border radius
-
-
-    author:
-      cta:
-        class:
-          - black-60          # Text color
-          - hover-dark-gray   # Hover color
-          - b ba br-pill      # Border radius
-          

@@ -1,24 +1,23 @@
 ---
 layout: post
-title:  Post title with hero image with CTA
+title: Post title with hero image with CTA
 subtitle: Adding subtitles couldn't be easier
-date:   2017-05-15 16:20:50 +0100
+date: 2017-05-15 16:20:50 +0100
 author: Desired Persona
 
 header:
     layout: hero
     image: "/assets/images/evening.jpg"
     caption: "[Unsplash](https://unsplash.com)"
-    cta: "Call-to-action"
-    cta_url: https://www.desiredpersona.com/themes/
-    cta_class: white bg-red bb bw1 br2 b--dark-red
     class: bg-darken-25 bg-darken-0-ns
+    cta:
+        text: "Call-to-action"
+        url: https://www.desiredpersona.com/themes/
+        class: btn btn--success
 
 categories:
-    - jekyll theme
     - post formatting
 tags:
-    - post
     - header
 ---
 
@@ -26,21 +25,15 @@ To add a hero image with a call-to-action button to any blog post header, simply
 
 ```yaml
 header:
-    layout: hero
-    image: "/assets/images/evening.jpg"
-    caption: "[Unsplash](https://unsplash.com)"
-    cta: "Call-to-action"
-    cta_url: https://www.desiredpersona.com/themes/
-    cta_class: white bg-red bb bw1 br2 b--dark-red
-    class: bg-darken-25 bg-darken-0-ns
+    layout: hero # Choose hero or header.
+    image: "/assets/images/evening.jpg" # Set a background image.
+    vh: vh-50 vh-75-m vh-100-l # Set a custom vertical height for mobile/tablet/desktop.
+    caption: "[Unsplash](https://unsplash.com)" # Create a header image caption. Support for markdown links.
+    class: bg-darken-25 bg-darken-0-ns # Overwrite the themes default header classes on any page. Easily set background overlays for mobile, tablet and desktop.
+    cta: 
+        text: "Call-to-action" # Create a call-to-action.
+        url: https://www.desiredpersona.com/themes/ # Call-to-action link. URL's starting with 'http' will open in a new tab automatically.
+        class: white hover-white bg-red bb bw1 br2 b--dark-red # Overwrite the themes default CTA button classes on any page. Control the text color, button color, button shape and button border color.
 ```
-
-- `layout:` Choose `hero` or `header`.
-- `image:` Set a background image.
-- `caption:` Create a header image caption. Support for markdown links.
-- `cta:` Allows you to create a call-to-action.
-- `cta_url:` Call-to-action link. URL's starting with 'http' will open in a new tab automatically.
-- `cta_class:` Overwrite the themes default CTA button classes on any page. Control the text color, button color, button shape and button border color.
-- `class:` Overwrite the themes default header classes on any page. Easily set background overlays for mobile, tablet and desktop.
 
 I highly recommend you take a look at all the features of this theme. I think you will be blown away.

@@ -7,34 +7,27 @@ last_modified_at: 2017-05-07 22:02:07 +0100
 author: Joe Bloggs
 header:
     layout: hero
+    vh: vh-50 vh-75-m vh-100-l
     navigation: fancy
     image: /assets/images/full-moon-night.jpg
     caption: "[Nathan Anderson](https://unsplash.com/@nathananderson)"
 
 categories:
-    - jekyll theme
     - post formatting
 tags:
-    - post
-    - header image
+    - header
 ---
 
 To add a hero image to any blog post header, simply add the following in that posts YAML front-matter.
 
 ```yaml
 header:
-    layout: hero
-    navigation: fancy
-    image: /assets/images/stars-large.jpg
-    filter: "rgba(0, 0, 0, .2)"
-    caption: "Photo credit: [Unsplash](https://unsplash.com)"
+    layout: hero # Choose hero or header
+    vh: vh-50 vh-75-m vh-100-l  # Set a custom vertical height for mobile/tablet/desktop.
+    navigation: fancy # Choose your navigation. Leave blank for white background nav.
+    image: /assets/images/stars-large.jpg # Set a background image.
+    caption: "Photo credit: [Unsplash](https://unsplash.com)" # Create captions with support for markdown urls.
 ```
-
-- `layout:` Choose `hero` or `header`.
-- `navigation:` Choose your navigation.
-- `image:` Set a background image.
-- `filter:` this option is handy if you need to make the text more readable against the background image. Its support full rgba. You can use this [color picker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool){:target="_blank"} to choose a filter color.
-- `caption:` Create captions with support for markdown urls.
 
 ***
 
