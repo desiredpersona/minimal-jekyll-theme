@@ -8,6 +8,7 @@
 - Added support for HTML lang attribute in `head.html`.
 - Added Google Analytics async tracking with fallback setting in `_config.yml` for older browser support.
 - Added support for Facebook Pixel.
+- Added sibebar support for Page layout.
 
 ## 15-09-2017
 - Added full support for jekyll-archives plugin.
