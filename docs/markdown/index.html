@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Meta Robots Tag -->
+  <meta name="robots" content="all">
+
+  <!-- Site Author -->
+  <meta name="author" content="Joe Bloggs">
+
+  <!-- Atom Feed -->
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Minimal Theme Feed">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/minimal.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- Analytics -->
+  
+
+  <!-- SEO -->
+  <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Markdown 101 | Minimal Theme</title>
+<meta property="og:title" content="Markdown 101" />
+<meta name="author" content="Desired Persona" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Buttons" />
+<meta property="og:description" content="Buttons" />
+<link rel="canonical" href="/docs/markdown/" />
+<meta property="og:url" content="/docs/markdown/" />
+<meta property="og:site_name" content="Minimal Theme" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-07-04T14:47:50+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@JoeBloggs" />
+<meta name="twitter:creator" content="@desiredpersona" />
+<script type="application/ld+json">
+{"name":null,"description":"Buttons","author":{"@type":"Person","name":"Desired Persona"},"@type":"BlogPosting","url":"/docs/markdown/","publisher":null,"image":null,"headline":"Markdown 101","dateModified":"2017-09-13T05:24:00+01:00","datePublished":"2017-07-04T14:47:50+01:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"/docs/markdown/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body class="black-90 ">
+
+
+
+<div class="flex-l justify-between items-center mw7 mw8-l w-100 center-l pt3 pb3 pl3 pr3-ns ph4-m">
+
+<a class="black hover-black link f2 f3-l fw4 mr3" href="/" title="Home">Minimal Theme</a>
+
+
+  <div class="flex-l items-center mt3 mt0-l">
+    <nav class="nowrap overflow-x-auto">
+    
+    
+
+    
+    <a href="/docs/" class="black hover-black link f4 f5-l fw3 mr3 mt2" >Documentation</a>
+    
+
+    
+    
+
+    
+    <a href="https://desiredpersona.com/themes/" class="black hover-black link f4 f5-l fw3 mr3 mt2" target="_blank">Themes</a>
+    
+
+    
+    
+
+    
+    <a href="/about/" class="black hover-black link f4 f5-l fw3 mr3 mt2" >About</a>
+    
+
+    
+    
+
+    
+    <a href="/archive/" class="black hover-black link f4 f5-l fw3 mr3 mt2" >Blog</a>
+    
+
+    
+    
+
+    
+    <a href="mailto:you@example.com" class="black hover-black link f4 f5-l fw3 mr3 mt2" >Contact</a>
+    
+
+    
+    </nav>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<main class="mw8 center flex flex-column flex-row-l justify-center">
+  <article class="mw7 center-l w-100 w-75-l ph3 ph4-ns">
+
+    
+    <header class="mt5">
+      <h1 class="f2 fw6 lh-title mb1">Markdown 101</h1>
+      
+    </header>
+    
+
+    <div class="f5 f4-ns fw3 lh-copy mb0">
+    <h2 id="buttons">Buttons</h2>
+
+<p>A small collection predefined button styles, each serving its own semantic purpose.</p>
+
+<p><a href="#" class="btn btn--primary">Primary</a>
+<a href="#" class="btn btn--secondary">Secondary</a>
+<a href="#" class="btn btn--success">Success</a>
+<a href="#" class="btn btn--warning">Warning</a>
+<a href="#" class="btn btn--danger">Danger</a>
+<a href="#" class="btn btn--info">Info</a>
+<a href="#" class="btn btn--light">Light</a>
+<a href="#" class="btn btn--dark">Dark</a></p>
+
+<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="nv">primary</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--primary}
+<span class="p">[</span><span class="nv">secondary</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--secondary}
+<span class="p">[</span><span class="nv">success</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--success}
+<span class="p">[</span><span class="nv">warning</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--warning}
+<span class="p">[</span><span class="nv">danger</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--danger}
+<span class="p">[</span><span class="nv">info</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--info}
+<span class="p">[</span><span class="nv">light</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--light}
+<span class="p">[</span><span class="nv">dark</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--dark}
+</code></pre>
+</div>
+
+<h2 id="button-outline">Outline buttons</h2>
+
+<p>An alternative collection of predefined button styles.</p>
+
+<p><a href="#" class="btn btn-outline--primary">Primary</a>
+<a href="#" class="btn btn-outline--secondary">Secondary</a>
+<a href="#" class="btn btn-outline--success">Success</a>
+<a href="#" class="btn btn-outline--warning">Warning</a>
+<a href="#" class="btn btn-outline--danger">Danger</a>
+<a href="#" class="btn btn-outline--info">Info</a>
+<a href="#" class="btn btn-outline--light">Light</a>
+<a href="#" class="btn btn-outline--dark">Dark</a></p>
+
+<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="nv">primary</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--primary}
+<span class="p">[</span><span class="nv">secondary</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--secondary}
+<span class="p">[</span><span class="nv">success</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--success}
+<span class="p">[</span><span class="nv">warning</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--warning}
+<span class="p">[</span><span class="nv">danger</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--danger}
+<span class="p">[</span><span class="nv">info</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--info}
+<span class="p">[</span><span class="nv">light</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--light}
+<span class="p">[</span><span class="nv">dark</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--dark}
+</code></pre>
+</div>
+
+<h2 id="button-sizes">Sizes</h2>
+
+<p><a href="#" class="btn btn-outline--primary btn--x-large">Extra Large</a> <a href="#" class="btn btn--primary btn--x-large">Extra Large</a></p>
+
+<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="nv">extra large</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--primary .btn--x-large}
+<span class="p">[</span><span class="nv">extra large</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--primary .btn--x-large}
+</code></pre>
+</div>
+
+<hr />
+
+<p><a href="#" class="btn btn-outline--primary btn--large">Large</a> <a href="#" class="btn btn--primary btn--large">Large</a></p>
+
+<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="nv">large</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--primary .btn--large}
+<span class="p">[</span><span class="nv">large</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--primary .btn--large}
+</code></pre>
+</div>
+
+<hr />
+
+<p><a href="#" class="btn btn-outline--primary">Medium</a> <a href="#" class="btn btn--primary">Medium</a></p>
+
+<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="nv">medium</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--primary}
+<span class="p">[</span><span class="nv">medium</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--primary}
+</code></pre>
+</div>
+
+<hr />
+
+<p><a href="#" class="btn btn-outline--primary btn--small">small</a> <a href="#" class="btn btn--primary btn--small">small</a></p>
+
+<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="nv">small</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--primary .btn--small}
+<span class="p">[</span><span class="nv">small</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--primary .btn--small}
+</code></pre>
+</div>
+
+<p>Create block level buttons that span the full width of a parent.</p>
+
+<p><a href="#" class="btn btn--primary btn--block">Block level button</a> <a href="#" class="btn btn-outline--primary btn--block">Block level button</a></p>
+
+<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="nv">Block level button</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--primary .btn--block}
+<span class="p">[</span><span class="nv">Block level outline button</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--primary .btn--block}
+</code></pre>
+</div>
+<p>Add classes for uppercase, capitalised and lowercase buttons.</p>
+
+<p><a href="#" class="btn btn--primary ttu">uppercase</a> <a href="#" class="btn btn-outline--primary ttc">capitalised</a> <a href="#" class="btn btn--primary ttl">LOWERCASE</a></p>
+
+<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="nv">uppercase</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--primary .ttu}
+<span class="p">[</span><span class="nv">capitalised</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--primary .ttc}
+<span class="p">[</span><span class="nv">LOWERCASE</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--primary .ttl}
+</code></pre>
+</div>
+
+<p>Animate buttons with some hover effects</p>
+
+<p><a href="#" class="btn btn-outline--primary grow">grow</a> <a href="#" class="btn btn--primary glow o-80">glow</a> <a href="#" class="btn btn--primary dim">dim</a></p>
+
+<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="nv">grow</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn-outline--primary .grow}
+<span class="p">[</span><span class="nv">glow</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--primary .glow .o-80}
+<span class="p">[</span><span class="nv">dim</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .btn .btn--primary .dim}
+</code></pre>
+</div>
+
+<h2 id="notices">Alerts</h2>
+
+<p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages</p>
+
+<p class="alert alert--primary">Beautiful notices that are designed to grab a visitors attention.</p>
+
+<p class="alert alert--secondary">Beautiful notices that are designed to grab a visitors attention.</p>
+
+<p class="alert alert--success">Beautiful notices that are designed to grab a visitors attention.</p>
+
+<p class="alert alert--warning">Beautiful notices that are designed to grab a visitors attention.</p>
+
+<p class="alert alert--danger">Beautiful notices that are designed to grab a visitors attention.</p>
+
+<p class="alert alert--info">Beautiful notices that are designed to grab a visitors attention.</p>
+
+<p class="alert alert--light">Beautiful notices that are designed to grab a visitors attention.</p>
+
+<p class="alert alert--dark">Beautiful notices that are designed to grab a visitors attention.</p>
+
+<div class="language-markdown highlighter-rouge"><pre class="highlight"><code>your text here
+{: .alert .alert--primary}
+
+your text here
+{: .alert .alert--secondary}
+
+your text here
+{: .alert .alert--success}
+
+your text here
+{: .alert .alert--warning}
+
+your text here
+{: .alert .alert--danger}
+
+your text here
+{: .alert .alert--info}
+
+your text here
+{: .alert .alert--light}
+
+your text here
+{: .alert .alert--dark}
+</code></pre>
+</div>
+
+<h2 id="links">Links</h2>
+
+<p>Mix and match different css classes to create different link styles.</p>
+
+<p><a href="#">Primary link</a> - Set primary colors in <code class="highlighter-rouge">variables.scss</code>.</p>
+
+<p><a href="https://google.com" target="_blank">Open link in new tab</a></p>
+
+<p><a href="#" title="Google">Link title on hover</a></p>
+
+<p><a href="#" class="hover-black dim">Dim on hover</a></p>
+
+<p><a href="#" class="link">Link without underline</a></p>
+
+<p><a href="#" class="link underline-hover hover-black">Underline on hover</a></p>
+
+<p>You can mix and match colours from <code class="highlighter-rouge">_skins.scss</code> or create your own classes.</p>
+
+<p><a href="#" class="blue hover-blue">blue link</a>
+<a href="#" class="black hover-black">black link</a>
+<a href="#" class="green hover-green">green link</a>
+<a href="#" class="gray hover-gray">gray link</a>
+<a href="#" class="yellow hover-yellow">yellow link</a>
+<a href="#" class="gold hover-gold">gold link</a>
+<a href="#" class="orange hover-orange">orange</a>
+<a href="#" class="light-purple hover-light-purple">light-purple link</a>
+<a href="#" class="pink hover-light-pink">pink/ hover light pink</a>
+<a href="#" class="dark-pink hover-hot-pink">dark-pink/ hover hot pink</a>
+<a href="#" class="red hover-dark-red">red link/ hover dark red</a></p>
+
+<div class="language-markdown highlighter-rouge"><pre class="highlight"><code><span class="p">[</span><span class="nv">Primary link</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>
+<span class="p">[</span><span class="nv">Open link in new tab</span><span class="p">](</span><span class="sx">https://google.com</span><span class="p">)</span>{:target="_blank"}
+<span class="p">[</span><span class="nv">Link title on hover</span><span class="p">](</span><span class="sx">#</span> <span class="nn">"Google"</span><span class="p">)</span>
+<span class="p">[</span><span class="nv">Dim on hover</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .dim}
+<span class="p">[</span><span class="nv">Link without underline</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .link}
+<span class="p">[</span><span class="nv">Underline on hover</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .link .underline-hover .hover-black}
+<span class="p">[</span><span class="nv">blue link</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .blue .hover-blue}
+<span class="p">[</span><span class="nv">black link</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .black .hover-black}
+<span class="p">[</span><span class="nv">green link</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .green .hover-green}
+<span class="p">[</span><span class="nv">gray link</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .gray .hover-gray}
+<span class="p">[</span><span class="nv">yellow link</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .yellow .hover-yellow}
+<span class="p">[</span><span class="nv">gold link</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .gold .hover-gold}
+<span class="p">[</span><span class="nv">orange</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .orange .hover-orange}
+<span class="p">[</span><span class="nv">light-purple link</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .light-purple .hover-light-purple}
+<span class="p">[</span><span class="nv">pink/ hover light pink</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .pink .hover-light-pink}
+<span class="p">[</span><span class="nv">dark-pink/ hover hot pink</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .dark-pink .hover-hot-pink}
+<span class="p">[</span><span class="nv">red link/ hover dark red</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>{: .red .hover-dark-red}
+</code></pre>
+</div>
+
+    </div>
+  </article>
+
+  
+    <aside class="pa3 ph4-m w-100 w-25-l">
+
+    
+    <h3>Documentation</h3>
+      <ul class="pl0 list ttc">
+      
+      
+      <li><a href="/docs/" class="f5 fw3 lh-copy link underline-hover" >Introduction</a></li>
+      
+      
+      <li><a href="/docs/install-theme/" class="f5 fw3 lh-copy link underline-hover" >Install</a></li>
+      
+      
+      <li><a href="/docs/theme-layouts/" class="f5 fw3 lh-copy link underline-hover" >Layouts</a></li>
+      
+      
+      <li><a href="/docs/ui-text/" class="f5 fw3 lh-copy link underline-hover" >UI-Text</a></li>
+      
+      
+      <li><a href="/docs/authors/" class="f5 fw3 lh-copy link underline-hover" >Authors</a></li>
+      
+      
+      <li><a href="/docs/navigation/" class="f5 fw3 lh-copy link underline-hover" >Navigation</a></li>
+      
+      
+      <li><a href="/docs/post-layouts/" class="f5 fw3 lh-copy link underline-hover" >Posts</a></li>
+      
+      
+      <li><a href="/docs/page-layouts/" class="f5 fw3 lh-copy link underline-hover" >Pages</a></li>
+      
+      
+      <li><a href="/docs/collections/" class="f5 fw3 lh-copy link underline-hover" >Collections</a></li>
+      
+      
+      <li><a href="/docs/markdown/" class="f5 fw3 lh-copy link underline-hover" >Markdown</a></li>
+      
+      </ul>
+    
+
+  </aside>
+  
+</main>
+
+
+<footer class="flex justify-start items-baseline mw8 center w-100 ph3 ph4-ns mt4 mb2 lh-copy">
+  <nav class="flex flex-row flex-wrap">
+    <span class="f7 fw3 silver mr3 ttc"><a href="/" class="f7 fw5 silver hover-silver link underline-hover" title="Minimal Theme">Minimal theme</a> &copy; 2017</span>
+    
+    
+    
+    
+    <a href="/privacy/" class="f7 fw3 silver hover-silver link underline-hover mr3" >Privacy</a>
+    
+    
+    <a href="/terms/" class="f7 fw3 silver hover-silver link underline-hover mr3" >Terms</a>
+    
+    
+
+    
+    <span class="f7 fw3 silver mr3">Designed with <a href="https://desiredpersona.com/themes/" class="f7 fw3 silver hover-silver link underline-hover mr3" target="_blank">Minimal Theme</a></span>
+    
+  </nav>
+</footer>
+
+
+
+</body>
+</html>

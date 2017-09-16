@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="en" /><updated>2017-09-16T21:48:19+01:00</updated><id>/</id><title type="html">Minimal Theme</title><subtitle>Your awesome site</subtitle><author><name>Joe Bloggs</name></author><entry><title type="html">Post formatting looks pretty damn amazing</title><link href="/posts-formatting/" rel="alternate" type="text/html" title="Post formatting looks pretty damn amazing" /><published>2017-06-06T13:20:50+01:00</published><updated>2017-07-08T22:02:07+01:00</updated><id>/posts-formatting</id><content type="html" xml:base="/posts-formatting/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;heading-one&quot;&gt;Heading One&lt;/h1&gt;
+
+&lt;h2 id=&quot;heading-two&quot;&gt;Heading Two&lt;/h2&gt;
+
+&lt;h3 id=&quot;heading-three&quot;&gt;Heading Three&lt;/h3&gt;
+
+&lt;h4 id=&quot;heading-four&quot;&gt;Heading Four&lt;/h4&gt;
+
+&lt;h5 id=&quot;heading-five&quot;&gt;Heading Five&lt;/h5&gt;
+
+&lt;h6 id=&quot;heading-six&quot;&gt;Heading Six&lt;/h6&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;images&quot;&gt;Images&lt;/h1&gt;
+
+&lt;p&gt;Add images to your post using the markdown image tag.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/macbook-small.jpg&quot; alt=&quot;northern lights&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;image-with-caption&quot;&gt;Image with caption&lt;/h1&gt;
+
+&lt;p&gt;Add captions to your images using the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;figure&amp;gt;&lt;/code&gt; include like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/assets/images/macbook-small.jpg&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Macbook on a table&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Macbook on my office desk&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will output the following:&lt;/p&gt;
+
+&lt;figure class=&quot;&quot;&gt;
+  &lt;img src=&quot;/assets/images/macbook-small.jpg&quot; alt=&quot;Macbook on a table&quot; /&gt;
+  
+    &lt;figcaption&gt;Macbook on my office desk
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;figure&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/images/macbook-small.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Macbook on a table&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/span&gt;Macbook on my office desk&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figure&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;centered-image-with-caption&quot;&gt;Centered image with caption&lt;/h1&gt;
+
+&lt;p&gt;It’s really simple to center your posts images. Just add the class &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.tc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; to the end of the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;figure&amp;gt;&lt;/code&gt; include like so.&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/assets/images/stars-small.jpg&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;stars&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Beautiful night sky.&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;{: .tc}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will output the following:&lt;/p&gt;
+
+&lt;figure class=&quot;tc&quot;&gt;
+  &lt;img src=&quot;/assets/images/stars-small.jpg&quot; alt=&quot;stars&quot; /&gt;
+  
+    &lt;figcaption&gt;Beautiful night sky
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;figure&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tc&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/images/stars-small.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stars&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/span&gt;Beautiful night sky&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figure&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;image-aligned-left&quot;&gt;Image aligned left&lt;/h1&gt;
+
+&lt;p&gt;Align an image to the left by adding the class &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.tl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; to the end of the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;figure&amp;gt;&lt;/code&gt; include like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/assets/images/horse.jpg&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;photo of a horse&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Photo of a horse.&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;{: .tl}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will output the following:&lt;/p&gt;
+
+&lt;figure class=&quot;tl&quot;&gt;
+  &lt;img src=&quot;/assets/images/horse.jpg&quot; alt=&quot;photo of a horse&quot; /&gt;
+  
+    &lt;figcaption&gt;Photo of a horse
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;figure&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tl&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/images/horse.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;photo of a horse&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/span&gt;Photo of a horse&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figure&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;image-aligned-right&quot;&gt;Image aligned right&lt;/h1&gt;
+
+&lt;p&gt;Align an image to the right by adding the class &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.tr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; to the end of the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;figure&amp;gt;&lt;/code&gt; include like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/assets/images/horse.jpg&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;photo of a horse&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Photo of a horse.&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;{: .tr}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will output the following:&lt;/p&gt;
+
+&lt;figure class=&quot;tr&quot;&gt;
+  &lt;img src=&quot;/assets/images/horse.jpg&quot; alt=&quot;photo of a horse&quot; /&gt;
+  
+    &lt;figcaption&gt;Photo of a horse
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;figure&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tr&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/images/horse.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;photo of a horse&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/span&gt;Photo of a horse&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figure&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;full-post-width-image&quot;&gt;Full post width image&lt;/h1&gt;
+
+&lt;p&gt;To create a full post width image add the class &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.w-100&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.tc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; to the end of the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;figure&amp;gt;&lt;/code&gt; include like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/assets/images/mountains-large.jpg&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mountain&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Mountain landscape&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;{: .w-100 .tc}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will output the following:&lt;/p&gt;
+
+&lt;figure class=&quot;w-100 tc&quot;&gt;
+  &lt;img src=&quot;/assets/images/mountains-large.jpg&quot; alt=&quot;mountain&quot; /&gt;
+  
+    &lt;figcaption&gt;Mountain landscape
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;figure&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;w-100 tc&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/images/mountains-large.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;mountain&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/span&gt;Mountain landscape&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figure&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;full-width-image&quot;&gt;Full width image&lt;/h1&gt;
+
+&lt;p&gt;To create a full width image add the class &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.full&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;.tc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; to the end of the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;figure&amp;gt;&lt;/code&gt; include like so:&lt;/p&gt;
+
+&lt;p&gt;(&lt;strong&gt;NB:&lt;/strong&gt; You will need to use a large image).&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;image_path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/assets/images/porsche-large.jpg&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;alt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Porsche 911&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Porsche 911&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;{: .full .tc}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will output the following:&lt;/p&gt;
+
+&lt;figure class=&quot;full tc&quot;&gt;
+  &lt;img src=&quot;/assets/images/porsche-large.jpg&quot; alt=&quot;Porsche 911&quot; /&gt;
+  
+    &lt;figcaption&gt;Porsche 911
+&lt;/figcaption&gt;
+  
+&lt;/figure&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;figure&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;full tc&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/images/porsche-large.jpg&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;alt=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Porsche 911&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/span&gt;Porsche 911&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figure&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;responsive-videos&quot;&gt;Responsive Videos&lt;/h1&gt;
+
+&lt;p&gt;Add a responsive Youtube video using the video include like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://www.youtube.com/embed/V2q7-1XppDM&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will output the following:&lt;/p&gt;
+
+&lt;div class=&quot;aspect-ratio aspect-ratio--16x9 w-100 mb4&quot;&gt;
+  &lt;iframe class=&quot;aspect-ratio--object&quot; src=&quot;https://www.youtube.com/embed/V2q7-1XppDM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;aspect-ratio aspect-ratio--16x9 w-100 mb4&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;aspect-ratio--object&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://www.youtube.com/embed/V2q7-1XppDM&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;frameborder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;allowfullscreen&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h1&gt;
+
+&lt;p&gt;Single line blockquote:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I am not talented, I am obsessed&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Multi line blockquote with a cite reference:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;There’s no talent here, this is hard work. This is an obsession. Talent does not exist, we are all equal as human beings. You could be anyone if you put in the time. You will reach the top, and that’s that. I am not talented, I am obsessed.&lt;/p&gt;
+
+  &lt;p&gt;— &lt;cite&gt;Conor McGregor&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;tables&quot;&gt;Tables&lt;/h1&gt;
+
+&lt;p&gt;Create a table like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;| Employee                 | Salary |                            |
+| ------------------------ | ------ | -------------------------- |
+| &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;John Joe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;            | $1     | Needs a better salary      |
+| &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Jane Doe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;            | $10K   | Blogging intern            |
+| &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Joe Bloggs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;          | $25k   | Photographer               |
+| &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Jane Bloggs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;](&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;         | $100k  | Marketer &amp;amp; Copywriter      |
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will output the following:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Employee&lt;/th&gt;
+      &lt;th&gt;Salary&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;John Joe&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;$1&lt;/td&gt;
+      &lt;td&gt;Needs a better salary&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Jane Doe&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;$10K&lt;/td&gt;
+      &lt;td&gt;Blogging intern&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Joe Bloggs&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;$25k&lt;/td&gt;
+      &lt;td&gt;Photographer&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;#&quot;&gt;Jane Bloggs&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;$100k&lt;/td&gt;
+      &lt;td&gt;Marketer &amp;amp; Copywriter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a table with a footer like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;| Header1   | Header2 | Header3   |
+|:----------|:-------:|----------:|
+| cell1     | cell2   | cell3     |
+| cell4     | cell5   | cell6     |
+|---------------------------------|
+| cell1     | cell2   | cell3     |
+| cell4     | cell5   | cell6     |
+|=================================|
+| Footer1   | Footer2   | Footer3 |
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This will output the following:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Header1&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Header2&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Header3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cell1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;cell2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;cell3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;cell4&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;cell5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;cell6&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Footer1&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Footer2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Footer3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;codeblocks&quot;&gt;Codeblocks&lt;/h1&gt;
+
+&lt;p&gt;This Jekyll theme also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;list-types&quot;&gt;List Types&lt;/h1&gt;
+
+&lt;h2 id=&quot;definition-lists&quot;&gt;Definition Lists&lt;/h2&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Definition List Title&lt;/dt&gt;
+  &lt;dd&gt;Definition list division.&lt;/dd&gt;
+  &lt;dt&gt;Definition&lt;/dt&gt;
+  &lt;dd&gt;An exact statement or description of the nature, scope, or meaning of something: &lt;em&gt;our definition of what constitutes poetry&lt;/em&gt;.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h2 id=&quot;unordered-lists-nested&quot;&gt;Unordered Lists (Nested)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;List item one
+    &lt;ul&gt;
+      &lt;li&gt;List item one
+        &lt;ul&gt;
+          &lt;li&gt;List item one&lt;/li&gt;
+          &lt;li&gt;List item two&lt;/li&gt;
+          &lt;li&gt;List item three&lt;/li&gt;
+          &lt;li&gt;List item four&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;List item two&lt;/li&gt;
+      &lt;li&gt;List item three&lt;/li&gt;
+      &lt;li&gt;List item four&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List item two&lt;/li&gt;
+  &lt;li&gt;List item three&lt;/li&gt;
+  &lt;li&gt;List item four&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ordered-list-nested&quot;&gt;Ordered List (Nested)&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;List item one
+    &lt;ol&gt;
+      &lt;li&gt;List item one
+        &lt;ol&gt;
+          &lt;li&gt;List item one&lt;/li&gt;
+          &lt;li&gt;List item two&lt;/li&gt;
+          &lt;li&gt;List item three&lt;/li&gt;
+          &lt;li&gt;List item four&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;List item two&lt;/li&gt;
+      &lt;li&gt;List item three&lt;/li&gt;
+      &lt;li&gt;List item four&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List item two&lt;/li&gt;
+  &lt;li&gt;List item three&lt;/li&gt;
+  &lt;li&gt;List item four&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;buttons&quot;&gt;Buttons&lt;/h1&gt;
+
+&lt;p&gt;You can view the &lt;a href=&quot;http://localhost:5000/docs/markdown/#buttons&quot; target=&quot;\_blank&quot;&gt;button documentation here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--primary&quot;&gt;primary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--secondary&quot;&gt;secondary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--success&quot;&gt;success&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--warning&quot;&gt;warning&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--danger&quot;&gt;danger&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--info&quot;&gt;info&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--light&quot;&gt;light&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--dark&quot;&gt;dark&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--primary&quot;&gt;primary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--secondary&quot;&gt;secondary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--success&quot;&gt;success&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--warning&quot;&gt;warning&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--danger&quot;&gt;danger&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--info&quot;&gt;info&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--light&quot;&gt;light&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--dark&quot;&gt;dark&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--primary btn--x-large&quot;&gt;extra large&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--primary btn--x-large&quot;&gt;extra large&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--primary btn--large&quot;&gt;large&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--primary btn--large&quot;&gt;large&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--primary btn--small&quot;&gt;small&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--primary btn--small&quot;&gt;small&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--primary btn--block&quot;&gt;Block level button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--primary btn--block&quot;&gt;Block level outline button&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--primary ttu&quot;&gt;uppercase&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--primary ttc&quot;&gt;capitalised&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--primary ttl&quot;&gt;LOWERCASE&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-outline--primary grow&quot;&gt;grow&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--primary glow o-80&quot;&gt;glow&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn--primary dim&quot;&gt;dim&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;alertsnotices&quot;&gt;Alerts/Notices&lt;/h1&gt;
+
+&lt;p&gt;You can view the &lt;a href=&quot;http://localhost:5000/docs/markdown/#notices&quot; target=&quot;\_blank&quot;&gt;Notices documentation here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;alert alert--primary&quot;&gt;Beautiful notices that are designed to grab a visitors attention.&lt;/p&gt;
+
+&lt;p class=&quot;alert alert--secondary&quot;&gt;Beautiful notices that are designed to grab a visitors attention.&lt;/p&gt;
+
+&lt;p class=&quot;alert alert--success&quot;&gt;Beautiful notices that are designed to grab a visitors attention.&lt;/p&gt;
+
+&lt;p class=&quot;alert alert--warning&quot;&gt;Beautiful notices that are designed to grab a visitors attention.&lt;/p&gt;
+
+&lt;p class=&quot;alert alert--danger&quot;&gt;Beautiful notices that are designed to grab a visitors attention.&lt;/p&gt;
+
+&lt;p class=&quot;alert alert--info&quot;&gt;Beautiful notices that are designed to grab a visitors attention.&lt;/p&gt;
+
+&lt;p class=&quot;alert alert--light&quot;&gt;Beautiful notices that are designed to grab a visitors attention.&lt;/p&gt;
+
+&lt;p class=&quot;alert alert--dark&quot;&gt;Beautiful notices that are designed to grab a visitors attention.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;html-tags&quot;&gt;HTML Tags&lt;/h1&gt;
+
+&lt;h2 id=&quot;address-tag&quot;&gt;Address Tag&lt;/h2&gt;
+
+&lt;p&gt;Create an address like so:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;address&amp;gt;&lt;/span&gt;
+  1 Infinite Loop&lt;span class=&quot;nt&quot;&gt;&amp;lt;br/&amp;gt;&lt;/span&gt; Cupertino, CA 95014&lt;span class=&quot;nt&quot;&gt;&amp;lt;br/&amp;gt;&lt;/span&gt; United States
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/address&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;This will output the following:&lt;/p&gt;
+
+&lt;address&gt;
+  1 Infinite Loop&lt;br /&gt; Cupertino, CA 95014&lt;br /&gt; United States
+&lt;/address&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;links--anchor-tag&quot;&gt;Links / Anchor Tag&lt;/h2&gt;
+
+&lt;p&gt;You can view the &lt;a href=&quot;http://localhost:5000/docs/markdown/#links&quot; target=&quot;\_blank&quot;&gt;links documentation here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;Primary link&lt;/a&gt; - Set primary colors in &lt;code class=&quot;highlighter-rouge&quot;&gt;variables.scss&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://google.com&quot; target=&quot;\_blank&quot;&gt;Open link in new tab&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; title=&quot;Google&quot;&gt;Link title on hover&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;hover-black dim&quot;&gt;Dim on hover&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;link&quot;&gt;Link without underline&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;link underline-hover hover-black&quot;&gt;Underline on hover&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;blue hover-blue&quot;&gt;blue link&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;black hover-black&quot;&gt;black link&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;green hover-green&quot;&gt;green link&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;gray hover-gray&quot;&gt;gray link&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;yellow hover-yellow&quot;&gt;yellow link&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;gold hover-gold&quot;&gt;gold link&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;orange hover-orange&quot;&gt;orange&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;light-purple hover-light-purple&quot;&gt;light-purple link&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;pink hover-light-pink&quot;&gt;pink/ hover light pink&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;dark-pink hover-hot-pink&quot;&gt;dark-pink/ hover hot pink&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;red hover-dark-red&quot;&gt;red link/ hover dark red&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;abbreviation-tag&quot;&gt;Abbreviation Tag&lt;/h2&gt;
+
+&lt;p&gt;The abbreviation &lt;abbr title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/abbr&gt; stands for “Cascading Style Sheets”.&lt;/p&gt;
+
+&lt;h2 id=&quot;cite-tag&quot;&gt;Cite Tag&lt;/h2&gt;
+
+&lt;p&gt;“Code is poetry.” —&lt;cite&gt;Automattic&lt;/cite&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;strike-tag&quot;&gt;Strike Tag&lt;/h2&gt;
+
+&lt;p&gt;This tag will let you &lt;strike&gt;strikeout text&lt;/strike&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;emphasize-tag&quot;&gt;Emphasize Tag&lt;/h2&gt;
+&lt;p&gt;The emphasize tag should &lt;em&gt;italicize&lt;/em&gt; text.&lt;/p&gt;
+
+&lt;h2 id=&quot;insert-tag&quot;&gt;Insert Tag&lt;/h2&gt;
+&lt;p&gt;This tag should denote updated text &lt;ins&gt;inserted&lt;/ins&gt; in a blog post.&lt;/p&gt;
+
+&lt;h2 id=&quot;keyboard-tag&quot;&gt;Keyboard Tag&lt;/h2&gt;
+&lt;p&gt;This scarcely known &lt;kbd&gt;keyboard tag&lt;/kbd&gt; emulates represents user input and produces an inline element displayed in the browser’s default monospace font, which is usually styled like the &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;code&amp;gt;&lt;/code&gt; tag.&lt;/p&gt;
+
+&lt;h2 id=&quot;code-tag&quot;&gt;Code Tag&lt;/h2&gt;
+&lt;p&gt;Its probably a really good idea to wrap your code within code tags. This is how you do it &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;title&amp;gt;HTML for Baby's&amp;lt;/title&amp;gt;&lt;/code&gt;. You don’t want any surprises.&lt;/p&gt;
+
+&lt;h2 id=&quot;preformatted-tag&quot;&gt;Preformatted Tag&lt;/h2&gt;
+&lt;p&gt;This tag styles large blocks of code&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.ba&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;border-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;strong-tag&quot;&gt;Strong Tag&lt;/h2&gt;
+&lt;p&gt;This tag makes &lt;strong&gt;bold text, try not to overuse it tho.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;subscript-tag&quot;&gt;Subscript Tag&lt;/h2&gt;
+&lt;p&gt;My girlfriend is a medical scientist, so i bet she knows what C&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;6&lt;/sub&gt;O and C&lt;sub&gt;6&lt;/sub&gt;H&lt;sub&gt;12&lt;/sub&gt;O&lt;sub&gt;6&lt;/sub&gt; means, right Rachel? Anyway the subscript tag &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;sub&amp;gt;&amp;lt;/sub&amp;gt;&lt;/code&gt; should have pushed the numbers down.&lt;/p&gt;
+
+&lt;h2 id=&quot;superscript-tag&quot;&gt;Superscript Tag&lt;/h2&gt;
+&lt;p&gt;Oh more science yay! Albert Einstein E = mc&lt;sup&gt;2&lt;/sup&gt;, The superscript tag &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;sup&amp;gt;&amp;lt;/sup&amp;gt;&lt;/code&gt; should lift the 2 up.&lt;/p&gt;
+
+&lt;h2 id=&quot;variable-tag&quot;&gt;Variable Tag&lt;/h2&gt;
+&lt;p&gt;The variable tag &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;var&amp;gt;&amp;lt;/var&amp;gt;&lt;/code&gt;  allows you to denote &lt;var&gt;variables&lt;/var&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h2&gt;
+&lt;p&gt;I have more &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to say up here.&lt;/p&gt;
+
+&lt;h2 id=&quot;horizontal-rules&quot;&gt;Horizontal Rules&lt;/h2&gt;
+&lt;p&gt;To create a horizontal rule, just use &lt;code class=&quot;highlighter-rouge&quot;&gt;***&lt;/code&gt; on a new line anywhere in your posts like so&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;mark-tag&quot;&gt;Mark Tag&lt;/h2&gt;
+&lt;p&gt;The &lt;mark&gt;mark tag allows you to highlight parts &lt;/mark&gt; of your text.&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;To say down here.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Desired Persona</name><email>hello@desiredpersona.com</email></author><category term="header" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Post title with hero image with CTA</title><link href="/post-with-hero-with-call-to-action/" rel="alternate" type="text/html" title="Post title with hero image with CTA" /><published>2017-05-15T16:20:50+01:00</published><updated>2017-05-15T16:20:50+01:00</updated><id>/post-with-hero-with-call-to-action</id><content type="html" xml:base="/post-with-hero-with-call-to-action/">&lt;p&gt;To add a hero image with a call-to-action button to any blog post header, simply add the following in that posts YAML front-matter.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;hero&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Choose hero or header.&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/assets/images/evening.jpg&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Set a background image.&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;vh&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;vh-50 vh-75-m vh-100-l&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Set a custom vertical height for mobile/tablet/desktop.&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;[Unsplash](https://unsplash.com)&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Create a header image caption. Support for markdown links.&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bg-darken-25 bg-darken-0-ns&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Overwrite the themes default header classes on any page. Easily set background overlays for mobile, tablet and desktop.&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;cta&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; 
+        &lt;span class=&quot;s&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Call-to-action&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Create a call-to-action.&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;https://www.desiredpersona.com/themes/&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Call-to-action link. URL's starting with 'http' will open in a new tab automatically.&lt;/span&gt;
+        &lt;span class=&quot;s&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;white hover-white bg-red bb bw1 br2 b--dark-red&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Overwrite the themes default CTA button classes on any page. Control the text color, button color, button shape and button border color.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I highly recommend you take a look at all the features of this theme. I think you will be blown away.&lt;/p&gt;</content><author><name>Desired Persona</name><email>hello@desiredpersona.com</email></author><category term="header" /><summary type="html">To add a hero image with a call-to-action button to any blog post header, simply add the following in that posts YAML front-matter.</summary></entry><entry><title type="html">Post with hero image</title><link href="/post-with-hero/" rel="alternate" type="text/html" title="Post with hero image" /><published>2017-04-14T13:20:50+01:00</published><updated>2017-05-07T22:02:07+01:00</updated><id>/post-with-hero</id><content type="html" xml:base="/post-with-hero/">&lt;p&gt;To add a hero image to any blog post header, simply add the following in that posts YAML front-matter.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;hero&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Choose hero or header&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;vh&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;vh-50 vh-75-m vh-100-l&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# Set a custom vertical height for mobile/tablet/desktop.&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;navigation&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;fancy&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Choose your navigation. Leave blank for white background nav.&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/assets/images/stars-large.jpg&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Set a background image.&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Photo&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;credit:&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;[Unsplash](https://unsplash.com)&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Create captions with support for markdown urls.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nibh orci. Donec posuere, urna sit amet hendrerit pellentesque, massa ex commodo lorem, vel euismod mauris justo a tortor. Nunc nec eros lacus. Curabitur quis massa non neque viverra viverra. Integer feugiat lorem non velit fermentum efficitur. Cras id turpis sed ipsum egestas hendrerit consequat vel elit. Pellentesque eros sem, bibendum tempus felis ac, molestie auctor lacus. In hac habitasse platea dictumst. Nulla facilisi. Nullam mattis dui sit amet diam luctus venenatis. Donec sed pulvinar dolor. Sed purus dui, pellentesque in dolor quis, volutpat euismod nibh.&lt;/p&gt;
+
+&lt;p&gt;Vivamus fermentum auctor neque, a posuere felis. Vivamus vel tempor turpis, vel rutrum risus. Duis est diam, porta quis lorem id, hendrerit euismod nisi. Duis vel convallis odio. Praesent at ipsum suscipit, efficitur tellus et, laoreet justo. Aliquam erat volutpat. Aliquam erat volutpat. Suspendisse eu pretium eros. Duis ac pulvinar ante, id mollis elit. Donec pretium non ex ut volutpat. Maecenas convallis diam sed elementum gravida. Aenean imperdiet eu nisi nec dignissim. Nunc massa augue, ornare nec nisi id, bibendum maximus lectus. Sed ultrices risus sit amet purus tempus malesuada. Suspendisse potenti.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum leo, egestas sed mi id, elementum imperdiet odio. Sed scelerisque consectetur rutrum. Nam neque nibh, luctus sed pharetra vitae, tincidunt eget turpis. Maecenas rhoncus turpis vitae ipsum ullamcorper placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut pellentesque eros mauris, quis luctus magna efficitur interdum. Proin enim velit, rhoncus a molestie id, vestibulum id tortor. Vestibulum maximus leo eros, eget consequat lorem posuere cursus. Sed vestibulum enim nisi, eu sollicitudin odio pretium et. Phasellus et dictum enim. Curabitur et tellus a erat tempus cursus.&lt;/p&gt;
+
+&lt;p&gt;Donec porttitor tempor felis vel ullamcorper. Duis vestibulum urna leo, nec sodales diam semper sit amet. Mauris viverra semper efficitur. Vivamus commodo pretium libero eget feugiat. Nam in mattis magna. Nullam nec tellus eleifend, venenatis tellus nec, ultrices libero. Donec efficitur iaculis orci, nec ultricies sem cursus a. Morbi a dui a risus volutpat vehicula ac vel sapien. Donec volutpat lacus felis, quis congue metus hendrerit eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus purus a est cursus, porta convallis sem mollis.&lt;/p&gt;
+
+&lt;p&gt;Ut fringilla tellus id venenatis interdum. Phasellus quis massa suscipit, molestie ante non, dapibus nulla. Etiam ultricies leo in leo feugiat, eu faucibus nibh dignissim. Vivamus felis dui, iaculis non semper quis, consectetur nec nibh. Proin urna sem, lobortis vitae lacus in, faucibus sodales leo. Fusce interdum consequat sem gravida pulvinar. Praesent sollicitudin a eros sed molestie. In vel diam vulputate, scelerisque diam a, tristique mi. Sed at ligula dapibus diam pretium tincidunt eget eu nunc. Aliquam vehicula orci ac ultricies sollicitudin.&lt;/p&gt;
+
+&lt;p&gt;Fusce magna tortor, pellentesque a velit non, lacinia ullamcorper risus. Suspendisse potenti. Vivamus id libero vitae dolor sagittis laoreet. Aenean mattis dui quis velit gravida porttitor. Integer tortor urna, dignissim a posuere eu, finibus a dolor. Aliquam ut dictum ante, at scelerisque enim. Pellentesque ac urna vitae justo molestie sagittis. Aliquam id sapien dapibus, ullamcorper nunc in, maximus sapien. Etiam nec tempus turpis, sed porttitor ipsum. Sed ut dignissim ipsum. Donec imperdiet felis lobortis, tincidunt justo et, elementum massa. Nunc euismod, tortor eu maximus pretium, diam mauris suscipit augue, sed tempus nunc mauris nec elit. Morbi iaculis nec nisi euismod posuere.&lt;/p&gt;
+
+&lt;p&gt;Donec euismod, urna et vulputate accumsan, neque turpis tempor ex, quis vestibulum est odio vel urna. Aliquam porta lorem erat, et gravida purus euismod a. Suspendisse in ante rutrum, iaculis justo posuere, pharetra lorem. Maecenas tincidunt feugiat nisi in maximus. Sed in convallis odio. Aenean mollis felis ac ligula commodo, sit amet posuere dui condimentum. Mauris vel metus eleifend, malesuada augue a, sodales urna. Morbi egestas ante ut risus posuere pellentesque. Duis a felis vel lacus maximus malesuada sed id ante. Ut pellentesque purus ut elit elementum suscipit.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum leo, egestas sed mi id, elementum imperdiet odio. Sed scelerisque consectetur rutrum. Nam neque nibh, luctus sed pharetra vitae, tincidunt eget turpis. Maecenas rhoncus turpis vitae ipsum ullamcorper placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut pellentesque eros mauris, quis luctus magna efficitur interdum. Proin enim velit, rhoncus a molestie id, vestibulum id tortor. Vestibulum maximus leo eros, eget consequat lorem posuere cursus. Sed vestibulum enim nisi, eu sollicitudin odio pretium et. Phasellus et dictum enim. Curabitur et tellus a erat tempus cursus.&lt;/p&gt;</content><author><name>Joe Bloggs</name><email>joebloggs458@gmail.com</email></author><category term="header" /><summary type="html">To add a hero image to any blog post header, simply add the following in that posts YAML front-matter.</summary></entry><entry><title type="html">Post with minimal hero header</title><link href="/post-with-hero-minimal/" rel="alternate" type="text/html" title="Post with minimal hero header" /><published>2017-04-13T13:20:50+01:00</published><updated>2017-05-06T21:05:37+01:00</updated><id>/post-with-hero-minimal</id><content type="html" xml:base="/post-with-hero-minimal/">&lt;p&gt;To add a hero image to any blog post header, simply add the following in that posts YAML front-matter.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;hero&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bg-green&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;layout:&lt;/code&gt; Choose &lt;code class=&quot;highlighter-rouge&quot;&gt;hero&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;header&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;navigation:&lt;/code&gt; Set navigation to &lt;code class=&quot;highlighter-rouge&quot;&gt;fancy&lt;/code&gt; to remove white navigation bar.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;class:&lt;/code&gt; Set a background colour class if not using a background image.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nibh orci. Donec posuere, urna sit amet hendrerit pellentesque, massa ex commodo lorem, vel euismod mauris justo a tortor. Nunc nec eros lacus. Curabitur quis massa non neque viverra viverra. Integer feugiat lorem non velit fermentum efficitur. Cras id turpis sed ipsum egestas hendrerit consequat vel elit. Pellentesque eros sem, bibendum tempus felis ac, molestie auctor lacus. In hac habitasse platea dictumst. Nulla facilisi. Nullam mattis dui sit amet diam luctus venenatis. Donec sed pulvinar dolor. Sed purus dui, pellentesque in dolor quis, volutpat euismod nibh.&lt;/p&gt;
+
+&lt;p&gt;Vivamus fermentum auctor neque, a posuere felis. Vivamus vel tempor turpis, vel rutrum risus. Duis est diam, porta quis lorem id, hendrerit euismod nisi. Duis vel convallis odio. Praesent at ipsum suscipit, efficitur tellus et, laoreet justo. Aliquam erat volutpat. Aliquam erat volutpat. Suspendisse eu pretium eros. Duis ac pulvinar ante, id mollis elit. Donec pretium non ex ut volutpat. Maecenas convallis diam sed elementum gravida. Aenean imperdiet eu nisi nec dignissim. Nunc massa augue, ornare nec nisi id, bibendum maximus lectus. Sed ultrices risus sit amet purus tempus malesuada. Suspendisse potenti.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum leo, egestas sed mi id, elementum imperdiet odio. Sed scelerisque consectetur rutrum. Nam neque nibh, luctus sed pharetra vitae, tincidunt eget turpis. Maecenas rhoncus turpis vitae ipsum ullamcorper placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut pellentesque eros mauris, quis luctus magna efficitur interdum. Proin enim velit, rhoncus a molestie id, vestibulum id tortor. Vestibulum maximus leo eros, eget consequat lorem posuere cursus. Sed vestibulum enim nisi, eu sollicitudin odio pretium et. Phasellus et dictum enim. Curabitur et tellus a erat tempus cursus.&lt;/p&gt;
+
+&lt;p&gt;Donec porttitor tempor felis vel ullamcorper. Duis vestibulum urna leo, nec sodales diam semper sit amet. Mauris viverra semper efficitur. Vivamus commodo pretium libero eget feugiat. Nam in mattis magna. Nullam nec tellus eleifend, venenatis tellus nec, ultrices libero. Donec efficitur iaculis orci, nec ultricies sem cursus a. Morbi a dui a risus volutpat vehicula ac vel sapien. Donec volutpat lacus felis, quis congue metus hendrerit eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus purus a est cursus, porta convallis sem mollis.&lt;/p&gt;
+
+&lt;p&gt;Ut fringilla tellus id venenatis interdum. Phasellus quis massa suscipit, molestie ante non, dapibus nulla. Etiam ultricies leo in leo feugiat, eu faucibus nibh dignissim. Vivamus felis dui, iaculis non semper quis, consectetur nec nibh. Proin urna sem, lobortis vitae lacus in, faucibus sodales leo. Fusce interdum consequat sem gravida pulvinar. Praesent sollicitudin a eros sed molestie. In vel diam vulputate, scelerisque diam a, tristique mi. Sed at ligula dapibus diam pretium tincidunt eget eu nunc. Aliquam vehicula orci ac ultricies sollicitudin.&lt;/p&gt;
+
+&lt;p&gt;Fusce magna tortor, pellentesque a velit non, lacinia ullamcorper risus. Suspendisse potenti. Vivamus id libero vitae dolor sagittis laoreet. Aenean mattis dui quis velit gravida porttitor. Integer tortor urna, dignissim a posuere eu, finibus a dolor. Aliquam ut dictum ante, at scelerisque enim. Pellentesque ac urna vitae justo molestie sagittis. Aliquam id sapien dapibus, ullamcorper nunc in, maximus sapien. Etiam nec tempus turpis, sed porttitor ipsum. Sed ut dignissim ipsum. Donec imperdiet felis lobortis, tincidunt justo et, elementum massa. Nunc euismod, tortor eu maximus pretium, diam mauris suscipit augue, sed tempus nunc mauris nec elit. Morbi iaculis nec nisi euismod posuere.&lt;/p&gt;
+
+&lt;p&gt;Donec euismod, urna et vulputate accumsan, neque turpis tempor ex, quis vestibulum est odio vel urna. Aliquam porta lorem erat, et gravida purus euismod a. Suspendisse in ante rutrum, iaculis justo posuere, pharetra lorem. Maecenas tincidunt feugiat nisi in maximus. Sed in convallis odio. Aenean mollis felis ac ligula commodo, sit amet posuere dui condimentum. Mauris vel metus eleifend, malesuada augue a, sodales urna. Morbi egestas ante ut risus posuere pellentesque. Duis a felis vel lacus maximus malesuada sed id ante. Ut pellentesque purus ut elit elementum suscipit.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum leo, egestas sed mi id, elementum imperdiet odio. Sed scelerisque consectetur rutrum. Nam neque nibh, luctus sed pharetra vitae, tincidunt eget turpis. Maecenas rhoncus turpis vitae ipsum ullamcorper placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut pellentesque eros mauris, quis luctus magna efficitur interdum. Proin enim velit, rhoncus a molestie id, vestibulum id tortor. Vestibulum maximus leo eros, eget consequat lorem posuere cursus. Sed vestibulum enim nisi, eu sollicitudin odio pretium et. Phasellus et dictum enim. Curabitur et tellus a erat tempus cursus.&lt;/p&gt;</content><author><name>Joe Bloggs</name><email>joebloggs458@gmail.com</email></author><category term="header" /><summary type="html">To add a hero image to any blog post header, simply add the following in that posts YAML front-matter.</summary></entry><entry><title type="html">Post with codeblocks</title><link href="/post-with-codeblocks/" rel="alternate" type="text/html" title="Post with codeblocks" /><published>2017-03-19T11:05:50+00:00</published><updated>2017-03-19T11:05:50+00:00</updated><id>/post-with-codeblocks</id><content type="html" xml:base="/post-with-codeblocks/">&lt;p&gt;This is how to add codeblocks to your posts&lt;/p&gt;
+
+&lt;h3 id=&quot;codeblocks&quot;&gt;Codeblocks&lt;/h3&gt;
+
+&lt;p&gt;Input:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;``` ruby
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+```&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Output:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;show&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@widget&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Widget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;respond_to&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# show.html.erb&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;json: &lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@widget&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;codeblocks-with-line-numbers&quot;&gt;Codeblocks with line numbers&lt;/h3&gt;
+
+&lt;p&gt;Input:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;{% highlight ruby linenos %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+{% endhighlight %}&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Output:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;show&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@widget&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Widget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;respond_to&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# show.html.erb&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;json: &lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@widget&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;command-line-prompt&quot;&gt;Command line prompt&lt;/h3&gt;
+
+&lt;p&gt;Input:&lt;/p&gt;
+
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% highlight shell %}
+$ gem install jekyll
+{% endhighlight %}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Output:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;code-in-a-paragraph&quot;&gt;Code in a paragraph&lt;/h3&gt;
+
+&lt;p&gt;Input:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This is what `code` looks like in a paragraph of text.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Output:&lt;/p&gt;
+
+&lt;p&gt;This is what &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; looks like in a paragraph of text.&lt;/p&gt;</content><author><name>Desired Persona</name><email>hello@desiredpersona.com</email></author><summary type="html">This is how to add codeblocks to your posts</summary></entry><entry><title type="html">A beautiful post about your startup</title><link href="/post-about-your-startup/" rel="alternate" type="text/html" title="A beautiful post about your startup" /><published>2016-10-12T13:20:50+01:00</published><updated>2016-10-12T13:20:50+01:00</updated><id>/post-about-your-startup</id><content type="html" xml:base="/post-about-your-startup/">&lt;p&gt;To add a subtitle to any blog post, simply add &lt;code class=&quot;highlighter-rouge&quot;&gt;subtitle: Your subtitle text goes here&lt;/code&gt; in that posts YAML front-matter.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nibh orci. Donec posuere, urna sit amet hendrerit pellentesque, massa ex commodo lorem, vel euismod mauris justo a tortor. Nunc nec eros lacus. Curabitur quis massa non neque viverra viverra. Integer feugiat lorem non velit fermentum efficitur. Cras id turpis sed ipsum egestas hendrerit consequat vel elit. Pellentesque eros sem, bibendum tempus felis ac, molestie auctor lacus. In hac habitasse platea dictumst. Nulla facilisi. Nullam mattis dui sit amet diam luctus venenatis. Donec sed pulvinar dolor. Sed purus dui, pellentesque in dolor quis, volutpat euismod nibh.&lt;/p&gt;
+
+&lt;p&gt;Vivamus fermentum auctor neque, a posuere felis. Vivamus vel tempor turpis, vel rutrum risus. Duis est diam, porta quis lorem id, hendrerit euismod nisi. Duis vel convallis odio. Praesent at ipsum suscipit, efficitur tellus et, laoreet justo. Aliquam erat volutpat. Aliquam erat volutpat. Suspendisse eu pretium eros. Duis ac pulvinar ante, id mollis elit. Donec pretium non ex ut volutpat. Maecenas convallis diam sed elementum gravida. Aenean imperdiet eu nisi nec dignissim. Nunc massa augue, ornare nec nisi id, bibendum maximus lectus. Sed ultrices risus sit amet purus tempus malesuada. Suspendisse potenti.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum leo, egestas sed mi id, elementum imperdiet odio. Sed scelerisque consectetur rutrum. Nam neque nibh, luctus sed pharetra vitae, tincidunt eget turpis. Maecenas rhoncus turpis vitae ipsum ullamcorper placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut pellentesque eros mauris, quis luctus magna efficitur interdum. Proin enim velit, rhoncus a molestie id, vestibulum id tortor. Vestibulum maximus leo eros, eget consequat lorem posuere cursus. Sed vestibulum enim nisi, eu sollicitudin odio pretium et. Phasellus et dictum enim. Curabitur et tellus a erat tempus cursus.&lt;/p&gt;</content><author><name>Desired Persona</name><email>hello@desiredpersona.com</email></author><category term="subtitle" /><summary type="html">To add a subtitle to any blog post, simply add subtitle: Your subtitle text goes here in that posts YAML front-matter.</summary></entry><entry><title type="html">Minimal post with title and subtitle</title><link href="/minimal-post-with-a-title-and-subtitle/" rel="alternate" type="text/html" title="Minimal post with title and subtitle" /><published>2016-10-12T13:20:50+01:00</published><updated>2016-10-12T13:20:50+01:00</updated><id>/minimal-post-with-a-title-and-subtitle</id><content type="html" xml:base="/minimal-post-with-a-title-and-subtitle/">&lt;p&gt;To add a subtitle to any blog post, simply add &lt;code class=&quot;highlighter-rouge&quot;&gt;subtitle: Your subtitle text goes here&lt;/code&gt; in that posts YAML front-matter.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nibh orci. Donec posuere, urna sit amet hendrerit pellentesque, massa ex commodo lorem, vel euismod mauris justo a tortor. Nunc nec eros lacus. Curabitur quis massa non neque viverra viverra. Integer feugiat lorem non velit fermentum efficitur. Cras id turpis sed ipsum egestas hendrerit consequat vel elit. Pellentesque eros sem, bibendum tempus felis ac, molestie auctor lacus. In hac habitasse platea dictumst. Nulla facilisi. Nullam mattis dui sit amet diam luctus venenatis. Donec sed pulvinar dolor. Sed purus dui, pellentesque in dolor quis, volutpat euismod nibh.&lt;/p&gt;
+
+&lt;p&gt;Vivamus fermentum auctor neque, a posuere felis. Vivamus vel tempor turpis, vel rutrum risus. Duis est diam, porta quis lorem id, hendrerit euismod nisi. Duis vel convallis odio. Praesent at ipsum suscipit, efficitur tellus et, laoreet justo. Aliquam erat volutpat. Aliquam erat volutpat. Suspendisse eu pretium eros. Duis ac pulvinar ante, id mollis elit. Donec pretium non ex ut volutpat. Maecenas convallis diam sed elementum gravida. Aenean imperdiet eu nisi nec dignissim. Nunc massa augue, ornare nec nisi id, bibendum maximus lectus. Sed ultrices risus sit amet purus tempus malesuada. Suspendisse potenti.&lt;/p&gt;</content><author><name>Desired Persona</name><email>hello@desiredpersona.com</email></author><category term="subtitle" /><summary type="html">To add a subtitle to any blog post, simply add subtitle: Your subtitle text goes here in that posts YAML front-matter.</summary></entry><entry><title type="html">Post with comments turned off</title><link href="/post-with-no-comments/" rel="alternate" type="text/html" title="Post with comments turned off" /><published>2016-09-30T13:20:50+01:00</published><updated>2016-09-30T13:20:50+01:00</updated><id>/post-with-no-comments</id><content type="html" xml:base="/post-with-no-comments/">&lt;p&gt;You can disable Disqus comments on any blog post. You simply add &lt;code class=&quot;highlighter-rouge&quot;&gt;comments: false&lt;/code&gt; in that posts YAML front-matter. Enable/disable comments site-wide by adding/removing your disqus shortname in theme.yml.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nibh orci. Donec posuere, urna sit amet hendrerit pellentesque, massa ex commodo lorem, vel euismod mauris justo a tortor. Nunc nec eros lacus. Curabitur quis massa non neque viverra viverra. Integer feugiat lorem non velit fermentum efficitur. Cras id turpis sed ipsum egestas hendrerit consequat vel elit. Pellentesque eros sem, bibendum tempus felis ac, molestie auctor lacus. In hac habitasse platea dictumst. Nulla facilisi. Nullam mattis dui sit amet diam luctus venenatis. Donec sed pulvinar dolor. Sed purus dui, pellentesque in dolor quis, volutpat euismod nibh.&lt;/p&gt;
+
+&lt;p&gt;Vivamus fermentum auctor neque, a posuere felis. Vivamus vel tempor turpis, vel rutrum risus. Duis est diam, porta quis lorem id, hendrerit euismod nisi. Duis vel convallis odio. Praesent at ipsum suscipit, efficitur tellus et, laoreet justo. Aliquam erat volutpat. Aliquam erat volutpat. Suspendisse eu pretium eros. Duis ac pulvinar ante, id mollis elit. Donec pretium non ex ut volutpat. Maecenas convallis diam sed elementum gravida. Aenean imperdiet eu nisi nec dignissim. Nunc massa augue, ornare nec nisi id, bibendum maximus lectus. Sed ultrices risus sit amet purus tempus malesuada. Suspendisse potenti.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum leo, egestas sed mi id, elementum imperdiet odio. Sed scelerisque consectetur rutrum. Nam neque nibh, luctus sed pharetra vitae, tincidunt eget turpis. Maecenas rhoncus turpis vitae ipsum ullamcorper placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut pellentesque eros mauris, quis luctus magna efficitur interdum. Proin enim velit, rhoncus a molestie id, vestibulum id tortor. Vestibulum maximus leo eros, eget consequat lorem posuere cursus. Sed vestibulum enim nisi, eu sollicitudin odio pretium et. Phasellus et dictum enim. Curabitur et tellus a erat tempus cursus.&lt;/p&gt;
+
+&lt;p&gt;Donec porttitor tempor felis vel ullamcorper. Duis vestibulum urna leo, nec sodales diam semper sit amet. Mauris viverra semper efficitur. Vivamus commodo pretium libero eget feugiat. Nam in mattis magna. Nullam nec tellus eleifend, venenatis tellus nec, ultrices libero. Donec efficitur iaculis orci, nec ultricies sem cursus a. Morbi a dui a risus volutpat vehicula ac vel sapien.&lt;/p&gt;
+
+&lt;p&gt;Donec euismod, urna et vulputate accumsan, neque turpis tempor ex, quis vestibulum est odio vel urna. Aliquam porta lorem erat, et gravida purus euismod a. Suspendisse in ante rutrum, iaculis justo posuere, pharetra lorem. Maecenas tincidunt feugiat nisi in maximus. Sed in convallis odio. Aenean mollis felis ac ligula commodo, sit amet posuere dui condimentum. Mauris vel metus eleifend, malesuada augue a, sodales urna. Morbi egestas ante ut risus posuere pellentesque. Duis a felis vel lacus maximus malesuada sed id ante. Ut pellentesque purus ut elit elementum suscipit.&lt;/p&gt;</content><author><name>Desired Persona</name><email>hello@desiredpersona.com</email></author><category term="comments" /><summary type="html">You can disable Disqus comments on any blog post. You simply add comments: false in that posts YAML front-matter. Enable/disable comments site-wide by adding/removing your disqus shortname in theme.yml.</summary></entry><entry><title type="html">Post with post meta above title</title><link href="/post-with-post-meta/" rel="alternate" type="text/html" title="Post with post meta above title" /><published>2016-08-29T12:04:50+01:00</published><updated>2016-08-29T12:04:50+01:00</updated><id>/post-with-post-meta</id><content type="html" xml:base="/post-with-post-meta/">&lt;p&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;post_meta: true&lt;/code&gt; in any posts YAML front-matter to include the post meta above posts. You can also set &lt;code class=&quot;highlighter-rouge&quot;&gt;post_meta:&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; in your theme.yml file to enable/disable post meta site wide.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nibh orci. Donec posuere, urna sit amet hendrerit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum leo, egestas sed mi id, elementum imperdiet odio. Sed scelerisque consectetur rutrum. Nam neque nibh, luctus sed pharetra vitae, tincidunt eget turpis. Maecenas rhoncus turpis vitae ipsum ullamcorper placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut pellentesque eros mauris, quis luctus magna efficitur interdum. Proin enim velit, rhoncus a molestie id, vestibulum id tortor. Vestibulum maximus leo eros, eget consequat lorem posuere cursus. Sed vestibulum enim nisi, eu sollicitudin odio pretium et. Phasellus et dictum enim. Curabitur et tellus a erat tempus cursus.&lt;/p&gt;
+
+&lt;p&gt;Donec porttitor tempor felis vel ullamcorper. Duis vestibulum urna leo, nec sodales diam semper sit amet. Mauris viverra semper efficitur. Vivamus commodo pretium libero eget feugiat. Nam in mattis magna. Nullam nec tellus eleifend, venenatis tellus nec, ultrices libero. Donec efficitur iaculis orci, nec ultricies sem cursus a. Morbi a dui a risus volutpat vehicula ac vel sapien. Donec volutpat lacus felis, quis congue metus hendrerit eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus purus a est cursus, porta convallis sem mollis.&lt;/p&gt;
+
+&lt;p&gt;Ut fringilla tellus id venenatis interdum. Phasellus quis massa suscipit, molestie ante non, dapibus nulla. Etiam ultricies leo in leo feugiat, eu faucibus nibh dignissim. Vivamus felis dui, iaculis non semper quis, consectetur nec nibh. Proin urna sem, lobortis vitae lacus in, faucibus sodales leo. Fusce interdum consequat sem gravida pulvinar. Praesent sollicitudin a eros sed molestie. In vel diam vulputate, scelerisque diam a, tristique mi. Sed at ligula dapibus diam pretium tincidunt eget eu nunc. Aliquam vehicula orci ac ultricies sollicitudin.&lt;/p&gt;
+
+&lt;p&gt;Fusce magna tortor, pellentesque a velit non, lacinia ullamcorper risus. Suspendisse potenti. Vivamus id libero vitae dolor sagittis laoreet. Aenean mattis dui quis velit gravida porttitor. Integer tortor urna, dignissim a posuere eu, finibus a dolor. Aliquam ut dictum ante, at scelerisque enim. Pellentesque ac urna vitae justo molestie sagittis. Aliquam id sapien dapibus, ullamcorper nunc in, maximus sapien. Etiam nec tempus turpis, sed porttitor ipsum. Sed ut dignissim ipsum. Donec imperdiet felis lobortis, tincidunt justo et, elementum massa. Nunc euismod, tortor eu maximus pretium, diam mauris suscipit augue, sed tempus nunc mauris nec elit. Morbi iaculis nec nisi euismod posuere.&lt;/p&gt;
+
+&lt;p&gt;Donec euismod, urna et vulputate accumsan, neque turpis tempor ex, quis vestibulum est odio vel urna. Aliquam porta lorem erat, et gravida purus euismod a. Suspendisse in ante rutrum, iaculis justo posuere, pharetra lorem. Maecenas tincidunt feugiat nisi in maximus. Sed in convallis odio. Aenean mollis felis ac ligula commodo, sit amet posuere dui condimentum. Mauris vel metus eleifend, malesuada augue a, sodales urna. Morbi egestas ante ut risus posuere pellentesque. Duis a felis vel lacus maximus malesuada sed id ante. Ut pellentesque purus ut elit elementum suscipit.&lt;/p&gt;</content><author><name>Desired Persona</name><email>hello@desiredpersona.com</email></author><summary type="html">Add post_meta: true in any posts YAML front-matter to include the post meta above posts. You can also set post_meta: to true or false in your theme.yml file to enable/disable post meta site wide.</summary></entry><entry><title type="html">Post with author bio after posts</title><link href="/post-with-author-bio/" rel="alternate" type="text/html" title="Post with author bio after posts" /><published>2016-08-28T12:04:50+01:00</published><updated>2016-08-28T12:04:50+01:00</updated><id>/post-with-author-bio</id><content type="html" xml:base="/post-with-author-bio/">&lt;p&gt;Add &lt;code class=&quot;highlighter-rouge&quot;&gt;author_bio: true&lt;/code&gt; in any posts YAML front-matter to include the author bio after posts. You can also set &lt;code class=&quot;highlighter-rouge&quot;&gt;author_bio:&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;true&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt; in your theme.yml file to enable/disable the author bio site-wide.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nibh orci. Donec posuere, urna sit amet hendrerit Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum leo, egestas sed mi id, elementum imperdiet odio. Sed scelerisque consectetur rutrum. Nam neque nibh, luctus sed pharetra vitae, tincidunt eget turpis. Maecenas rhoncus turpis vitae ipsum ullamcorper placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut pellentesque eros mauris, quis luctus magna efficitur interdum. Proin enim velit, rhoncus a molestie id, vestibulum id tortor. Vestibulum maximus leo eros, eget consequat lorem posuere cursus. Sed vestibulum enim nisi, eu sollicitudin odio pretium et. Phasellus et dictum enim. Curabitur et tellus a erat tempus cursus.&lt;/p&gt;
+
+&lt;p&gt;Donec porttitor tempor felis vel ullamcorper. Duis vestibulum urna leo, nec sodales diam semper sit amet. Mauris viverra semper efficitur. Vivamus commodo pretium libero eget feugiat. Nam in mattis magna. Nullam nec tellus eleifend, venenatis tellus nec, ultrices libero. Donec efficitur iaculis orci, nec ultricies sem cursus a. Morbi a dui a risus volutpat vehicula ac vel sapien. Donec volutpat lacus felis, quis congue metus hendrerit eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus purus a est cursus, porta convallis sem mollis.&lt;/p&gt;
+
+&lt;p&gt;Ut fringilla tellus id venenatis interdum. Phasellus quis massa suscipit, molestie ante non, dapibus nulla. Etiam ultricies leo in leo feugiat, eu faucibus nibh dignissim. Vivamus felis dui, iaculis non semper quis, consectetur nec nibh. Proin urna sem, lobortis vitae lacus in, faucibus sodales leo. Fusce interdum consequat sem gravida pulvinar. Praesent sollicitudin a eros sed molestie. In vel diam vulputate, scelerisque diam a, tristique mi. Sed at ligula dapibus diam pretium tincidunt eget eu nunc. Aliquam vehicula orci ac ultricies sollicitudin.&lt;/p&gt;
+
+&lt;p&gt;Fusce magna tortor, pellentesque a velit non, lacinia ullamcorper risus. Suspendisse potenti. Vivamus id libero vitae dolor sagittis laoreet. Aenean mattis dui quis velit gravida porttitor. Integer tortor urna, dignissim a posuere eu, finibus a dolor. Aliquam ut dictum ante, at scelerisque enim. Pellentesque ac urna vitae justo molestie sagittis. Aliquam id sapien dapibus, ullamcorper nunc in, maximus sapien. Etiam nec tempus turpis, sed porttitor ipsum. Sed ut dignissim ipsum. Donec imperdiet felis lobortis, tincidunt justo et, elementum massa. Nunc euismod, tortor eu maximus pretium, diam mauris suscipit augue, sed tempus nunc mauris nec elit. Morbi iaculis nec nisi euismod posuere.&lt;/p&gt;
+
+&lt;p&gt;Donec euismod, urna et vulputate accumsan, neque turpis tempor ex, quis vestibulum est odio vel urna. Aliquam porta lorem erat, et gravida purus euismod a. Suspendisse in ante rutrum, iaculis justo posuere, pharetra lorem. Maecenas tincidunt feugiat nisi in maximus. Sed in convallis odio. Aenean mollis felis ac ligula commodo, sit amet posuere dui condimentum. Mauris vel metus eleifend, malesuada augue a, sodales urna. Morbi egestas ante ut risus posuere pellentesque. Duis a felis vel lacus maximus malesuada sed id ante. Ut pellentesque purus ut elit elementum suscipit.&lt;/p&gt;</content><author><name>Desired Persona</name><email>hello@desiredpersona.com</email></author><summary type="html">Add author_bio: true in any posts YAML front-matter to include the author bio after posts. You can also set author_bio: to true or false in your theme.yml file to enable/disable the author bio site-wide.</summary></entry></feed>
