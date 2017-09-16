@@ -14,16 +14,26 @@ Subscribe to my [newsletter for more themes](https://desiredpersona.com/themes/)
 
 ## Features
 
-- Compatible with Jekyll 3.5.x and GitHub Pages.
-- Support for Jekyll's built-in Sass/SCSS preprocessor.
-- Built with [Tachyons-sass](https://github.com/tachyons-css/tachyons-sass).
-- Several layout options (one-column pages, two-column pages, posts, archive, landing pages).
-- SEO optimized using [Jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag).
-- Optional [Disqus comments](https://disqus.com/).
-- Optional analytics ([Google Analytics](https://www.google.com/analytics/) and custom).
-- Multiple author support.
+- Compatible with Jekyll 3.5.x and GitHub Pages
 - System-fonts
+- Mobile first responsive design
+- Built with [Tachyons-sass](https://github.com/tachyons-css/tachyons-sass)
+- Multiple author support
+- Jekyll excerpt support
+- Social share icons
+- Header and footer navigation
+- Post header image with optional CTA
+- Multiple layouts including page, post, landing page, archives. [View layout demos](https://github.com/desiredpersona/minimal-jekyll-theme/tree/master/docs/docs/)
+- [Disqus comments](https://disqus.com/)
+- [Google Analytics](https://www.google.com/analytics/) async tracking.
+- Facebook Pixel
 
+## Plugin Dependencies
+
+- Atom feed via [Jekyll feed](https://github.com/jekyll/jekyll-feed)
+- Sitemap via [Jekyll sitemap](https://github.com/jekyll/jekyll-sitemap)
+- SEO via [Jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
+- Archive pages for year, month, day, categories and tags auto-generated via [Jekyll archives](https://github.com/jekyll/jekyll-archives)
 
 ## Installation
 
@@ -44,8 +54,8 @@ Desired Persona
 
 - [Jekyll](http://jekyllrb.com)
 - [Tachyons](http://tachyons.io)
-- [Tachyons Background Overlays by Alec Lomas](https://github.com/lowmess/tachyons-background-overlays)
-- [SVG Icons by Matthew Skiles](https://dribbble.com/shots/1925069-Lynny-Icon-Set-Free)
+- [Tachyons background overlays by Alec Lomas](https://github.com/lowmess/tachyons-background-overlays)
+- [SVG icons by Matthew Skiles](https://dribbble.com/shots/1925069-Lynny-Icon-Set-Free)
 
 ## Contributing
 
@@ -58,6 +68,6 @@ The theme is available as open source under the terms of the [Creative Commons A
 #### TLDR:
 This theme is free to use for personal and/or commercial sites once you do not remove the attribution link from the themes footer.
 
-#### Remove Attribution Link (optional):
+#### Remove Attribution Link (Optional):
 If you would like to remove the attribution link from the themes footer for personal and/or commercial sites set `attribution: false` in your theme.yml file and [purchase a theme licence.](https://desiredpersona.com/themes/)
 
