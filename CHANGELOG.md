@@ -9,6 +9,7 @@
 - Added support for Facebook Pixel.
 - Added sibebar support for Page layout.
 - Added support for HTML lang attribute in `head.html`.
+- Improved header navigation menu font size, weight & position on mobile/tablet.
 
 ## 15-09-2017
 - Added full support for jekyll-archives plugin.
