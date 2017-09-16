@@ -4,34 +4,66 @@
 
 */
 
+// Typography
+$font-family: -apple-system, BlinkMacSystemFont,
+              'avenir next', avenir,
+              'helvetica neue', helvetica,
+              ubuntu,
+              roboto, noto,
+              'segoe ui', arial,
+              sans-serif;
+
+$code-font-family: menlo, monaco, monospace;
+$code-font-size: 0.9rem;
+$code-font-weight: 300;
+
 // Links
 $link: $black;
+$hover: $silver;
+$author-cta-link: $silver;
+$author-cta-hover: $green;
 
-// Fonts
-$font-family: -apple-system, BlinkMacSystemFont,
-               'avenir next', avenir,
-               'helvetica neue', helvetica,
-               ubuntu,
-               roboto, noto,
-               'segoe ui', arial,
-               sans-serif;
+// Buttons
+$btn-primary: $blue;
+$btn-secondary: $silver;
+$btn-success: $green;
+$btn-warning: $yellow;
+$btn-danger: $red;
+$btn-info: $light-blue;
+$btn-light: $near-white;
+$btn-dark: $black-90;
 
-$code-font-family: monospace;
+// Alerts
+$alert-primary: $light-blue;
+$alert-secondary: $light-gray;
+$alert-success: $washed-green;
+$alert-warning: $washed-yellow;
+$alert-danger: $washed-red;
+$alert-info: $lightest-blue;
+$alert-light: $near-white;
+$alert-dark: $black-90;
 
 // Codeblocks
-$code-background-color: $light-gray;
+$code-background-color: $near-white;
+$linenos-color: $moon-gray;
+$gutter-background-color: $light-gray;
 
 // Blockquotes
-$blockquote-border: $black;
+$blockquote-border-color: $black;
 $blockquote-color: $black;
-$blockquote-border-left: 3px;
+
+// Horizontal rule
+$hr-color: $light-gray;
+
+// Abbreviation
+$abbr-color: $black;
 
 // Tables
-$table-border: $black;
-$table-header: $white;
+$table-border-color: $black;
+$table-header-color: $white;
 
 // Highlighted text
 $mark-color: $lightest-blue;
 
 // Image captions
-$figcaption-color: $light-silver;
+$figcaption-color: $silver;
