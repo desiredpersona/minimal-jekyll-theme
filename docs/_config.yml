@@ -7,8 +7,8 @@ title       : Minimal Theme
 description : Your awesome site
 author      : Joe Bloggs
 email       : your-email@domain.com
-baseurl     : "" # the subpath of your site, e.g. /blog
-url         : ""
+baseurl     : "/minimal-jekyll-theme" # the subpath of your site, e.g. /blog
+url         : "https://desiredpersona.github.io"
 date_format : "%-d %b %Y"
 port        : 5000
 
