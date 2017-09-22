@@ -1,5 +1,6 @@
 ## 22-09-2017
 - Updated mark tag color in `_variables.scss`.
+- Added relative_url support to author.picture and author.url
 
 ## 16-09-2017
 - Google, Bing, Alexa and Yandex site verification now supported via jekyll-seo-tag plugin.
