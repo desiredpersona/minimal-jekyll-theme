@@ -13,9 +13,10 @@ permalink: /docs/page-layouts/
 ---
 
 ### Archive Pages
-This theme fully supports [Jekyll Archives](https://github.com/jekyll/jekyll-archives){:target="\_blank"} plugin.
+This theme fully supports [Jekyll Archives](https://github.com/jekyll/jekyll-archives){:target="_blank"} plugin.
 
-1. Update your sites `_config` file with the required settings.
+
+1. Update your sites `_config.yml` file with the required settings.
 
 ```yaml
 # Jekyll Archives Settings https://github.com/jekyll/jekyll-archives

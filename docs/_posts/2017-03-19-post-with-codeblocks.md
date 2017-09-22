@@ -92,12 +92,12 @@ $ gem install jekyll
 Input:
 
 ```
-{% raw %}This is what `code` looks like in a paragraph of text.{% endraw %}
+{% raw %}This is what `<html>` code looks like in a paragraph of text.{% endraw %}
 ```
 
 Output:
 
-This is what `code` looks like in a paragraph of text.
+This is what `<html>` code looks like in a paragraph of text.
 
 
 

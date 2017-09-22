@@ -13,6 +13,524 @@ post_meta: false
 permalink: /docs/markdown/
 ---
 
+This documentation covers everything the theme can do in markdown.
+
+<h2 id="headings">Headings</h2>
+# Heading One
+
+## Heading Two
+
+### Heading Three
+
+#### Heading Four
+
+##### Heading Five
+
+###### Heading Six
+
+```markdown
+# Heading One
+
+## Heading Two
+
+### Heading Three
+
+#### Heading Four
+
+##### Heading Five
+
+###### Heading Six
+```
+
+<h2 id="images">Images</h2>
+
+![northern lights]({{ "/assets/images/stars-small.jpg" | relative_url }})
+
+Add images to your post using the markdown.
+
+Input:
+
+```markdown
+![northern lights](/assets/images/stars-small.jpg)
+```
+
+If you are using `site.baseurl` in `_config.yml` you will need to use the following format.
+
+{% highlight markdown %}{% raw %}
+![northern lights]({{ "/assets/images/stars-small.jpg" | relative_url }})
+{% endraw %}{% endhighlight%}
+
+Output:
+```html
+<img src="/minimal-jekyll-theme/assets/images/stars-small.jpg" alt="northern lights">
+```
+
+
+<h3 id="image-caption">Image with caption</h3>
+
+{% include figure image_path="/assets/images/macbook-small.jpg" alt="Macbook on a table" caption="Macbook on my office desk" %}
+
+Add a caption to your image using the `<figure>` include.
+
+Input: 
+
+```liquid
+{% raw %}{% include figure image_path="/assets/images/macbook-small.jpg" alt="Macbook on a table" caption="Macbook on my office desk" %}{% endraw %}
+```
+
+Output:
+
+```html
+<figure>
+  <img src="/assets/images/macbook-small.jpg" alt="Macbook on a table">
+  <figcaption>Macbook on my office desk</figcaption>
+</figure>
+```
+
+<h3 id="centered-image" class="tc">Centered image with caption</h3>
+
+{% include figure image_path="/assets/images/stars-small.jpg" alt="stars" caption="Beautiful night sky" %}{: .tc}
+
+Center images.
+
+
+Input:
+
+```liquid
+{% raw %}{% include figure image_path="/assets/images/stars-small.jpg" alt="stars" caption="Beautiful night sky." %}{: .tc}{% endraw %}
+```
+
+Output:
+
+```html
+<figure class="tc">
+  <img src="/assets/images/stars-small.jpg" alt="stars">
+  <figcaption>Beautiful night sky</figcaption>
+</figure>
+```
+
+
+<h3 id="image-left">Image aligned left</h3>
+
+{% include figure image_path="/assets/images/horse.jpg" alt="photo of a horse" caption="Photo of a horse" %}{: .tl}
+
+Align an image to the left.
+
+Input:
+
+```liquid
+{% raw %}{% include figure image_path="/assets/images/horse.jpg" alt="photo of a horse" caption="Photo of a horse." %}{: .tl}{% endraw %}
+```
+
+Output:
+
+```html
+<figure class="tl">
+  <img src="/assets/images/horse.jpg" alt="photo of a horse">
+  <figcaption>Photo of a horse</figcaption>
+</figure>
+```
+
+
+<h3 id="image-right" class="tr">Image aligned right</h3>
+
+{% include figure image_path="/assets/images/horse.jpg" alt="photo of a horse" caption="Photo of a horse" %}{: .tr}
+
+Align an image to the right.
+
+Input:
+
+```liquid
+{% raw %}{% include figure image_path="/assets/images/horse.jpg" alt="photo of a horse" caption="Photo of a horse." %}{: .tr}{% endraw %}
+```
+
+Output:
+
+```html
+<figure class="tr">
+  <img src="/assets/images/horse.jpg" alt="photo of a horse">
+  <figcaption>Photo of a horse</figcaption>
+</figure>
+```
+
+
+<h3 id="image-post-width">Post width image</h3>
+
+{% include figure image_path="/assets/images/mountains-large.jpg" alt="mountain" caption="Mountain landscape" %}{: .w-100 .tc}
+
+Make an image fill the width of a post/page.
+
+Input:
+
+```liquid
+{% raw %}{% include figure image_path="/assets/images/mountains-large.jpg" alt="mountain" caption="Mountain landscape" %}{: .w-100 .tc}{% endraw %}
+```
+
+Output:
+
+```html
+<figure class="w-100 tc">
+  <img src="/assets/images/mountains-large.jpg" alt="mountain">
+  <figcaption>Mountain landscape</figcaption>
+</figure>
+```
+
+
+<h3 id="image-full-width">Full width image</h3>
+
+{% include figure image_path="/assets/images/porsche-large.jpg" alt="Porsche 911" caption="Porsche 911" %}{: .full .tc}
+
+To create a full width image add the class `{: .full .tc}` to the end of the `<figure>` include. Please use a large image file.
+
+Input:
+
+```liquid
+{% raw %}{% include figure image_path="/assets/images/porsche-large.jpg" alt="Porsche 911" caption="Porsche 911" %}{: .full .tc}{% endraw %}
+```
+
+Output:
+
+```html
+<figure class="full tc">
+  <img src="/assets/images/porsche-large.jpg" alt="Porsche 911">
+  <figcaption>Porsche 911</figcaption>
+</figure>
+```
+
+***
+
+
+<h2 id="responsive-video">Responsive video</h2>
+
+### YouTube
+
+{% include video src="https://www.youtube.com/embed/V2q7-1XppDM" %}
+
+Add a responsive Youtube video by using the video include.
+
+Input:
+
+```liquid
+{% raw %}{% include video src="https://www.youtube.com/embed/V2q7-1XppDM" %}{% endraw %}
+```
+
+Output:
+
+```html
+<div class="aspect-ratio aspect-ratio--16x9 w-100 mb4">
+  <iframe class="aspect-ratio--object" src="https://www.youtube.com/embed/V2q7-1XppDM" frameborder="0" allowfullscreen></iframe>
+</div>
+```
+
+### Vimeo
+
+{% include video src="https://player.vimeo.com/video/159104382" %}
+
+Add a responsive Vimeo video by using the video include.
+
+Input:
+
+```liquid
+{% raw %}{% include video src="https://player.vimeo.com/video/159104382" %}{% endraw %}
+```
+
+Output:
+
+```html
+<div class="aspect-ratio aspect-ratio--16x9 w-100 mb4">
+  <iframe class="aspect-ratio--object" src="https://player.vimeo.com/video/159104382" frameborder="0" allowfullscreen></iframe>
+</div>
+```
+***
+
+
+<h2 id="blockquotes">Blockquotes</h2>
+
+
+Single line blockquote.
+
+>I am not talented, I am obsessed
+
+Input:
+
+```markdown
+>I am not talented, I am obsessed
+```
+
+Output:
+
+```html
+<blockquote>
+  <p>I am not talented, I am obsessed</p>
+</blockquote>
+```
+
+<br>
+Multi line blockquote with a cite reference.
+
+>There's no talent here, this is hard work. This is an obsession. Talent does not exist, we are all equal as human beings. You could be anyone if you put in the time. You will reach the top, and that’s that. I am not talented, I am obsessed.
+>
+> --- <cite>Conor McGregor</cite>
+
+Input:
+
+```markdown
+>There's no talent here, this is hard work. This is an obsession. Talent does not exist, we are all equal as human beings. You could be anyone if you put in the time. You will reach the top, and that’s that. I am not talented, I am obsessed.
+>
+> --- <cite>Conor McGregor</cite>
+```
+
+Output:
+
+```html
+<blockquote>
+  <p>There’s no talent here, this is hard work. This is an obsession. Talent does not exist, we are all equal as human beings. You could be anyone if you put in the time. You will reach the top, and that’s that. I am not talented, I am obsessed.</p>
+
+  <p>— <cite>Conor McGregor</cite></p>
+</blockquote>
+```
+
+***
+
+<h2 id="tables">Tables</h2>
+
+Minimal table
+
+Input:
+
+```markdown
+| Employee                 | Salary |                            |
+| ------------------------ | ------ | -------------------------- |
+| [John Joe](#)            | $1     | Needs a better salary      |
+| [Jane Doe](#)            | $10K   | Blogging intern            |
+| [Joe Bloggs](#)          | $25k   | Photographer               |
+| [Jane Bloggs](#)         | $100k  | Marketer & Copywriter      |
+
+```
+
+Output:
+
+| Employee                 | Salary |                            |
+| ------------------------ | ------ | -------------------------- |
+| [John Joe](#)            | $1     | Needs a better salary      |
+| [Jane Doe](#)            | $10K   | Blogging intern            |
+| [Joe Bloggs](#)          | $25k   | Photographer               |
+| [Jane Bloggs](#)         | $100k  | Marketer & Copywriter      |
+
+
+<br>
+
+Table with a footer.
+
+Input:
+
+```markdown
+| Header1  | Header2 | Header3  |
+|:---------|:-------:|---------:|
+| cell1    | cell2   | cell3    |
+| cell4    | cell5   | cell6    |
+|-------------------------------|
+| cell1    | cell2   | cell3    |
+| cell4    | cell5   | cell6    |
+|===============================|
+| Footer1  | Footer2 | Footer3  |
+```
+
+Output:
+
+| Header1  | Header2 | Header3  |
+|:---------|:-------:|---------:|
+| cell1    | cell2   | cell3    |
+| cell4    | cell5   | cell6    |
+|-------------------------------|
+| cell1    | cell2   | cell3    |
+| cell4    | cell5   | cell6    |
+|===============================|
+| Footer1  | Footer2 | Footer3  |
+
+***
+
+<h2 id="codeblocks">Codeblocks</h2>
+
+Input:
+
+{% highlight text %}
+```ruby
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+```
+{% endhighlight %}
+
+Output:
+
+``` ruby
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+```
+
+
+### Codeblock with line numbers
+
+Input:
+
+{% highlight text %}
+{% raw %}{% highlight ruby linenos %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+{% endhighlight %}{% endraw %}
+{% endhighlight %}
+
+Output:
+
+{% highlight ruby linenos %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+{% endhighlight %}
+
+
+### Command line prompt
+
+Input:
+
+```text
+{% raw %}{% highlight shell %}
+$ gem install jekyll
+{% endhighlight %}{% endraw %}
+```
+
+Output:
+
+```shell
+$ gem install jekyll
+```
+
+### Code in a paragraph
+
+Input:
+
+```
+{% raw %}This is what `<html>` code looks like in a paragraph of text.{% endraw %}
+```
+
+Output:
+
+This is what `<html>` code looks like in a paragraph of text.
+
+***
+
+
+<h2 id="lists">List Types</h2>
+
+
+### Definition Lists
+
+Input:
+
+```markdown
+Definition
+:   An exact statement or description of the nature, scope, or meaning of something: *our definition of what constitutes poetry*.
+```
+
+Output:
+
+Definition
+:   An exact statement or description of the nature, scope, or meaning of something: *our definition of what constitutes poetry*.
+
+<br>
+
+### Unordered Lists (Nested)
+
+Input:
+
+```markdown
+* List item one
+    * List item one
+        * List item one
+        * List item two
+        * List item three
+        * List item four
+    * List item two
+    * List item three
+    * List item four
+* List item two
+* List item three
+* List item four
+```
+
+Output:
+
+* List item one
+    * List item one
+        * List item one
+        * List item two
+        * List item three
+        * List item four
+    * List item two
+    * List item three
+    * List item four
+* List item two
+* List item three
+* List item four
+
+<br>
+
+### Ordered List (Nested)
+
+Input:
+
+```markdown
+1. List item one
+    1. List item one
+        1. List item one
+        2. List item two
+        3. List item three
+        4. List item four
+    2. List item two
+    3. List item three
+    4. List item four
+2. List item two
+3. List item three
+4. List item four
+```
+
+Output:
+
+1. List item one
+    1. List item one
+        1. List item one
+        2. List item two
+        3. List item three
+        4. List item four
+    2. List item two
+    3. List item three
+    4. List item four
+2. List item two
+3. List item three
+4. List item four
+
+***
+
+
 <h2 id="buttons">Buttons</h2>
 
 A small collection predefined button styles, each serving its own semantic purpose.
@@ -63,7 +581,7 @@ An alternative collection of predefined button styles.
 ```
 
 
-<h2 id="button-sizes">Sizes</h2>
+<h2 id="button-sizes">Button sizes</h2>
 
 [Extra Large](#){: .btn .btn-outline--primary .btn--x-large} [Extra Large](#){: .btn .btn--primary .btn--x-large}
 
@@ -72,8 +590,6 @@ An alternative collection of predefined button styles.
 {% raw %}[extra large](#){: .btn .btn--primary .btn--x-large}{% endraw %}
 ```
 
-***
-
 [Large](#){: .btn .btn-outline--primary .btn--large} [Large](#){: .btn .btn--primary .btn--large}
 
 ```markdown
@@ -81,16 +597,12 @@ An alternative collection of predefined button styles.
 {% raw %}[large](#){: .btn .btn--primary .btn--large}{% endraw %}
 ```
 
-***
-
 [Medium](#){: .btn .btn-outline--primary} [Medium](#){: .btn .btn--primary}
 
 ```markdown
 {% raw %}[medium](#){: .btn .btn-outline--primary}{% endraw %}
 {% raw %}[medium](#){: .btn .btn--primary}{% endraw %}
 ```
-
-***
 
 [small](#){: .btn .btn-outline--primary .btn--small} [small](#){: .btn .btn--primary .btn--small}
 
@@ -126,6 +638,8 @@ Animate buttons with some hover effects
 [glow](#){: .btn .btn--primary .glow .o-80}
 [dim](#){: .btn .btn--primary .dim}
 ```
+
+***
 
 
 <h2 id="notices">Alerts</h2>
@@ -184,6 +698,9 @@ your text here
 {: .alert .alert--dark}
 ```
 
+***
+
+
 <h2 id="links">Links</h2>
 
 Mix and match different css classes to create different link styles.
@@ -237,3 +754,230 @@ You can mix and match colours from `_skins.scss` or create your own classes.
 [dark-pink/ hover hot pink](#){: .dark-pink .hover-hot-pink}
 [red link/ hover dark red](#){: .red .hover-dark-red}
 ```
+
+***
+
+
+<h2 id="tags">HTML Tags</h2>
+
+### Address Tag
+
+Input:
+
+```html
+<address>
+  1 Infinite Loop<br/> Cupertino, CA 95014<br/> United States
+</address>
+```
+
+Output:
+
+<address>
+  1 Infinite Loop<br/> Cupertino, CA 95014<br/> United States
+</address>
+
+***
+
+### Abbreviation Tag
+
+Input:
+
+```markdown
+The abbreviation CSS stands for "Cascading Style Sheets".
+
+*[CSS]: Cascading Style Sheets
+```
+
+Output:
+
+The abbreviation CSS stands for "Cascading Style Sheets".
+
+*[CSS]: Cascading Style Sheets
+
+***
+
+### Cite Tag
+
+Input:
+
+```html
+"Code is poetry." ---<cite>Automattic</cite>
+```
+
+Output:
+
+"Code is poetry." ---<cite>Automattic</cite>
+
+***
+
+### Strike Tag
+
+Input:
+
+```html
+This tag will let you <strike>strikeout text</strike>.
+```
+
+Output:
+
+This tag will let you <strike>strikeout text</strike>.
+
+
+***
+
+### Emphasize Tag
+
+Input:
+
+```markdown
+The emphasize tag should *italicize* text.
+```
+
+Output:
+
+The emphasize tag should *italicize* text.
+
+
+***
+
+### Insert Tag
+
+Input:
+
+```html
+This tag should denote updated text <ins>inserted</ins> in a blog post.
+```
+
+Output:
+
+This tag should denote updated text <ins>inserted</ins> in a blog post.
+
+***
+
+### Keyboard Tag
+
+Input:
+
+```html
+This scarcely known <kbd>keyboard tag</kbd> emulates represents user input and produces an inline element displayed in the browser's default monospace font.
+```
+
+Output:
+
+This scarcely known <kbd>keyboard tag</kbd> emulates represents user input and produces an inline element displayed in the browser's default monospace font.
+
+***
+
+### Footnotes
+
+Input:
+
+```markdown
+I get 10 times more traffic from [Google] [^1] than from
+[Yahoo] [^2] or [MSN] [^3].
+```
+
+Output:
+
+I get 10 times more traffic from [Google] [^1] than from
+[Yahoo] [^2] or [MSN] [^3].
+
+***
+
+### Strong Tag
+
+Input:
+
+```markdown
+This tag makes **bold text, try not to overuse it tho**.
+```
+
+Output:
+
+This tag makes **bold text, try not to overuse it tho**.
+
+***
+
+### Subscript Tag
+
+Input:
+
+```html
+C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>
+```
+
+Output:
+
+C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>
+
+***
+
+### Superscript Tag
+
+Input:
+
+```html
+E = mc<sup>2</sup>
+```
+
+Output:
+
+E = mc<sup>2</sup>
+
+***
+
+### Variable Tag
+
+Input:
+
+```html
+The variable tag allows you to denote <var>variables</var>.
+```
+
+Output:
+
+The variable tag allows you to denote <var>variables</var>.
+
+***
+
+### Horizontal Rules
+
+Input:
+
+```markdown
+***
+```
+
+Output:
+
+***
+
+### Mark Tag
+
+Input:
+
+```html
+The <mark>mark tag allows you to highlight parts </mark> of your text.
+```
+
+Output:
+
+The <mark>mark tag allows you to highlight parts </mark> of your text.
+
+***
+
+### Footnotes reference
+
+Input:
+
+```markdown
+[^1]: http://google.com/        "Google"
+[^2]: http://search.yahoo.com/  "Yahoo Search"
+[^3]: http://search.msn.com/    "MSN Search"
+```
+
+Output:
+
+[^1]: http://google.com/        "Google"
+[^2]: http://search.yahoo.com/  "Yahoo Search"
+[^3]: http://search.msn.com/    "MSN Search"

@@ -64,5 +64,3 @@ permalink: /docs/install-theme/
 ## Usage
 
 To view your new theme, run `bundle exec jekyll serve` and open your browser at [http://localhost:4000](http://localhost:4000).
-
-The `/docs/` directory contains a working demo of this theme. To view the demo, run `bundle exec jekyll serve` while in `/docs/` directory and open your browser at [http://localhost:5000](http://localhost:5000).
