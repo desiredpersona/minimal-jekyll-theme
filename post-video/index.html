@@ -22,6 +22,18 @@
 
   <!-- Analytics -->
   
+  
+<!-- Google Analytics async -->
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-106595790-1', 'auto');
+  ga('require', 'linkid');
+  ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  
 
   <!-- SEO -->
   <!-- Begin Jekyll SEO tag v2.3.0 -->
@@ -57,40 +69,20 @@
   <div class="flex-l items-center mt3 mt0-l">
     <nav class="nowrap overflow-x-auto">
     
+      
+      <a href="https://desiredpersona.github.io/minimal-jekyll-theme/docs/" class="black hover-black link f4 f5-l fw3 mr3 mt2" >Documentation</a>
     
-
+      
+      <a href="https://desiredpersona.com/themes/" class="black hover-black link f4 f5-l fw3 mr3 mt2" target="_blank">Themes</a>
     
-    <a href="/docs/" class="black hover-black link f4 f5-l fw3 mr3 mt2" >Documentation</a>
+      
+      <a href="https://desiredpersona.github.io/minimal-jekyll-theme/about/" class="black hover-black link f4 f5-l fw3 mr3 mt2" >About</a>
     
-
+      
+      <a href="https://desiredpersona.github.io/minimal-jekyll-theme/archive/" class="black hover-black link f4 f5-l fw3 mr3 mt2" >Blog</a>
     
-    
-
-    
-    <a href="https://desiredpersona.com/themes/" class="black hover-black link f4 f5-l fw3 mr3 mt2" target="_blank">Themes</a>
-    
-
-    
-    
-
-    
-    <a href="/about/" class="black hover-black link f4 f5-l fw3 mr3 mt2" >About</a>
-    
-
-    
-    
-
-    
-    <a href="/archive/" class="black hover-black link f4 f5-l fw3 mr3 mt2" >Blog</a>
-    
-
-    
-    
-
-    
-    <a href="mailto:you@example.com" class="black hover-black link f4 f5-l fw3 mr3 mt2" >Contact</a>
-    
-
+      
+      <a href="mailto:you@example.com" class="black hover-black link f4 f5-l fw3 mr3 mt2" >Contact</a>
     
     </nav>
   </div>
@@ -118,7 +110,7 @@
 <div class="flex w-100 mt4 lh-copy">
   <div class="pt1 pt0-ns">
     
-      <a href="https://desiredpersona.com/about/" target="_blank"><img src="https://desiredpersona.github.io/minimal-jekyll-theme/assets/images/author.jpg" alt="Desired Persona" class="w2 h2 w3-ns h3-ns br-100"></a>
+      <a href="https://desiredpersona.com/about/" target="_blank"><img src="/minimal-jekyll-theme/assets/images/author.jpg" alt="Desired Persona" class="w2 h2 w3-ns h3-ns br-100"></a>
     
   </div>
 
@@ -168,51 +160,21 @@
     <div class="mw7 w-100 f5 f4-ns fw3 lh-copy mb0">
     <p>Here are a few examples of how to add responsive video to a post or page.</p>
 
-<h3 id="youtube">Youtube</h3>
+<p>View <a href="/minimal-jekyll-theme/docs/markdown/#responsive-video" target="_blank">Responsive video documentation</a>.</p>
 
-<p>Add a responsive Youtube video embed using the video include like so:</p>
+<h3 id="youtube">YouTube</h3>
 
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">video</span><span class="w"> </span><span class="na">src</span><span class="o">=</span><span class="s2">"https://www.youtube.com/embed/V2q7-1XppDM"</span><span class="w"> </span><span class="p">%}</span>
-</code></pre>
-</div>
-
-<p>This will output the following:</p>
-
-<div class="aspect-ratio aspect-ratio--16x9 w-100 mb4">
+<div class=" aspect-ratio aspect-ratio--16x9 w-100 mb4">
   <iframe class="aspect-ratio--object" src="https://www.youtube.com/embed/V2q7-1XppDM" frameborder="0" allowfullscreen=""></iframe>
 </div>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"aspect-ratio aspect-ratio--16x9 w-100 mb4"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"aspect-ratio--object"</span> <span class="na">src=</span><span class="s">"https://www.youtube.com/embed/V2q7-1XppDM"</span> <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">allowfullscreen</span><span class="nt">&gt;&lt;/iframe&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-<hr />
-
 <h3 id="vimeo">Vimeo</h3>
 
-<p>Add a responsive Vimeo video embed using the video include like so:</p>
-
-<div class="language-liquid highlighter-rouge"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span><span class="nv">video</span><span class="w"> </span><span class="na">src</span><span class="o">=</span><span class="s2">"https://player.vimeo.com/video/159104382"</span><span class="w"> </span><span class="p">%}</span>
-</code></pre>
-</div>
-
-<p>This will output the following:</p>
-
-<div class="aspect-ratio aspect-ratio--16x9 w-100 mb4">
+<div class=" aspect-ratio aspect-ratio--16x9 w-100 mb4">
   <iframe class="aspect-ratio--object" src="https://player.vimeo.com/video/159104382" frameborder="0" allowfullscreen=""></iframe>
 </div>
 
-<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"aspect-ratio aspect-ratio--16x9 w-100 mb4"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"aspect-ratio--object"</span> <span class="na">src=</span><span class="s">"https://player.vimeo.com/video/159104382"</span> <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">allowfullscreen</span><span class="nt">&gt;&lt;/iframe&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
-</div>
-
-<hr />
-
-<p>Responsive videos look great with Minimal Jekyll Theme. Yep i’m a big deadmau5 fan.</p>
+<p>Responsive videos look great with Minimal Jekyll Theme. Yes i’m a big deadmau5 fan.</p>
 
     </div>
 
@@ -274,7 +236,7 @@
 <div class="flex w-100 mt2 lh-copy bt b--light-gray pv3">
   <div>
     
-    <a href="https://desiredpersona.com/about/" target="_blank"><img src="/assets/images/author.jpg" alt="Desired Persona" class="w2 h2 w3-ns h3-ns br-100"></a>
+      <a href="https://desiredpersona.com/about/" target="_blank"><img src="/minimal-jekyll-theme/assets/images/author.jpg" alt="Desired Persona" class="w2 h2 w3-ns h3-ns br-100"></a>
     
   </div>
 
@@ -334,12 +296,11 @@
     <span class="f7 fw3 silver mr3 ttc"><a href="https://desiredpersona.github.io/minimal-jekyll-theme/" class="f7 fw5 silver hover-silver link underline-hover" title="Minimal Theme">Minimal theme</a> &copy; 2017</span>
     
     
+      
+      <a href="https://desiredpersona.github.io/minimal-jekyll-theme/privacy/" class="f7 fw3 silver hover-silver link underline-hover mr3" >Privacy</a>
     
-    
-    <a href="/privacy/" class="f7 fw3 silver hover-silver link underline-hover mr3" >Privacy</a>
-    
-    
-    <a href="/terms/" class="f7 fw3 silver hover-silver link underline-hover mr3" >Terms</a>
+      
+      <a href="https://desiredpersona.github.io/minimal-jekyll-theme/terms/" class="f7 fw3 silver hover-silver link underline-hover mr3" >Terms</a>
     
     
 
