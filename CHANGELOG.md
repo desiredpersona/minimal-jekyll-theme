@@ -1,3 +1,6 @@
+## 22-09-2017
+- Updated mark tag color in `_variables.scss`.
+
 ## 16-09-2017
 - Google, Bing, Alexa and Yandex site verification now supported via jekyll-seo-tag plugin.
 - Canonical link now supported via jekyll-seo-tag plugin.
