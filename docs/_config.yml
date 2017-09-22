@@ -46,7 +46,7 @@ exclude:
 ################################
 # Analytics Settings
 ################################
-google_analytics: UA-XXXXXXXX-N
+google_analytics: UA-106595790-1
 google_analytics_async: true # https://developers.google.com/analytics/devguides/collection/analyticsjs/#alternative_async_tracking_snippet
 google_tag_manager:
 facebook_pixel_id:
