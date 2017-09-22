@@ -2,6 +2,7 @@
 - Updated mark tag color in `_variables.scss`.
 - Added relative_url support to author.picture and author.url
 - Fixed navigation baseurl issue. `append: site.baseurl` issue caused by `contains` not working with `or`. Thanks to @ashmaroli for solution.
+- figure include now removes `class=""` if no class has been set.
 
 ## 16-09-2017
 - Google, Bing, Alexa and Yandex site verification now supported via jekyll-seo-tag plugin.
