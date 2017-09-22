@@ -8,18 +8,14 @@
   <div class="flex-l items-center mt3 mt0-l">
     <nav class="nowrap overflow-x-auto">
     {% for link in site.data.theme.navigation.main %}
-    {% if link.url contains 'http' or 'mailto' %}
-    {% assign domain = '' %}
-    {% else %}
-    {% assign domain = site.url | append: site.baseurl %}
-    {% endif %}
-
-    {% if page.header.navigation == 'fancy' %}
-    <a href="{{ domain }}{{ link.url }}" class="white hover-white dim link f4 f5-l fw3 mr3 mt2" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a>
-    {% else %}
-    <a href="{{ domain }}{{ link.url }}" class="black hover-black link f4 f5-l fw3 mr3 mt2" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a>
-    {% endif %}
-
+      {% if link.url contains 'http' %}
+        {% assign domain = '' %}
+      {% elsif link.url contains 'mailto' %}
+        {% assign domain = '' %}
+      {% else %}
+        {% assign domain = site.url | append: site.baseurl %}
+      {% endif %}
+      <a href="{{ domain }}{{ link.url }}" class="{% if page.header.navigation == 'fancy' %}white hover-white dim{% else %}black hover-black{% endif %} link f4 f5-l fw3 mr3 mt2" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a>
     {% endfor %}
     </nav>
   </div>

@@ -4,13 +4,15 @@
     <h3>{{ page.sidebar.title }}</h3>
       <ul class="pl0 list ttc">
       {% for link in site.data.theme.navigation[page.sidebar.navigation] %}
-      {% if link.url contains 'http' or 'mailto' %}
-      {% assign domain = '' %}
-      {% else %}
-        {% assign domain = site.url | append: site.baseurl %}
-      {% endif %}
-      <li><a href="{{ domain }}{{ link.url }}" class="f5 fw3 lh-copy link underline-hover" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
-      {% endfor %}
+        {% if link.url contains 'http' %}
+          {% assign domain = '' %}
+        {% elsif link.url contains 'mailto' %}
+          {% assign domain = '' %}
+        {% else %}
+          {% assign domain = site.url | append: site.baseurl %}
+        {% endif %}
+        <li><a href="{{ domain }}{{ link.url }}" class="f5 fw3 lh-copy link underline-hover" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+        {% endfor %}
       </ul>
     {% endif %}
 

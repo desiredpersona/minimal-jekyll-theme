@@ -1,15 +1,16 @@
 <footer class="flex justify-start items-baseline {% if page.sidebar %}mw8{% else %}mw7{% endif %} center w-100 ph3 ph4-ns mt4 mb2 lh-copy">
   <nav class="flex flex-row flex-wrap">
     <span class="f7 fw3 silver mr3 ttc"><a href="{{ '/' | absolute_url }}" class="f7 fw5 silver hover-silver link underline-hover" title="{{ site.title }}">{{ site.title | capitalize }}</a> &copy; {{ site.time | date: '%Y' }}</span>
-    
     {% if site.data.theme.navigation.footer %}
     {% for link in site.data.theme.navigation.footer %}
-    {% if link.url contains 'http' or 'mailto' %}
-      {% assign domain = '' %}
-    {% else %}
-      {% assign domain = site.url | append: site.baseurl %}
-    {% endif %}
-    <a href="{{ domain }}{{ link.url }}" class="f7 fw3 silver hover-silver link underline-hover mr3" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title | capitalize }}</a>
+      {% if link.url contains 'http' %}
+        {% assign domain = '' %}
+      {% elsif link.url contains 'mailto' %}
+        {% assign domain = '' %}
+      {% else %}
+        {% assign domain = site.url | append: site.baseurl %}
+      {% endif %}
+      <a href="{{ domain }}{{ link.url }}" class="f7 fw3 silver hover-silver link underline-hover mr3" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title | capitalize }}</a>
     {% endfor %}
     {% endif %}
 
