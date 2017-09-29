@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name                    = "minimal-jekyll-theme"
-  spec.version                 = "0.1.3"
+  spec.version                 = "0.2.0"
   spec.authors                 = ["Desired Persona"]
   spec.summary                 = %q{A minimal Jekyll theme that converts.}
   spec.homepage                = "https://desiredpersona.com/themes/"
-  spec.license                 = "CC-BY-4.0"
+  spec.license                 = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
 

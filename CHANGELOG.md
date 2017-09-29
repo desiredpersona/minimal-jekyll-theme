@@ -1,3 +1,9 @@
+## 29-09-2017
+- MIT Licence
+
+## 25-09-2017
+- Released theme version 0.2.0
+
 ## 22-09-2017
 - Updated mark tag color in `_variables.scss`.
 - Added relative_url support to author.picture and author.url
