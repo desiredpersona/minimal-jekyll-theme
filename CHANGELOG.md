@@ -3,6 +3,7 @@
 - Added `<time>` tags to post_meta, archive page and archive layout. 
 - Shell commands now include "$" symbol.
 - Changed light button hover text to black for improved visability.
+- Improved the readability of the theme.
 
 ## 29-09-2017
 - MIT Licence

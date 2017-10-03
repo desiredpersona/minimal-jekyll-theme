@@ -2,7 +2,7 @@
 {% if page.header.navigation == 'fancy' %}
 <a class="white hover-white dim link f2 f3-l fw4 mr3" href="{{ '/' | absolute_url }}" title="Home">{{ site.title }}</a>
 {% else %}
-<a class="black hover-black link f2 f3-l fw4 mr3" href="{{ '/' | absolute_url }}" title="Home">{{ site.title }}</a>
+<a class="black-80 hover-black-80 link f2 f3-l fw4 mr3" href="{{ '/' | absolute_url }}" title="Home">{{ site.title }}</a>
 {% endif %}
 
   <div class="flex-l items-center mt3 mt0-l">
@@ -15,7 +15,7 @@
       {% else %}
         {% assign domain = site.url | append: site.baseurl %}
       {% endif %}
-      <a href="{{ domain }}{{ link.url }}" class="{% if page.header.navigation == 'fancy' %}white hover-white dim{% else %}black hover-black{% endif %} link f4 f5-l fw3 mr3 mt2" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a>
+      <a href="{{ domain }}{{ link.url }}" class="{% if page.header.navigation == 'fancy' %}white hover-white dim{% else %}black-80 hover-black-80{% endif %} link f4 f5-l fw3 mr3 mt2" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a>
     {% endfor %}
     </nav>
   </div>

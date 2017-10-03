@@ -7,7 +7,7 @@ layout: default
     <h3 class="f5 f4-ns fw3 mb0 pb2 bb b--light-gray">{{ site.data.theme.text.latest_articles | default: "Recent Posts" }}</h3>
     
     {% for post in site.posts limit: site.data.theme.text.post_limit %}
-    <a class="link black hover-silver" href="{{ post.url | relative_url }}">
+    <a class="link black-80 hover-silver" href="{{ post.url | relative_url }}">
       <article class="post pv4 bb b--light-gray">
         <div class="f5 fw3 silver lh-copy">
           {% if post.last_modified_at %}
@@ -24,7 +24,7 @@ layout: default
     </a>
     {% endfor %}
     <div class="inline-flex">
-      <a class="f5 f4-ns fw3 link black hover-silver ba br2 bw1 mv4 pv2 ph3" href="{{ site.data.theme.text.full_archive_url | relative_url }}">{{ site.data.theme.text.full_archive | default: "All Posts" }}</a>    
+      <a class="f5 f4-ns fw3 link black-80 hover-silver ba br2 bw1 mv4 pv2 ph3" href="{{ site.data.theme.text.full_archive_url | relative_url }}">{{ site.data.theme.text.full_archive | default: "All Posts" }}</a>    
     </div>
   </div>
 </section>

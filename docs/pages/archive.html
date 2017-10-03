@@ -10,7 +10,7 @@ permalink: /archive/
   <h1 class="f5 fw4 lh-title mb0 pb2 bb b--light-gray">{{ site.data.theme.text.full_archive }}</h1>
 
   {% for post in site.posts %}
-  <a class="link black hover-silver" href="{{ post.url | relative_url }}">
+  <a class="link black-80 hover-silver" href="{{ post.url | relative_url }}">
     <article class="f5 lh-copy fw3 pb4 bb b--light-gray">
       <div class="f6 fw6 lh-title ttu tracked mv4"><time>{{ post.date | date: "%b %Y" }}</time></div>
       <h3 class="f3 fw6 lh-title mb0">{{ post.title | escape }}</h3>
