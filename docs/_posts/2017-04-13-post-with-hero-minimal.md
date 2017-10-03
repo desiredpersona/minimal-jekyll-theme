@@ -19,13 +19,10 @@ To add a hero image to any blog post header, simply add the following in that po
 
 ```yaml
 header:
-    layout: hero
-    class: bg-green
+    layout: hero        # Choose `hero` or `header`.
+    navigation: fancy   # Optional: Set navigation to `fancy` to remove white navigation bar.
+    class: bg-green     # Set a background colour class if not using a background image. 
 ```
-
-- `layout:` Choose `hero` or `header`.
-- `navigation:` Set navigation to `fancy` to remove white navigation bar.
-- `class:` Set a background colour class if not using a background image.
 
 
 ***

@@ -13,7 +13,7 @@ header:
     cta:
         text: "Call-to-action"
         url: https://www.desiredpersona.com/themes/
-        class: btn btn--success
+        class: btn btn--secondary
 
 categories:
     - post formatting
@@ -33,7 +33,7 @@ header:
     cta: 
         text: "Call-to-action" # Create a call-to-action.
         url: https://www.desiredpersona.com/themes/ # Call-to-action link. URL's starting with 'http' will open in a new tab automatically.
-        class: white hover-white bg-red bb bw1 br2 b--dark-red # Overwrite the themes default CTA button classes on any page. Control the text color, button color, button shape and button border color.
+        class: btn btn--secondary # Use any theme button class.
 ```
 
-I highly recommend you take a look at all the features of this theme. I think you will be blown away.
+I highly recommend you take a look at all the features of this theme.
