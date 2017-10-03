@@ -57,32 +57,32 @@
 
 </head>
 
-<body class="black-90 ">
+<body class="black-80 ">
 
 
 
 <div class="flex-l justify-between items-center mw7 mw8-l w-100 center pt3 pb3 pl3 pr3-ns ph4-m">
 
-<a class="black hover-black link f2 f3-l fw4 mr3" href="https://desiredpersona.github.io/minimal-jekyll-theme/" title="Home">Minimal Theme</a>
+<a class="black-80 hover-black-80 link f2 f3-l fw4 mr3" href="https://desiredpersona.github.io/minimal-jekyll-theme/" title="Home">Minimal Theme</a>
 
 
   <div class="flex-l items-center mt3 mt0-l">
     <nav class="nowrap overflow-x-auto">
     
       
-      <a href="https://desiredpersona.github.io/minimal-jekyll-theme/docs/" class="black hover-black link f4 f5-l fw3 mr3 mt2" >Documentation</a>
+      <a href="https://desiredpersona.github.io/minimal-jekyll-theme/docs/" class="black-80 hover-black-80 link f4 f5-l fw3 mr3 mt2" >Documentation</a>
     
       
-      <a href="https://desiredpersona.com/themes/" class="black hover-black link f4 f5-l fw3 mr3 mt2" target="_blank">Themes</a>
+      <a href="https://desiredpersona.com/themes/" class="black-80 hover-black-80 link f4 f5-l fw3 mr3 mt2" target="_blank">Themes</a>
     
       
-      <a href="https://desiredpersona.github.io/minimal-jekyll-theme/about/" class="black hover-black link f4 f5-l fw3 mr3 mt2" >About</a>
+      <a href="https://desiredpersona.github.io/minimal-jekyll-theme/about/" class="black-80 hover-black-80 link f4 f5-l fw3 mr3 mt2" >About</a>
     
       
-      <a href="https://desiredpersona.github.io/minimal-jekyll-theme/archive/" class="black hover-black link f4 f5-l fw3 mr3 mt2" >Blog</a>
+      <a href="https://desiredpersona.github.io/minimal-jekyll-theme/archive/" class="black-80 hover-black-80 link f4 f5-l fw3 mr3 mt2" >Blog</a>
     
       
-      <a href="mailto:you@example.com" class="black hover-black link f4 f5-l fw3 mr3 mt2" >Contact</a>
+      <a href="mailto:you@example.com" class="black-80 hover-black-80 link f4 f5-l fw3 mr3 mt2" >Contact</a>
     
     </nav>
   </div>
@@ -117,7 +117,7 @@
   <div class="flex flex-column w-90 w-80-ns pl2 pl3-ns">
     <div class="flex items-center">
       
-      <a class="f5 fw4 lh-title black hover-black link mr2" href="https://desiredpersona.com/about/" target="_blank">Desired Persona</a>
+      <a class="f5 fw4 lh-title black-80 hover-black-80 link mr2" href="https://desiredpersona.com/about/" target="_blank">Desired Persona</a>
       
 
       
@@ -129,7 +129,7 @@
 
     <div class="f6 fw3 lh-copy silver">
       
-      <span>19 Mar 2017</span>
+      <span><time>19 Mar 2017</time></span>
       
 
       <span class="ttl"> &middot;
@@ -176,15 +176,14 @@ end
 
 <p>Output:</p>
 
-<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">show</span>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">show</span>
   <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
   <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
     <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="c1"># show.html.erb</span>
     <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@widget</span> <span class="p">}</span>
   <span class="k">end</span>
 <span class="k">end</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <h3 id="codeblocks-with-line-numbers">Codeblocks with line numbers</h3>
 
@@ -202,44 +201,41 @@ end
 
 <p>Output:</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
 3
 4
 5
 6
-7</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">show</span>
+7
+</pre></td><td class="code"><pre><span class="k">def</span> <span class="nf">show</span>
   <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
   <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
     <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="c1"># show.html.erb</span>
     <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@widget</span> <span class="p">}</span>
   <span class="k">end</span>
-<span class="k">end</span><span class="w">
-</span></pre></td></tr></tbody></table></code></pre></figure>
+<span class="k">end</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="command-line-prompt">Command line prompt</h3>
 
 <p>Input:</p>
 
-<div class="language-text highlighter-rouge"><pre class="highlight"><code>{% highlight shell %}
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% highlight shell %}
 $ gem install jekyll
 {% endhighlight %}
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>Output:</p>
 
-<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>gem install jekyll
-</code></pre>
-</div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gem install jekyll
+</code></pre></div></div>
 
 <h3 id="code-in-a-paragraph">Code in a paragraph</h3>
 
 <p>Input:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>This is what `<span class="nt">&lt;html&gt;</span>` code looks like in a paragraph of text.
-</code></pre>
-</div>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is what `<span class="nt">&lt;html&gt;</span>` code looks like in a paragraph of text.
+</code></pre></div></div>
 
 <p>Output:</p>
 

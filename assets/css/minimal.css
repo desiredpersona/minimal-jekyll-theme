@@ -7889,7 +7889,7 @@ html {
 a {
   color: #000; }
   a:hover {
-    color: #999; }
+    color: rgba(0, 0, 0, 0.8); }
 
 a.nested-author-cta {
   color: #999; }
@@ -7989,7 +7989,7 @@ a.nested-author-cta {
   color: #f4f4f4;
   border: 0.125rem solid #f4f4f4; }
   .btn-outline--light:hover {
-    color: #fff;
+    color: #000;
     background-color: #f4f4f4; }
 .btn-outline--dark {
   color: rgba(0, 0, 0, 0.9);
@@ -8140,7 +8140,7 @@ p > code {
     .highlight table td {
       border: 0;
       padding: 0; }
-  .highlight .lineno, .highlight .gp {
+  .highlight .lineno {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -8148,10 +8148,18 @@ p > code {
     -ms-user-select: none;
     user-select: none;
     color: #ccc; }
+  .highlight .language-shell::before {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    content: "$";
+    color: #ccc;
+    padding-right: .5rem; }
   .highlight .lineno {
     padding: 0; }
-  .highlight .gp {
-    padding-right: .25rem; }
   .highlight .c {
     color: #999;
     font-style: italic; }
