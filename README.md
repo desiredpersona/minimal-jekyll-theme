@@ -1,5 +1,7 @@
 # Minimal Jekyll Theme
 
+[![Gem Version](https://badge.fury.io/rb/minimal-jekyll-theme.svg)](https://badge.fury.io/rb/minimal-jekyll-theme)
+
 ## [Theme demo](https://desiredpersona.github.io/minimal-jekyll-theme/)
 
 Subscribe to my [newsletter for more themes](https://desiredpersona.com/themes/).
