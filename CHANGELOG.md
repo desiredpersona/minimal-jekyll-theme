@@ -1,3 +1,6 @@
+## 03-10-2017
+- Added line height to hero cta
+
 ## 29-09-2017
 - MIT Licence
 

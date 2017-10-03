@@ -19,9 +19,9 @@
       {% endif %}
 
       {% if page.header.cta.url contains "://" %}
-      <a class="f5 f4-ns {{ page.header.cta.class | join: ' ' | prepend: ' ' }}" href="{{ page.header.cta.url }}" target="_blank" rel="nofollow">{{ page.header.cta.text }}</a>
+      <a class="f5 f4-ns lh-copy {{ page.header.cta.class | join: ' ' | prepend: ' ' }}" href="{{ page.header.cta.url }}" target="_blank" rel="nofollow">{{ page.header.cta.text }}</a>
       {% elsif page.header.cta.url %}
-      <a class="f5 f4-ns {{ page.header.cta.class | join: ' ' | prepend: ' ' }}" href="{{ page.header.cta.url | absolute_url }}">{{ page.header.cta.text }}</a>
+      <a class="f5 f4-ns lh-copy {{ page.header.cta.class | join: ' ' | prepend: ' ' }}" href="{{ page.header.cta.url | absolute_url }}">{{ page.header.cta.text }}</a>
       {% endif %}
     </div>
   </div>
