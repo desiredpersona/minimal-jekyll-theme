@@ -414,15 +414,17 @@ Input:
 
 ```text
 {% raw %}{% highlight shell %}
-$ gem install jekyll
+gem install jekyll
 {% endhighlight %}{% endraw %}
 ```
 
 Output:
 
-```shell
-$ gem install jekyll
-```
+Notice the "$" command line symbol is added for you automatically.
+
+{% highlight shell %}
+gem install jekyll
+{% endhighlight %}
 
 ### Code in a paragraph
 

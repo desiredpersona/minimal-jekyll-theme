@@ -177,7 +177,7 @@ a.nested-author-cta {
     border: .125rem solid $btn-light;
 
     &:hover {
-      color: $white;
+      color: $black;
       background-color: $btn-light;
     }
   }
@@ -411,17 +411,20 @@ p > code {
     user-select: none;
   }
 
-  .lineno, .gp {
+  .lineno {
     @include unselectable();
     color: $linenos-color;
   }
 
-  .lineno {
-    padding: 0;
+  .language-shell::before {
+    @include unselectable();
+    content: "$";
+    color: $linenos-color;
+    padding-right: .5rem;
   }
 
-  .gp {
-    padding-right: .25rem;
+  .lineno {
+    padding: 0;
   }
   
   // Syntax highlighting
