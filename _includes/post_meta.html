@@ -35,9 +35,9 @@
 
     <div class="f6 fw3 lh-copy silver">
       {% if page.last_modified_at %}
-      <span>{{ site.data.theme.text.updated }} {{ page.last_modified_at | date: site.date_format }}</span>
+      <span>{{ site.data.theme.text.updated }} <time>{{ page.last_modified_at | date: site.date_format }}</time></span>
       {% else %}
-      <span>{{ page.date | date: site.date_format }}</span>
+      <span><time>{{ page.date | date: site.date_format }}</time></span>
       {% endif %}
 
       <span class="ttl"> &middot;

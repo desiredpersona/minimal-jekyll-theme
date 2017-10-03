@@ -1,5 +1,6 @@
 ## 03-10-2017
-- Added line height to hero cta
+- Added line height to hero cta.
+- Added `<time>` tags to post_meta, archive page and archive layout. 
 
 ## 29-09-2017
 - MIT Licence

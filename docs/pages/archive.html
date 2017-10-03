@@ -12,7 +12,7 @@ permalink: /archive/
   {% for post in site.posts %}
   <a class="link black hover-silver" href="{{ post.url | relative_url }}">
     <article class="f5 lh-copy fw3 pb4 bb b--light-gray">
-      <div class="f6 fw6 lh-title ttu tracked mv4">{{ post.date | date: "%b %Y" }}</div>
+      <div class="f6 fw6 lh-title ttu tracked mv4"><time>{{ post.date | date: "%b %Y" }}</time></div>
       <h3 class="f3 fw6 lh-title mb0">{{ post.title | escape }}</h3>
       <p class="f5 fw3 lh-copy mv2">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 
