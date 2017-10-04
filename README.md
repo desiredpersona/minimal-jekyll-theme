@@ -1,6 +1,7 @@
 # Minimal Jekyll Theme
 
 [![Gem Version](https://badge.fury.io/rb/minimal-jekyll-theme.svg)](https://badge.fury.io/rb/minimal-jekyll-theme)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/desiredpersona/minimal-jekyll-theme/master/LICENSE.txt)
 
 ## [Theme demo](https://desiredpersona.github.io/minimal-jekyll-theme/)
 
@@ -81,5 +82,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 This theme is free to use for personal and/or commercial sites once you do not remove the attribution link from the themes footer.
 
 #### Remove Attribution Link (Optional):
-If you would like to remove the attribution link from the themes footer for personal and/or commercial sites set `attribution: false` in your theme.yml file and [purchase a theme licence.](https://desiredpersona.com/themes/)
+If you would like to remove the attribution link from the themes footer for personal and/or commercial sites set `attribution: false` in your theme.yml file and [purchase a theme licence.](https://desiredpersona.com/themes/).
 

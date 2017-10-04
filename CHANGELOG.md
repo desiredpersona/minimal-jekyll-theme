@@ -1,6 +1,7 @@
 ## 04-10-2017
 - Released theme version 0.2.1
-- Updated gemspec
+- Updated gemspec.
+- Added MIT license badge.
 
 ## 03-10-2017
 - Added line height to hero cta.
