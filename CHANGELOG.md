@@ -1,12 +1,16 @@
+## 04-10-2017
+- Released theme version 0.2.1
+- Updated gemspec
+
 ## 03-10-2017
 - Added line height to hero cta.
 - Added `<time>` tags to post_meta, archive page and archive layout. 
 - Shell commands now include "$" symbol.
-- Changed light button hover text to black for improved visability.
+- Changed light button hover text to black for improved visibility.
 - Improved the readability of the theme.
 
 ## 29-09-2017
-- MIT Licence
+- MIT License
 
 ## 25-09-2017
 - Released theme version 0.2.0

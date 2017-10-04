@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name                    = "minimal-jekyll-theme"
-  spec.version                 = "0.2.0"
+  spec.version                 = "0.2.1"
   spec.authors                 = ["Desired Persona"]
   spec.summary                 = %q{A minimal Jekyll theme that converts.}
   spec.homepage                = "https://desiredpersona.com/themes/"
