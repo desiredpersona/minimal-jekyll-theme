@@ -1,7 +1,9 @@
+## 11-10-2017
+- Moved horizontal ellipsis `&hellip;` from theme.yml to home.html layout.
+
 ## 07-10-2017
 - Created a section for media queries in _theme.scss
 - Decreased footnotes fontsize and added color variable.
-
 
 ## 04-10-2017
 - Released theme version 0.2.1

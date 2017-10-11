@@ -101,7 +101,7 @@ text:
 
     # Home Layout Settings
     post_limit        : 3
-    read_more         : Read more&hellip;
+    read_more         : Read more
     latest_articles   : Recent Posts
     full_archive      : All Posts
     full_archive_url  : /archive/
