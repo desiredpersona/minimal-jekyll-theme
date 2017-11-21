@@ -3,19 +3,11 @@
 [![Gem Version](https://badge.fury.io/rb/minimal-jekyll-theme.svg)](https://badge.fury.io/rb/minimal-jekyll-theme)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/desiredpersona/minimal-jekyll-theme/master/LICENSE.txt)
 
-## [Theme demo](https://desiredpersona.github.io/minimal-jekyll-theme/)
-
+View [theme demo](https://desiredpersona.github.io/minimal-jekyll-theme/).
+Buy me a [coffee](https://paypal.me/desiredpersona/5/).
 Subscribe to my [newsletter for more themes](https://desiredpersona.com/themes/).
 
-## Homepage Layout
 ![Minimal Jekyll Theme - homepage layout](/screenshot.png)
-
-## Post Layout With Hero Image And Call-To-Action
-![Minimal Jekyll Theme - Post layout with hero image and cta](/screenshot-post-hero.png)
-
-## Post Layout
-![Minimal Jekyll Theme - Post layout](/screenshot-post-layout.png)
-
 
 ## Features
 
@@ -68,19 +60,7 @@ Bug reports and pull requests are welcome on GitHub at [https://github.com/desir
 
 ## License
 
-The MIT License (MIT)
+[MIT](https://github.com/desiredpersona/minimal-jekyll-theme/blob/master/LICENSE.md)
 
-Copyright (c) 2017 Desired Persona
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-#### TLDR:
-This theme is free to use for personal and/or commercial sites once you do not remove the attribution link from the themes footer.
-
-#### Remove Attribution Link (Optional):
-If you would like to remove the attribution link from the themes footer for personal and/or commercial sites set `attribution: false` in your theme.yml file and [purchase a theme licence.](https://desiredpersona.com/themes/).
 
