@@ -4,7 +4,9 @@
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/desiredpersona/minimal-jekyll-theme/master/LICENSE.txt)
 
 View [theme demo](https://desiredpersona.github.io/minimal-jekyll-theme/).
+
 Buy me a [coffee](https://paypal.me/desiredpersona/5/).
+
 Subscribe to my [newsletter for more themes](https://desiredpersona.com/themes/).
 
 ![Minimal Jekyll Theme - homepage layout](/screenshot.png)
