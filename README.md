@@ -53,9 +53,9 @@ Desired Persona
 
 - [Jekyll](http://jekyllrb.com)
 - [Tachyons](http://tachyons.io)
-- [Tachyons background overlays by Alec Lomas](https://github.com/lowmess/tachyons-background-overlays)
-- [SVG icons by Matthew Skiles](https://dribbble.com/shots/1925069-Lynny-Icon-Set-Free)
-- BrowserStack Live, Web-Based Browser Testing.
+- [Tachyons background overlays](https://github.com/lowmess/tachyons-background-overlays) by Alec Lomas.
+- [SVG icons](https://dribbble.com/shots/1925069-Lynny-Icon-Set-Free) by Matthew Skiles.
+- [BrowserStack](https://www.browserstack.com) Live, Web-Based Browser Testing.
 
 [![browserstack.com](/browserstack-logo.png)](https://www.browserstack.com)
 
