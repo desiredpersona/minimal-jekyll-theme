@@ -56,7 +56,8 @@ Desired Persona
 - [Tachyons background overlays by Alec Lomas](https://github.com/lowmess/tachyons-background-overlays)
 - [SVG icons by Matthew Skiles](https://dribbble.com/shots/1925069-Lynny-Icon-Set-Free)
 - BrowserStack Live, Web-Based Browser Testing.
-[![BrowserStack](/browserstack-logo.png)](https://www.browserstack.com)
+
+[![browserstack.com](/browserstack-logo.png)](https://www.browserstack.com)
 
 ## Contributing
 
