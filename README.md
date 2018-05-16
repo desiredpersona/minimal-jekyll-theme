@@ -55,10 +55,12 @@ Desired Persona
 - [Tachyons](http://tachyons.io)
 - [Tachyons background overlays by Alec Lomas](https://github.com/lowmess/tachyons-background-overlays)
 - [SVG icons by Matthew Skiles](https://dribbble.com/shots/1925069-Lynny-Icon-Set-Free)
+- BrowserStack Live, Web-Based Browser Testing.
+[![BrowserStack](/browserstack-logo.png)](https://www.browserstack.com)
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at [https://github.com/desiredpersona/minimal-jekyll-theme](https://github.com/desiredpersona/minimal-jekyll-theme).
+Bug reports and pull requests are welcome on GitHub at [https://github.com/desiredpersona/minimal-jekyll-theme](https://github.com/desiredpersona/minimal-jekyll-theme). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
