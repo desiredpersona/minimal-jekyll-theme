@@ -3,6 +3,12 @@
 {% include head.html %}
 <body class="black-80 {% if page.class or layout.class %}{{ page.class | default: layout.class | join: ' ' | prepend: ' ' }}{% endif %}">
 
+{% comment %} Google Tag Manager (noscript) {% endcomment %}
+{% if site.google_tag_manager and jekyll.environment == 'production' %}
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+{% endif %}
+
 {% if page.header != false %}
 {% include header.html %}
 {% endif%}
