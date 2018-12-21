@@ -40,8 +40,8 @@ layout: default
     {% include cta/{{page.cta}}.html %}
     {% endif %}
 
-    {% if site.data.theme.disqus.shortname %}
-    {% include disqus_comments.html %}
+    {% if site.disqus.shortname %}
+    {% include post_comments.html %}
     {% endif %}
     </div>
 
