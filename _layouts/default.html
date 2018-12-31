@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang }}">
-{% include head.html %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% comment %} Meta Robots Tag {% endcomment %}
+  {% if page.meta_robots %}<meta name="robots" content="{{ page.meta_robots }}">{% else %}<meta name="robots" content="all">{% endif %}
+
+  {% comment %} Site Author  {% endcomment %}
+  <meta name="author" content="{{ site.author }}">
+
+  {% comment %} Atom Feed {% endcomment %}
+  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+  
+  {% comment %} Stylesheet {% endcomment %}
+  <link rel="stylesheet" href="{{ '/assets/css/minimal.css' | relative_url }}">
+
+  {% comment %} Favicon {% endcomment %}
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  {% comment %} Google Tag Manager {% endcomment %}
+  {% if site.google_tag_manager and jekyll.environment == 'production' %}
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{ site.google_tag_manager }}');</script>
+  {% endif %}
+
+  {% comment %} Jekyll SEO Tag {% endcomment %}
+  {% seo %}
+</head>
 <body class="black-80 {% if page.class or layout.class %}{{ page.class | default: layout.class | join: ' ' | prepend: ' ' }}{% endif %}">
 
 {% comment %} Google Tag Manager (noscript) {% endcomment %}
