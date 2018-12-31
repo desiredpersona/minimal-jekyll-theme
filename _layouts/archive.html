@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang }}">
-{% include head.html %}
-<body class="black-90 {% if page.class or layout.class %}{{ page.class | default: layout.class | join: ' ' | prepend: ' ' }}{% endif %}">
+---
+layout: default
+---
 
 <div class="flex flex-column items-center">
   <div class="mw7 w-100 ph3 ph4-ns">
@@ -28,7 +27,3 @@
 
   </div>
 </div>
-
-{% include footer.html %}
-</body>
-</html>
