@@ -5,7 +5,6 @@ subtitle: Convert more of your website visitors
 paragraph: into subscribers, customers and clients. 
 header:
     layout: hero
-    navigation: fancy
     image: "/assets/images/macbook.jpg"
     class: bg-darken-50 bg-darken-25-l
     cta:

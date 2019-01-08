@@ -24,6 +24,31 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+# Navigation Menus
+header_navigation:
+  - title: Documentation
+    url: /docs/
+
+  - title: Themes
+    url: https://desiredpersona.com/themes/
+
+  - title: About
+    url: /about/
+
+  - title: Blog
+    url: /archive/
+
+  - title: Contact
+    url: mailto:you@example.com
+
+footer_navigation:
+  - title: privacy
+    url: /privacy/
+
+  - title: terms
+    url: /terms/
+
+# Markdown Settings
 markdown: kramdown
 kramdown:
     input: GFM

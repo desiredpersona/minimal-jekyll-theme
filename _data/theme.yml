@@ -1,33 +1,4 @@
 ################################
-# Navigation Links
-################################
-navigation:
-  main:
-  - title: Documentation
-    url: /docs/
-
-  - title: Themes
-    url: https://desiredpersona.com/themes/
-
-  - title: About
-    url: /about/
-
-  - title: Blog
-    url: /archive/
-
-  - title: Contact
-    url: mailto:you@example.com
-
-
-  footer:
-  - title: privacy
-    url: /privacy/
-
-  - title: terms
-    url: /terms/
-
-
-################################
 # Attribution Link (Optional)
 ################################
 # Setting this to false will remove the attribution link from the themes footer.
