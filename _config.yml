@@ -48,6 +48,30 @@ footer_navigation:
   - title: terms
     url: /terms/
 
+# UI Default Text
+text:
+  updated           : Updated          # Post updated text
+  less_than         : Less than        # Post read time less than 1 minute
+  minute_read       : min read         # Post read time
+  words_per_minute  : 200              # Reading speed
+  undefined_wpm     : Undefined parameter text.words_per_minute in your config.yml file
+  caption           : Image	           # Header image caption
+  post_heading      : Latest Posts     # Latest posts heading
+  post_limit        : 3                # Show this many latest post on your homepage
+  read_more         : Read more        # Read more link
+  blog_title        : All Posts        # Archives link title
+  blog_url          : /blog/           # Archive link url for home.html and 404 page layouts
+  copyright         : 2015	           # The from year in the copyright. The current year is updated automatically.
+
+# UI Default Settings
+author_bio          : true             # Show author bio
+post_meta           : true             # Show post meta
+share_icons         : true             # Show post social sharing icons
+category_tag_list   : true             # Show post categories & tags
+twitter_icon        : true             # Show Twitter share button
+facebook_icon       : true             # Show Facebook share button
+google_plus_icon    : true             # Show Google+ share button
+
 # Markdown Settings
 markdown: kramdown
 kramdown:
@@ -73,6 +97,9 @@ disqus:
   # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
   shortname: desired-persona-dev
 
+# Theme Attribution Link (Optional)
+# Setting this to false will remove the attribution link from the themes footer.
+attribution: true 
 
 ################################
 # Analytics Settings

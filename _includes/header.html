@@ -34,5 +34,5 @@
 
 {% comment %} Hero Image Caption {% endcomment %}
 {% if page.header.caption %}
-  <span class="flex flex-row justify-center f6 fw3 silver pv2 ph3">{{ site.data.theme.text.caption }}&colon;&nbsp; {{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+  <span class="flex flex-row justify-center f6 fw3 silver pv2 ph3">{{ site.text.caption }}&colon;&nbsp; {{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
 {% endif %}

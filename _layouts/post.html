@@ -6,43 +6,39 @@ layout: default
   <article class="mw7 w-100 ph3 ph4-ns">
 
     <header class="{% if page.post_meta == false %}mt5{% endif %}">
-    {% if site.data.theme.post_meta %}
-    {% include post_meta.html %}
-    {% endif %}
+      {% if site.post_meta %}
+        {% include post_meta.html %}
+      {% endif %}
 
-    {% unless page.header.layout == 'hero' %}
-    <h1 class="f2 fw6 lh-title mb1">{{ page.title }}</h1>
-    {% if page.subtitle %}
-    <h2 class="f3 fw4 lh-title silver mv2">{{ page.subtitle }}</h2>
-    {% endif %}
-    {% endunless %}
+      {% unless page.header.layout == 'hero' %}
+        <h1 class="f2 fw6 lh-title mb1">{{ page.title }}</h1>
+        {% if page.subtitle %}
+          <h2 class="f3 fw4 lh-title silver mv2">{{ page.subtitle }}</h2>
+        {% endif %}
+      {% endunless %}
     </header>
 
 
     <div class="mw7 w-100 f5 f4-ns fw3 lh-copy mb0">
-    {{ content }}
+      {{ content }}
     </div>
 
     <div class="mw7 w-100 lh-copy">
-    {% if site.data.theme.category_tag_list %}
-    {% include category_tag_list.html %}
-    {% endif %}
+      {% if site.category_tag_list %}
+        {% include category_tag_list.html %}
+      {% endif %}
 
-    {% if site.data.theme.share_icons %}
-    {% include share_icons.html %}
-    {% endif %}
+      {% if site.share_icons %}
+        {% include share_icons.html %}
+      {% endif %}
 
-    {% if site.data.theme.author_bio %}
-    {% include author_bio.html %}
-    {% endif %}
+      {% if site.author_bio %}
+        {% include author_bio.html %}
+      {% endif %}
 
-    {% if page.cta %}
-    {% include cta/{{page.cta}}.html %}
-    {% endif %}
-
-    {% if site.disqus.shortname %}
-    {% include post_comments.html %}
-    {% endif %}
+      {% if site.disqus.shortname %}
+        {% include post_comments.html %}
+      {% endif %}
     </div>
 
   </article>

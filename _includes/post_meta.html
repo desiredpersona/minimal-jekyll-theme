@@ -1,49 +1,49 @@
 {% if page.post_meta != false %}
 
-{% if page.author and site.data.authors[page.author] %}
-  {% assign author = site.data.authors[page.author] %}
-{% else %}
-  {% assign author = site.author %}
-{% endif %}
+  {% if page.author and site.data.authors[page.author] %}
+    {% assign author = site.data.authors[page.author] %}
+  {% else %}
+    {% assign author = site.author %}
+  {% endif %}
 
 
-<div class="flex w-100 mt4 lh-copy">
-  <div class="pt1 pt0-ns">
-    {% if author.url contains "://" %}
-      <a href="{{ author.url }}" target="_blank"><img src="{{ author.picture | relative_url }}" alt="{{ author.name }}" class="w2 h2 w3-ns h3-ns br-100"></a>
-    {% else %}
-      <a href="{{ author.url | relative_url }}"><img src="{{ author.picture | relative_url }}" alt="{{ author.name }}" class="w2 h2 w3-ns h3-ns br-100"></a>
-    {% endif %}
-  </div>
-
-  <div class="flex flex-column w-90 w-80-ns pl2 pl3-ns">
-    <div class="flex items-center">
+  <div class="flex w-100 mt4 lh-copy">
+    <div class="pt1 pt0-ns">
       {% if author.url contains "://" %}
-      <a class="f5 fw4 lh-title black-80 hover-black-80 link mr2" href="{{ author.url }}" target="_blank">{{ author.name }}</a>
+        <a href="{{ author.url }}" target="_blank"><img src="{{ author.picture | relative_url }}" alt="{{ author.name }}" class="w2 h2 w3-ns h3-ns br-100"></a>
       {% else %}
-      <a class="f5 fw4 lh-title black-80 hover-black-80 link mr2" href="{{ author.url | relative_url }}">{{ author.name }}</a>
-      {% endif %}
-
-      {% if author.cta_url contains "://" %}
-      <a class="f6 fw4 lh-copy link nested-author-cta ba br-pill ph2" href="{{ author.cta_url }}" target="_blank">{{ author.cta | default: "Follow" }}</a>
-      {% else %}
-      <a class="f6 fw4 lh-copy link nested-author-cta ba br-pill ph2" href="{{ author.cta_url | relative_url }}">{{ author.cta | default: "Follow" }}</a>
+        <a href="{{ author.url | relative_url }}"><img src="{{ author.picture | relative_url }}" alt="{{ author.name }}" class="w2 h2 w3-ns h3-ns br-100"></a>
       {% endif %}
     </div>
 
-    <div class="f6 fw3 lh-copy silver">{{ author.post_meta_bio }}</div>
+    <div class="flex flex-column w-90 w-80-ns pl2 pl3-ns">
+      <div class="flex items-center">
+        {% if author.url contains "://" %}
+        <a class="f5 fw4 lh-title black-80 hover-black-80 link mr2" href="{{ author.url }}" target="_blank">{{ author.name }}</a>
+        {% else %}
+        <a class="f5 fw4 lh-title black-80 hover-black-80 link mr2" href="{{ author.url | relative_url }}">{{ author.name }}</a>
+        {% endif %}
 
-    <div class="f6 fw3 lh-copy silver">
-      {% if page.last_modified_at %}
-      <span>{{ site.data.theme.text.updated }} <time>{{ page.last_modified_at | date: site.date_format }}</time></span>
-      {% else %}
-      <span><time>{{ page.date | date: site.date_format }}</time></span>
-      {% endif %}
+        {% if author.cta_url contains "://" %}
+        <a class="f6 fw4 lh-copy link nested-author-cta ba br-pill ph2" href="{{ author.cta_url }}" target="_blank">{{ author.cta | default: "Follow" }}</a>
+        {% else %}
+        <a class="f6 fw4 lh-copy link nested-author-cta ba br-pill ph2" href="{{ author.cta_url | relative_url }}">{{ author.cta | default: "Follow" }}</a>
+        {% endif %}
+      </div>
 
-      <span class="ttl"> &middot;
-        {% include read_time.html %}
-      </span>
+      <div class="f6 fw3 lh-copy silver">{{ author.post_meta_bio }}</div>
+
+      <div class="f6 fw3 lh-copy silver">
+        {% if page.last_modified_at %}
+        <span>{{ site.text.updated }} <time>{{ page.last_modified_at | date: site.date_format }}</time></span>
+        {% else %}
+        <span><time>{{ page.date | date: site.date_format }}</time></span>
+        {% endif %}
+
+        <span class="ttl"> &middot;
+          {% include read_time.html %}
+        </span>
+      </div>
     </div>
   </div>
-</div>
 {% endif %}
