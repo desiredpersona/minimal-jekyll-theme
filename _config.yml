@@ -58,6 +58,7 @@ text:
   caption           : Image	           # Header image caption
   post_heading      : Latest Posts     # Latest posts heading
   post_limit        : 3                # Show this many latest post on your homepage
+  blog_limit	      : 10               # Show this many post on the blog
   read_more         : Read more        # Read more link
   blog_title        : All Posts        # Archives link title
   blog_url          : /blog/           # Archive link url for home.html and 404 page layouts
