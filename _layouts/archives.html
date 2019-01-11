@@ -1,0 +1,22 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<section class="mt5">
+  {% for post in site.posts %}
+    <article class="mt4">
+      <a class="link" href="{{ post.url | relative_url }}">
+        <h3 class="f4 fw6 lh-title underline-hover mb0">{{ post.title | escape }}</h3>
+        <div class="f6 fw3 lh-copy silver">
+          {% if post.last_modified_at %}
+            <span>{{ site.text.updated }} <time>{{ post.last_modified_at | date: site.date_format }}</time></span>
+          {% else %}
+            <time>{{ post.date | date: site.date_format }}</time>
+          {% endif %}
+        </div>
+      </a>
+    </article>
+  {% endfor %}
+</section>
