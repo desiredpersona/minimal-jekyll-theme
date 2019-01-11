@@ -1,15 +1,15 @@
 ---
-layout: default
+layout: page
 ---
 
-<section class="flex justify-center mt3">
-  <div class="mw7 w-100 pa3 pa4-ns">
-    <h3 class="f5 f4-ns fw3 mb0 pb2 bb b--light-gray">{{ site.text.post_heading | default: "Latest Posts" }}</h3>
+<section>
+
+  <h3 class="f4 fw4 mt5">{{ site.text.post_heading | default: "Latest Posts" }}</h3>
     
-    {% for post in site.posts limit: site.text.post_limit %}
-    <a class="link black-80 hover-silver" href="{{ post.url | relative_url }}">
-      <article class="post pv4 bb b--light-gray">
-        <div class="f5 fw3 silver lh-copy">
+  {% for post in site.posts limit: site.text.post_limit %}
+    <article class="post mt5">
+      <a class="link" href="{{ post.url | relative_url }}">
+        <div class="f5 fw3 lh-copy silver">
           {% if post.last_modified_at %}
           <span>{{ site.text.updated }} <time>{{ post.last_modified_at | date: site.date_format }}</time></span>
           {% else %}
@@ -17,14 +17,14 @@ layout: default
           {% endif %}
           <span class="ttl">&middot; {% include read_time.html %}</span>
         </div>
-        <h3 class="f3 f2-ns fw6 lh-title mt0 mb0">{{ post.title | escape }}</h3>
+        <h3 class="f3 f2-ns fw6 lh-title underline-hover mb0 mv0">{{ post.title | escape }}</h3>
         <p class="f5 f4-ns fw3 lh-copy mv2">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-        <div class="f6 fw3 silver lh-copy mb0">{{ site.text.read_more | capitalize }}&hellip;</div>
-      </article>
-    </a>
-    {% endfor %}
-    <div class="inline-flex">
-      <a class="f5 f4-ns fw3 link black-80 hover-silver ba br2 bw1 mv4 pv2 ph3" href="{{ site.text.blog_url | relative_url }}">{{ site.text.blog_title | default: "All Posts" }}</a>    
-    </div>
+        <div class="f6 fw3 silver lh-copy">{{ site.text.read_more | capitalize }}&hellip;</div>
+      </a>
+    </article>
+  {% endfor %}
+
+  <div class="mv5">
+    <a class="f5 f4-ns fw4 black-80 link ba br2 bw1 mv4 pv2 ph3" href="{{ site.text.blog_url | relative_url }}">{{ site.text.blog_title | default: "All Posts" }}</a>    
   </div>
 </section>
