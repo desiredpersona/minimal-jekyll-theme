@@ -1,11 +1,12 @@
-# Minimal Jekyll Theme
+# Minimal Jekyll Theme (Beta v0.2.1)
 
 [![Gem Version](https://badge.fury.io/rb/minimal-jekyll-theme.svg)](https://badge.fury.io/rb/minimal-jekyll-theme)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/desiredpersona/minimal-jekyll-theme/master/LICENSE.txt)
 
-[Theme demo](https://desiredpersona.github.io/minimal-jekyll-theme/)
+## This theme is currently in beta and not recommended for production use with Jekyll v4. For progress updates follow the [v1.0.0 Project](https://github.com/desiredpersona/minimal-jekyll-theme/projects).
 
 ![Minimal Jekyll Theme - homepage layout](/screenshot.png)
+[Theme demo (Beta v0.2.0)](https://desiredpersona.github.io/minimal-jekyll-theme/)
 
 ## Features
 
