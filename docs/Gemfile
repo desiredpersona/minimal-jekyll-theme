@@ -16,3 +16,6 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'jekyll-archives'
 end
+
+# This Ruby 3.0.0 dependancy is needed until Jekyll V4.3.0 release
+gem "webrick", "~> 1.7"
