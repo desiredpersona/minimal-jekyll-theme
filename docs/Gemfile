@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Jekyll
-gem "jekyll", "~> 3.6.0"
+gem "jekyll", "~> 4.2.1"
 
 # Theme
 gem "minimal-jekyll-theme"
