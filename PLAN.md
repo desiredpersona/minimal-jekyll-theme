@@ -140,52 +140,104 @@ When `page.author` is blank, both `post_meta.html` and `author_bio.html` fall ba
 
 ---
 
-### B4. CSS design tokens
-Nostalgia defines all design values as CSS custom properties on `:root`, making it trivial
-for users to retheme without touching SCSS. Add a new `_sass/_tokens.scss` partial that
-exposes key theme values, and import it first so `_theme.scss` can reference them.
+### B4. Replace Sass pipeline with plain CSS
+Nostalgia uses plain CSS with CSS custom properties — no preprocessor. Remove the entire
+Sass pipeline and replace it with a single `theme.css` file, keeping Tachyons as a
+pre-built vendor file. Dark mode (C3) is included here since it lives in the same file.
 
-```scss
-// _sass/_tokens.scss
+**What is deleted:**
+- All 67 files in `_sass/` (Tachyons SCSS modules + `_variables.scss` + `_theme.scss` +
+  `_tachyons.scss`)
+- `assets/css/minimal.scss` (the Sass entry point with front matter)
+- Remove the `sass:` config block from `_config.yml`
+
+**What is added:**
+
+`assets/css/tachyons.min.css` — download the pre-built minified Tachyons 4 CSS and commit
+it directly. This replaces the 64-file SCSS module tree with a single vendor file and
+removes the Sass compile step entirely.
+
+`assets/css/theme.css` — convert `_variables.scss` + `_theme.scss` to plain CSS:
+- Replace every `$sass-variable` with a CSS custom property on `:root`
+- Flatten all SCSS nesting (`a { &:hover {} }` → `a:hover {}`)
+- Expand the single `@extend .pre` into explicit properties
+- Add a `@media (prefers-color-scheme: dark)` block for dark mode (merges C3):
+
+```css
 :root {
-  --font-family:      #{$font-family};
-  --code-font-family: #{$code-font-family};
+  --font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
+                 'helvetica neue', helvetica, ubuntu, roboto, noto,
+                 'segoe ui', arial, sans-serif;
+  --code-font-family: menlo, monaco, monospace;
   --color-text:       #333;
   --color-text-muted: #777;
-  --color-link:       #{$link};
-  --color-link-hover: #{$hover};
+  --color-link:       #000;
+  --color-link-hover: rgba(0,0,0,0.8);
   --color-bg:         #fff;
   --color-bg-subtle:  #f4f4f4;
-  --color-border:     #e0e0e0;
-  --color-code-bg:    #{$code-background-color};
-  --content-width:    48rem;
+  --color-border:     #000;
+  --color-code-bg:    #f4f4f4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text:      #d4d4d4;
+    --color-text-muted:#999;
+    --color-link:      #74b9ff;
+    --color-link-hover:#a29bfe;
+    --color-bg:        #1a1a1a;
+    --color-bg-subtle: #2d2d2d;
+    --color-border:    #555;
+    --color-code-bg:   #2d2d2d;
+  }
 }
 ```
 
-**New file:** `_sass/_tokens.scss`
-**Updated file:** `assets/css/minimal.scss` (add `@import "tokens"` before `@import "theme"`)
+**Update `default.html`** — replace the single `minimal.css` link with two links:
+```html
+<link rel="stylesheet" href="{{ '/assets/css/tachyons.min.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
+```
+
+**Deleted:** `_sass/` (entire directory, 67 files), `assets/css/minimal.scss`
+**New files:** `assets/css/tachyons.min.css`, `assets/css/theme.css`
+**Updated files:** `_layouts/default.html`, `_config.yml`
 
 ---
 
-### B5. Print stylesheet
-Nostalgia ships a print stylesheet that hides navigation and resets colours for print.
+### B5. CSS minification for production
+Without the Sass pipeline, Jekyll no longer compresses the theme CSS. Add `jekyll-minifier`
+to handle CSS (and HTML — see B6) minification at build time.
 
-**New file `_sass/_print.scss`:**
-```scss
-@media print {
-  header, footer, nav,
-  .share-icons, .post-comments { display: none !important; }
-  body  { font-size: 12pt; color: #000; background: #fff; }
-  a     { color: #000; text-decoration: underline; }
-  a[href]::after { content: " (" attr(href) ")"; font-size: 0.8em; }
-  pre, blockquote { page-break-inside: avoid; }
-  h1, h2, h3      { page-break-after:  avoid; }
-  img             { max-width: 100%; }
-}
+Add to `minimal-jekyll-theme.gemspec`:
+```ruby
+spec.add_runtime_dependency "jekyll-minifier"
 ```
 
-**New file:** `_sass/_print.scss`
-**Updated file:** `assets/css/minimal.scss` (add `@import "print"` at the end)
+Add to `_config.yml`:
+```yaml
+################################
+# Jekyll Minifier
+# https://github.com/digitalsparky/jekyll-minifier
+################################
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+```
+
+Add to `plugins:` list in `_config.yml` and `docs/_config.yml`:
+```yaml
+  - jekyll-minifier
+```
+
+**Updated files:** `minimal-jekyll-theme.gemspec`, `Gemfile`, `docs/Gemfile`,
+`_config.yml`, `docs/_config.yml`
+
+---
+
+### B6. HTML minification for production
+`jekyll-minifier` (added in B5) also minifies HTML output. No additional configuration
+is required — it handles HTML automatically once the plugin is active.
 
 ---
 
@@ -214,60 +266,37 @@ pattern.
 
 ---
 
-### C2. CSS override hooks — `custom-variables.scss` and `custom-styles.scss`
-Minima provides two empty user-facing SCSS files:
+### C2. CSS user override file
+Minima provides user-facing override files so people can customise the theme without
+forking it. With Sass removed (B4), the equivalent is a plain `assets/css/custom.css`
+that ships empty and is loaded last. Users override it by placing their own
+`assets/css/custom.css` in their site directory (Jekyll's theme gem lookup gives site
+files priority over theme gem files).
 
-- `_sass/minima/custom-variables.scss` — override Sass variables before base styles compile
-- `_sass/minima/custom-styles.scss` — add/override CSS rules after base styles
+**New file `assets/css/custom.css`:** (empty, with comment)
+```css
+/*
+  Add your custom styles here.
+  This file is loaded after the theme CSS so your rules take precedence.
+  To override a design token, re-declare it on :root:
 
-Add equivalent files for this theme:
-
-**New file `_sass/_custom-variables.scss`:** (empty, with comment)
-```scss
-// Override theme variables here.
-// This file is imported before _variables.scss takes effect.
-// Example:
-//   $link: #005ea2;
+    :root { --color-link: #005ea2; }
+*/
 ```
 
-**New file `_sass/_custom-styles.scss`:** (empty, with comment)
-```scss
-// Add or override styles here.
-// This file is imported after all theme styles have loaded.
+**Update `default.html`** — add a third link after `theme.css`:
+```html
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 ```
 
-**Updated file:** `assets/css/minimal.scss`
-- Import `custom-variables` before `variables`
-- Import `custom-styles` at the very end
+**New file:** `assets/css/custom.css`
+**Updated file:** `_layouts/default.html`
 
 ---
 
-### C3. Dark mode support (`prefers-color-scheme`)
-Minima's `auto` skin uses CSS custom properties + a `@media (prefers-color-scheme: dark)`
-block to automatically switch to a dark palette based on the OS preference.
-
-With CSS design tokens already in place (B4), add a dark palette override in
-`_sass/_tokens.scss`:
-
-```scss
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text:      #d4d4d4;
-    --color-text-muted: #999;
-    --color-link:      #74b9ff;
-    --color-link-hover:#a29bfe;
-    --color-bg:        #1a1a1a;
-    --color-bg-subtle: #2d2d2d;
-    --color-border:    #444;
-    --color-code-bg:   #2d2d2d;
-  }
-}
-```
-
-Users who prefer to force light/dark mode can override `--color-bg` etc. in their own
-`_sass/_custom-styles.scss`.
-
-**Updated file:** `_sass/_tokens.scss`
+### C3. Dark mode — merged into B4
+The `@media (prefers-color-scheme: dark)` block lives directly in `theme.css`.
+No separate step required.
 
 ---
 
@@ -393,9 +422,9 @@ Add a dated entry for all changes.
 | 6 | Ordinal dates (B2) | new include + 5 layouts/includes | Medium |
 | 7 | Author fallback (B3) | 2 includes | Low |
 | 8 | Escape user strings (C5) | 5 files | Low |
-| 9 | CSS tokens + dark mode (B4, C3) | new partial + `minimal.scss` | Medium |
-| 10 | Print styles (B5) | new partial + `minimal.scss` | Low |
-| 11 | CSS override hooks (C2) | 2 new partials + `minimal.scss` | Low |
+| 9 | Replace Sass with plain CSS + dark mode (B4, C3) | delete 67 files, 2 new CSS files, `default.html`, `_config.yml` | High |
+| 10 | CSS user override file (C2) | new `custom.css` + `default.html` | Low |
+| 11 | CSS + HTML minification via jekyll-minifier (B5, B6) | gemspec + Gemfiles + configs | Low |
 | 12 | `show_excerpts` toggle (C7) | config + 2 layouts | Low |
 | 13 | Remove Alexa config (D1) | 2 config files | Low |
 | 14 | Bump gemspec version (D2) | gemspec | Low |
