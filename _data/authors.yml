@@ -10,7 +10,6 @@ Desired Persona:
   cta           : "Follow"
   cta_url       : "https://twitter.com/desiredpersona"
   twitter       : "desiredpersona"
-  google_plus   : "DesiredPersona"
   facebook      : "desiredpersona"
 
 
@@ -24,5 +23,4 @@ Joe Bloggs:
   cta           : "Subscribe"
   cta_url       : "/newsletter/"
   twitter       : "joebloggs"
-  google_plus   : "joebloggs"
   facebook      : "joebloggs"

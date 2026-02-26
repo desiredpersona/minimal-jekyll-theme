@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Jekyll
-gem "jekyll", "~> 4.2.1"
+gem "jekyll", "~> 4.4"
 
 # Theme
 gem "minimal-jekyll-theme"
@@ -17,5 +17,4 @@ group :jekyll_plugins do
   gem 'jekyll-archives'
 end
 
-# This Ruby 3.0.0 dependancy is needed until Jekyll V4.3.0 release
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8"
