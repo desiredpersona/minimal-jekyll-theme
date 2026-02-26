@@ -79,10 +79,6 @@ kramdown:
     hard_wrap: false
     syntax_highlighter: rouge
 
-sass:
-    sass_dir: _sass
-    style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
 # Include/Exclude filetypes
 include:
   - _pages

@@ -1,8 +1,8 @@
 {% if page.share_icons != false %}
-<div class="flex flex-row justify-end">
+<div class="share-icons">
 
 {% if site.twitter_icon != false  %}
-  <a class="link black-60 hover-dark-gray w2 ml3" href="https://twitter.com/intent/tweet?{% if site.text.twitter.username %}via={{ site.text.twitter.username }}&{% endif %}text={{ page.title }} {{ page.url | absolute_url }}" title="Share on Twitter" aria-hidden="true">
+  <a class="share-icons__link" href="https://twitter.com/intent/tweet?{% if site.text.twitter.username %}via={{ site.text.twitter.username }}&{% endif %}text={{ page.title }} {{ page.url | absolute_url }}" title="Share on Twitter" aria-hidden="true">
     <svg viewBox="0 0 20 20" data-icon="twitter" style="fill:currentcolor">
       <path xmlns="http://www.w3.org/2000/svg" d="M14.467,6.707c-0.34,0.198-0.715,0.342-1.115,0.419c-0.318-0.335-0.775-0.545-1.279-0.545c-0.969,0-1.754,0.773-1.754,1.727c0,0.135,0.015,0.267,0.045,0.394C8.905,8.628,7.612,7.94,6.747,6.896C6.596,7.151,6.509,7.448,6.509,7.764c0,0.599,0.31,1.128,0.78,1.438C7.002,9.192,6.732,9.115,6.495,8.985c0,0.007,0,0.014,0,0.021c0,0.837,0.605,1.535,1.408,1.694c-0.147,0.04-0.302,0.06-0.462,0.06c-0.113,0-0.223-0.011-0.33-0.031c0.223,0.687,0.871,1.186,1.638,1.199c-0.6,0.464-1.356,0.739-2.179,0.739c-0.142,0-0.281-0.007-0.418-0.023c0.777,0.489,1.699,0.775,2.689,0.775c3.228,0,4.991-2.63,4.991-4.913c0-0.075-0.002-0.149-0.004-0.223c0.342-0.244,0.639-0.547,0.875-0.894c-0.316,0.137-0.652,0.23-1.008,0.272C14.057,7.448,14.336,7.11,14.467,6.707 M10,0.594c-5.195,0-9.406,4.211-9.406,9.406c0,5.195,4.211,9.406,9.406,9.406c5.196,0,9.407-4.211,9.407-9.406C19.406,4.805,15.195,0.594,10,0.594 M10,18.552c-4.723,0-8.551-3.829-8.551-8.552S5.277,1.449,10,1.449c4.723,0,8.551,3.829,8.551,8.551S14.723,18.552,10,18.552"></path>
     </svg>
@@ -10,7 +10,7 @@
 {% endif %}
 
 {% if site.facebook_icon != false  %}
-  <a class="link black-60 hover-dark-gray w2 ml3" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Share on Facebook" aria-hidden="true">
+  <a class="share-icons__link" href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" title="Share on Facebook" aria-hidden="true">
     <svg viewBox="0 0 20 20" data-icon="facebook" style="fill:currentcolor">
       <path xmlns="http://www.w3.org/2000/svg" d="M10,0.5c-5.247,0-9.5,4.253-9.5,9.5c0,5.247,4.253,9.5,9.5,9.5c5.247,0,9.5-4.253,9.5-9.5C19.5,4.753,15.247,0.5,10,0.5 M10,18.637c-4.77,0-8.636-3.867-8.636-8.637S5.23,1.364,10,1.364S18.637,5.23,18.637,10S14.77,18.637,10,18.637 M10.858,7.949c0-0.349,0.036-0.536,0.573-0.536h0.719v-1.3H11c-1.38,0-1.866,0.65-1.866,1.743v0.845h-0.86V10h0.86v3.887h1.723V10h1.149l0.152-1.299h-1.302L10.858,7.949z"></path>
     </svg>

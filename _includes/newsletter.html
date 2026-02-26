@@ -1,19 +1,19 @@
-<div class="mb4 measure-narrow">
+<div class="newsletter-form">
   <form action="{{ page.newsletter.url }}" method="POST" target="_blank" accept-charset="utf-8">
 
-      <div class="mt2">
-        <label class="db f6 fw4 lh-copy" for="name">First name</label>
-        <input class="f5 f4-ns fw3 pa2 ba bg-white w-100 input-reset" type="text" name="name"  id="name">
-      </div>
+    <div class="form-field">
+      <label class="form-label" for="name">First name</label>
+      <input class="form-input" type="text" name="name" id="name">
+    </div>
 
-      <div class="mt3">
-        <label class="db f6 fw4 lh-copy" for="email">Email address</label>
-        <input class="f5 f4-ns fw3 pa2 ba bg-white w-100 input-reset" type="text" name="email"  id="email">
-      </div>
+    <div class="form-field">
+      <label class="form-label" for="email">Email address</label>
+      <input class="form-input" type="text" name="email" id="email">
+    </div>
 
-    <div class="mt3">
+    <div class="form-field">
       <input type="hidden" name="list" value="{{ page.newsletter.list }}">
-      <input class="f6 f5-ns fw4 white pa2 ba b--green bg-green w-100 grow pointer input-reset" type="submit" name="submit" value="Subscribe">
+      <input class="form-submit" type="submit" name="submit" value="Subscribe">
     </div>
   </form>
 </div>

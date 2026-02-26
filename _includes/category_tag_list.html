@@ -1,5 +1,5 @@
 {% if page.category_tag_list != false %}
-<div class="flex flex-row justify-start flex-wrap list mb2">
+<div class="tag-list">
   {% if post %}
     {% assign categories = post.categories %}
     {% assign tags = post.tags %}
@@ -9,12 +9,11 @@
   {% endif %}
 
   {% for category in categories %}
-    <a class="f6 br1 mt2 mr1 pa2 link black-60 hover-black-60 bg-near-white hover-bg-black-10" href="{{ "/category/" | absolute_url }}{{ category | slugify }}/">{{ category }}</a>
+    <a class="tag-list__item" href="{{ "/category/" | absolute_url }}{{ category | slugify }}/">{{ category }}</a>
   {% endfor %}
 
   {% for tag in tags %}
-    <a class="f6 br1 mt2 mr1 pa2 link black-60 hover-black-60 bg-near-white hover-bg-black-10" href="{{ "/tag/" | absolute_url }}{{ tag | slugify }}/">{{ tag }}</a>
+    <a class="tag-list__item" href="{{ "/tag/" | absolute_url }}{{ tag | slugify }}/">{{ tag }}</a>
   {% endfor %}
-
 </div>
 {% endif %}
