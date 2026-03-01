@@ -1,18 +1,18 @@
 <form name="contact" method="POST" netlify>
-  <div>
+  <div class="contact-form-field">
     <label>Your Name:</label><br>
-    <input type="text" name="name" class="w-100 w-50-l pa2 ba bw1 br2" />  
+    <input type="text" name="name" class="contact-form-input contact-form-input--half" />
   </div>
-  <div>
+  <div class="contact-form-field">
     <label>Your Email:</label><br>
-    <input type="email" name="email" class="w-100 w-50-l pa2 ba bw1 br2" />
+    <input type="email" name="email" class="contact-form-input contact-form-input--half" />
   </div>
-  <div>
+  <div class="contact-form-field">
     <label>Message:</label><br>
-    <textarea name="message" class="w-100 h5 pa2 ba bw1 br2"></textarea>
+    <textarea name="message" class="contact-form-textarea"></textarea>
   </div>
   <div data-netlify-recaptcha></div>
   <div>
-    <button class="white bg-green pv2 ph4 ba bw1 br2 b--dark-green" type="submit">Send</button>
+    <button class="contact-form-submit" type="submit">Send</button>
   </div>
 </form>

@@ -71,7 +71,6 @@ share_icons         : true             # Show post social sharing icons
 category_tag_list   : true             # Show post categories & tags
 twitter_icon        : true             # Show Twitter share button
 facebook_icon       : true             # Show Facebook share button
-google_plus_icon    : true             # Show Google+ share button
 
 # Markdown Settings
 markdown: kramdown
@@ -79,10 +78,6 @@ kramdown:
     input: GFM
     hard_wrap: false
     syntax_highlighter: rouge
-
-sass:
-    sass_dir: _sass
-    style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 # Include/Exclude filetypes
 include:
@@ -122,7 +117,6 @@ social:
   name: Joe Bloggs
   links:
     - https://twitter.com/username
-    - https://plus.google.com/u/0/+username
     - https://www.facebook.com/username
 
 twitter:

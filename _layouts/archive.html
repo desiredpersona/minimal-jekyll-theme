@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<div class="flex flex-column items-center">
-  <div class="mw7 w-100 ph3 ph4-ns">
-    <h1 class="f5 fw4 lh-title mb0 pb2 bb b--light-gray">
+<div class="listing-layout">
+  <div class="listing-container">
+    <h1 class="listing-header">
       {% if page.type == 'year' %}
         Posts from {{ page.date | date: "%Y" }}
       {% elsif page.type == 'month' %}
@@ -17,10 +17,10 @@ layout: default
     </h1>
 
     {% for post in page.posts %}
-      <a class="link black-80 hover-silver" href="{{ post.url | relative_url }}">
-        <article class="f5 lh-copy fw3 pb4 bb b--light-gray">
-          <h3 class="f3 fw6 lh-title mb0">{{ post.title | escape }}</h3>
-          <div class="f6 fw3 silver mt0">
+      <a href="{{ post.url | relative_url }}">
+        <article class="listing-item">
+          <h3 class="listing-item__title">{{ post.title | escape }}</h3>
+          <div class="listing-item__date">
             {% if post.last_modified_at %}
               <span>{{ site.text.updated }} <time>{{ post.last_modified_at | date: site.date_format }}</time></span>
             {% else %}

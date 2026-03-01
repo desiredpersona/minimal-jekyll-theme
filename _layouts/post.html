@@ -2,28 +2,27 @@
 layout: default
 ---
 
-<main class="flex flex-column items-center">
-  <article class="mw7 w-100 ph3 ph4-ns">
+<main class="post-layout">
+  <article class="post-article">
 
-    <header class="{% if page.post_meta == false %}mt5{% endif %}">
+    <header{% if page.post_meta == false %} class="content-header"{% endif %}>
       {% if site.post_meta %}
         {% include post_meta.html %}
       {% endif %}
 
       {% unless page.header.layout == 'hero' %}
-        <h1 class="f2 fw6 lh-title mb1">{{ page.title }}</h1>
+        <h1 class="content-title">{{ page.title }}</h1>
         {% if page.subtitle %}
-          <h2 class="f3 fw4 lh-title silver mv2">{{ page.subtitle }}</h2>
+          <h2 class="content-subtitle">{{ page.subtitle }}</h2>
         {% endif %}
       {% endunless %}
     </header>
 
-
-    <div class="mw7 w-100 f5 f4-ns fw3 lh-copy mb0">
+    <div class="post-content">
       {{ content }}
     </div>
 
-    <div class="mw7 w-100 lh-copy">
+    <div>
       {% if site.category_tag_list %}
         {% include category_tag_list.html %}
       {% endif %}

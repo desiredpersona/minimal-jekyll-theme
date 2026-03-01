@@ -6,21 +6,21 @@ layout: page
 
 <section>
   {% for post in site.posts limit: site.text.blog_limit %}
-    <article class="mt5">
-      <a class="link" href="{{ post.url | relative_url }}">
-        <h3 class="f4 fw6 lh-title underline-hover mb0">{{ post.title | escape }}</h3>
-        <p class="f5 f4-ns fw3 lh-copy mv1">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
-        <div class="f6 fw3 lh-copy silver">
+    <article class="blog-list-item">
+      <a href="{{ post.url | relative_url }}">
+        <h3 class="blog-list-item__title">{{ post.title | escape }}</h3>
+        <p class="blog-list-item__excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+        <div class="blog-list-item__meta">
           {% if post.last_modified_at %}
           <span>{{ site.text.updated }} <time>{{ post.last_modified_at | date: site.date_format }}</time></span>
           {% else %}
           <time>{{ post.date | date: site.date_format }}</time>
           {% endif %}
-          <span class="ttl">&middot; {% include read_time.html %}</span>
+          <span>&middot; {% include read_time.html %}</span>
         </div>
       </a>
-    </aritcle>
+    </article>
   {% endfor %}
 
-  <p class="mv5">Read older posts from the <a class="black" href="{{ "/archives/" | relative_url }}">archives</a></p>
+  <p class="archives-footer">Read older posts from the <a href="{{ "/archives/" | relative_url }}">archives</a></p>
 </section>

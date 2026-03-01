@@ -13,9 +13,9 @@
 
   {% comment %} Atom Feed {% endcomment %}
   <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-  
+
   {% comment %} Stylesheet {% endcomment %}
-  <link rel="stylesheet" href="{{ '/assets/css/minimal.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
 
   {% comment %} Favicon {% endcomment %}
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -32,7 +32,7 @@
   {% comment %} Jekyll SEO Tag {% endcomment %}
   {% seo %}
 </head>
-<body class="black-80 {% if page.class or layout.class %}{{ page.class | default: layout.class | join: ' ' | prepend: ' ' }}{% endif %}">
+<body{% if page.class or layout.class %} class="{{ page.class | default: layout.class | join: ' ' }}"{% endif %}>
 
 {% comment %} Google Tag Manager (noscript) {% endcomment %}
 {% if site.google_tag_manager and jekyll.environment == 'production' %}
