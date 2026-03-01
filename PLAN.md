@@ -140,68 +140,46 @@ When `page.author` is blank, both `post_meta.html` and `author_bio.html` fall ba
 
 ---
 
-### B4. Replace Sass pipeline with plain CSS
-Nostalgia uses plain CSS with CSS custom properties — no preprocessor. Remove the entire
-Sass pipeline and replace it with a single `theme.css` file, keeping Tachyons as a
-pre-built vendor file. Dark mode (C3) is included here since it lives in the same file.
+### B4. Replace Sass pipeline and Tachyons with plain CSS design system
+Nostalgia uses plain CSS with CSS custom properties — no preprocessor, no utility framework.
+Remove the entire Sass pipeline and Tachyons CSS framework. Replace with a single
+`assets/css/theme.css` using semantic BEM-style component classes. Dark mode (C3) is
+included here since it lives in the same file.
 
 **What is deleted:**
 - All 67 files in `_sass/` (Tachyons SCSS modules + `_variables.scss` + `_theme.scss` +
   `_tachyons.scss`)
 - `assets/css/minimal.scss` (the Sass entry point with front matter)
-- Remove the `sass:` config block from `_config.yml`
+- The `sass:` config block from `_config.yml`
+- `_sass` from the files glob in `minimal-jekyll-theme.gemspec`
 
 **What is added:**
 
-`assets/css/tachyons.min.css` — download the pre-built minified Tachyons 4 CSS and commit
-it directly. This replaces the 64-file SCSS module tree with a single vendor file and
-removes the Sass compile step entirely.
+`assets/css/theme.css` — complete CSS design system (26 sections) using CSS custom
+properties inspired by Nostalgia's architecture:
 
-`assets/css/theme.css` — convert `_variables.scss` + `_theme.scss` to plain CSS:
-- Replace every `$sass-variable` with a CSS custom property on `:root`
-- Flatten all SCSS nesting (`a { &:hover {} }` → `a:hover {}`)
-- Expand the single `@extend .pre` into explicit properties
-- Add a `@media (prefers-color-scheme: dark)` block for dark mode (merges C3):
+- **Design tokens on `:root`** — type scale (f1–f7 values), font weights, colours matching
+  the original Tachyons palette, spacing scale, border radii
+- **Automatic dark mode** via `@media (prefers-color-scheme: dark)` (merges C3)
+- **Semantic BEM-style component classes** replacing all Tachyons utility classes:
+  `.site-header`, `.site-nav`, `.hero`, `.post-layout`, `.page-layout`,
+  `.listing-layout`, `.post-content`, `.post-list-item`, `.blog-list-item`,
+  `.author-meta`, `.author-bio`, `.tag-list`, `.share-icons`, `.sidebar`,
+  `.footer-nav`, form classes, buttons, alerts, background overlays
+- Syntax highlighting, typography, reset, and responsive breakpoints preserved
 
-```css
-:root {
-  --font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
-                 'helvetica neue', helvetica, ubuntu, roboto, noto,
-                 'segoe ui', arial, sans-serif;
-  --code-font-family: menlo, monaco, monospace;
-  --color-text:       #333;
-  --color-text-muted: #777;
-  --color-link:       #000;
-  --color-link-hover: rgba(0,0,0,0.8);
-  --color-bg:         #fff;
-  --color-bg-subtle:  #f4f4f4;
-  --color-border:     #000;
-  --color-code-bg:    #f4f4f4;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text:      #d4d4d4;
-    --color-text-muted:#999;
-    --color-link:      #74b9ff;
-    --color-link-hover:#a29bfe;
-    --color-bg:        #1a1a1a;
-    --color-bg-subtle: #2d2d2d;
-    --color-border:    #555;
-    --color-code-bg:   #2d2d2d;
-  }
-}
-```
-
-**Update `default.html`** — replace the single `minimal.css` link with two links:
-```html
-<link rel="stylesheet" href="{{ '/assets/css/tachyons.min.css' | relative_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
-```
+**Templates rewritten (20 files)** — all Tachyons utility classes replaced with the
+semantic classes above:
+- Layouts: `default`, `post`, `page`, `home`, `blog`, `archives`, `archive`,
+  `category`, `tag`
+- Includes: `header`, `navigation`, `footer`, `post_meta`, `author_bio`,
+  `category_tag_list`, `share_icons`, `sidebar`, `netlify-form`, `newsletter`
+- Docs pages: `archive`, `category`, `tag`
 
 **Deleted:** `_sass/` (entire directory, 67 files), `assets/css/minimal.scss`
-**New files:** `assets/css/tachyons.min.css`, `assets/css/theme.css`
-**Updated files:** `_layouts/default.html`, `_config.yml`
+**New file:** `assets/css/theme.css`
+**Updated files:** `_layouts/default.html`, `_config.yml`, `minimal-jekyll-theme.gemspec`,
+all 20 templates listed above
 
 ---
 
@@ -422,7 +400,7 @@ Add a dated entry for all changes.
 | 6 | Ordinal dates (B2) | new include + 5 layouts/includes | Medium |
 | 7 | Author fallback (B3) | 2 includes | Low |
 | 8 | Escape user strings (C5) | 5 files | Low |
-| 9 | Replace Sass with plain CSS + dark mode (B4, C3) | delete 67 files, 2 new CSS files, `default.html`, `_config.yml` | High |
+| 9 | Replace Sass + Tachyons with plain CSS design system + dark mode (B4, C3) | delete 67 files, 1 new CSS file, 20 templates rewritten, `_config.yml`, gemspec | High |
 | 10 | CSS user override file (C2) | new `custom.css` + `default.html` | Low |
 | 11 | CSS + HTML minification via jekyll-minifier (B5, B6) | gemspec + Gemfiles + configs | Low |
 | 12 | `show_excerpts` toggle (C7) | config + 2 layouts | Low |
